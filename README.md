@@ -21,7 +21,7 @@ It supports Arabic 🇸🇦 and English 🇬🇧, manages user sessions, and all
 
 🛠️ Setup
 # 1. Clone the repo
-[git clone https://github.com/your-repo.git](https://github.com/KhalidEssam/whatsapp-bot)]
+[git clone https://github.com/KhalidEssam/whatsapp-bot]
 cd whatsapp-bot
 
 # 2. Install dependencies
