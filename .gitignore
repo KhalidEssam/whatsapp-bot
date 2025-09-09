@@ -6,6 +6,10 @@
 # Testing
 /coverage
 
+auth_info/
+app.log
+*.log
+
 # Production
 /build
 /dist
