@@ -1,0 +1,2837 @@
+{
+  "type": "form",
+  "data": {
+    "fields": [
+      {
+        "id": "checkbox-5",
+        "element_id": "checkbox-5",
+        "form_id": "wrapper-4624-5764",
+        "parent_group": "group-2",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Instagram",
+            "value": "Instagram",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Twitter",
+            "value": "Twitter",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "TikTok",
+            "value": "TikTok",
+            "limit": "",
+            "default": "",
+            "key": "3082-6600",
+            "error": ""
+          },
+          {
+            "label": "LinkedIn",
+            "value": "LinkedIn",
+            "limit": "",
+            "default": "",
+            "key": "3083-6656",
+            "error": ""
+          },
+          {
+            "label": "Facebook",
+            "value": "Facebook",
+            "limit": "",
+            "default": "",
+            "key": "4108-8995",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-1",
+            "rule": "is",
+            "value": "إدارة حسابات التواصل الاجتماعي"
+          }
+        ],
+        "wrapper_id": "wrapper-4624-5764",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Which platforms?",
+        "layout": "vertical",
+        "options_bulk_editor": "Instagram;انستقرام ( Instagram); 0\nTwitter;منصة أكس (Twitter); 0\nTikTok;تيك توك ( TikTok); 0\nLinkedIn;لينكد ان ( LinkedIn); 0\nFacebook;فيسبوك ( Facebook); 0",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "checkbox-13",
+        "element_id": "checkbox-13",
+        "form_id": "wrapper-1944-8811",
+        "parent_group": "group-2",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Static designs",
+            "value": "Static designs",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "short videos",
+            "value": "short videos",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "interactive content",
+            "value": "interactive content",
+            "limit": "",
+            "default": "",
+            "key": "8940-2045",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-1",
+            "rule": "is",
+            "value": "إدارة حسابات التواصل الاجتماعي"
+          }
+        ],
+        "wrapper_id": "wrapper-1944-8811",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "What type of content?",
+        "layout": "vertical",
+        "options_bulk_editor": "Static designs;تصاميم ثابتة; 0\nshort videos;فيديوهات قصيرة; 0\ninteractive content;محتوى تفاعلي (قصص، مسابقات...); 0",
+        "formid": "wrapper-9266-7854",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "radio-1",
+        "element_id": "radio-1",
+        "form_id": "wrapper-3849-5053",
+        "parent_group": "group-2",
+        "type": "radio",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "Yes",
+            "key": "3161-6222",
+            "error": ""
+          },
+          {
+            "label": "No",
+            "value": "No",
+            "key": "2633-4786",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-3849-5053",
+        "hidden_behavior": "zero",
+        "value_type": "radio",
+        "field_label": "Do you already have a visual identity ?",
+        "layout": "vertical",
+        "options_bulk_editor": "Yes;نعم; 0\nNo;لا; 0",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "text-1",
+        "element_id": "text-1",
+        "form_id": "wrapper-1082-7944",
+        "parent_group": "group-2",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-1082-7944",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "Any upcoming campaigns or events?",
+        "required": "1"
+      },
+      {
+        "id": "checkbox-12",
+        "element_id": "checkbox-12",
+        "form_id": "wrapper-5664-1300",
+        "parent_group": "group-2",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Increase followers",
+            "value": "Increase followers",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Engagement",
+            "value": "Engagement",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Service inquiries",
+            "value": "Service inquiries",
+            "limit": "",
+            "default": "",
+            "key": "7510-3462",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-5664-1300",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Goals of management ?",
+        "layout": "vertical",
+        "options_bulk_editor": "Increase followers;زيادة المتابعين; 0\n Engagement;تفاعل ومشاركات; 0\nService inquiries;طلبات على الخدمات; 0",
+        "formid": "wrapper-3073-7239",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "radio-7",
+        "element_id": "radio-7",
+        "form_id": "wrapper-6441-5485",
+        "parent_group": "group-2",
+        "type": "radio",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "Yes",
+            "key": "3161-6222",
+            "error": ""
+          },
+          {
+            "label": "No",
+            "value": "No",
+            "key": "2633-4786",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-6441-5485",
+        "hidden_behavior": "zero",
+        "value_type": "radio",
+        "field_label": "Do you want monthly performance reports ?",
+        "layout": "vertical",
+        "options_bulk_editor": "Yes;نعم; 0\nNo;لا; 0",
+        "required": "1",
+        "options_expanded": "1",
+        "formid": "wrapper-3189-4501"
+      },
+      {
+        "id": "radio-9",
+        "element_id": "radio-9",
+        "form_id": "wrapper-1518-3238",
+        "parent_group": "",
+        "type": "radio",
+        "options": [
+          {
+            "label": "Marketing &amp; Creative Services",
+            "value": "Marketing &amp; Creative Services",
+            "key": "3161-6222",
+            "error": "",
+            "default": "1"
+          },
+          {
+            "label": "Technical &amp; Digital Transformation Services",
+            "value": "Technical &amp; Digital Transformation Services",
+            "key": "2633-4786",
+            "error": "",
+            "default": ""
+          },
+          {
+            "label": "Financial &amp; Administrative Services",
+            "value": "Financial &amp; Administrative Services",
+            "limit": "",
+            "default": "",
+            "key": "9347-8831",
+            "error": ""
+          },
+          {
+            "label": "Corporate Management &amp; Consulting Services",
+            "value": "Corporate Management &amp; Consulting Services",
+            "limit": "",
+            "default": "",
+            "key": "2148-6923",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-1518-3238",
+        "hidden_behavior": "zero",
+        "value_type": "radio",
+        "field_label": "Select Main Service Type",
+        "layout": "vertical",
+        "options_bulk_editor": "Marketing &amp; Creative Services;Marketing &amp; Creative Services; 1\nTechnical &amp; Digital Transformation Services;Technical &amp; Digital Transformation Services; 0\nFinancial &amp; Administrative Services;Financial &amp; Administrative Services; 0\nCorporate Management &amp; Consulting Services;Corporate Management &amp; Consulting Services; 0",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "checkbox-1",
+        "element_id": "checkbox-1",
+        "form_id": "wrapper-4382-5975",
+        "parent_group": "",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Social Media Account Management",
+            "value": "Social Media Account Management",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Visual Identity Design",
+            "value": "Visual Identity Design",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Website Design",
+            "value": "Website Design",
+            "limit": "",
+            "default": "",
+            "key": "3550-4457",
+            "error": ""
+          },
+          {
+            "label": "Marketing Content Creation",
+            "value": "Marketing Content Creation",
+            "limit": "",
+            "default": "",
+            "key": "1881-4997",
+            "error": ""
+          },
+          {
+            "label": "Advertising Campaign Management",
+            "value": "Advertising Campaign Management",
+            "limit": "",
+            "default": "",
+            "key": "9912-5651",
+            "error": ""
+          },
+          {
+            "label": "Presentation Design",
+            "value": "Presentation Design",
+            "limit": "",
+            "default": "",
+            "key": "5008-2019",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "radio-9",
+            "rule": "is",
+            "value": "Marketing &amp; Creative Services"
+          }
+        ],
+        "wrapper_id": "wrapper-4382-5975",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Marketing & Creative Services",
+        "layout": "vertical",
+        "options_bulk_editor": "Social Media Account Management;إدارة حسابات التواصل الاجتماعي; 0\nVisual Identity Design;تصميم الهوية البصرية; 0\nWebsite Design;تصميم موقع إلكتروني; 0\nMarketing Content Creation;إعداد محتوى تسويقي; 0\nAdvertising Campaign Management;إدارة حملات إعلانية; 0\nPresentation Design;تصميم العروض التقديمية; 0",
+        "options_expanded": "1",
+        "required": "1",
+        "calculations": "false"
+      },
+      {
+        "id": "checkbox-2",
+        "element_id": "checkbox-2",
+        "form_id": "wrapper-6245-5495",
+        "parent_group": "",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Custom Management Systems (CRM – ERP)",
+            "value": "Custom Management Systems (CRM – ERP)",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Process Automation",
+            "value": "Process Automation",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Application Development",
+            "value": "Application Development",
+            "limit": "",
+            "default": "",
+            "key": "3550-4457",
+            "error": ""
+          },
+          {
+            "label": "Ongoing Technical &amp; Operational Support",
+            "value": "Ongoing Technical &amp; Operational Support",
+            "limit": "",
+            "default": "",
+            "key": "1881-4997",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "radio-9",
+            "rule": "is",
+            "value": "Technical &amp; Digital Transformation Services"
+          }
+        ],
+        "wrapper_id": "wrapper-6245-5495",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Technical & Digital Transformation Services",
+        "layout": "vertical",
+        "options_bulk_editor": "Custom Management Systems (CRM – ERP);تصميم أنظمة إدارة مخصصة (CRM – ERP); 0\nProcess Automation;أتمتة العمليات الإدارية والتشغيلية; 0\nApplication Development;تصميم تطبيقات; 0\nOngoing Technical &amp; Operational Support;دعم تقني وتشغيلي مستمر; 0",
+        "options_expanded": "1",
+        "required": "1",
+        "calculations": "false",
+        "formid": "wrapper-6245-5495"
+      },
+      {
+        "id": "checkbox-3",
+        "element_id": "checkbox-3",
+        "form_id": "wrapper-1056-6371",
+        "parent_group": "",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Financial Supervision &amp; Monitoring",
+            "value": "Financial Supervision &amp; Monitoring",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Financial Consulting",
+            "value": "Financial Consulting",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Financial Structuring &amp; Feasibility Studies",
+            "value": "Financial Structuring &amp; Feasibility Studies",
+            "limit": "",
+            "default": "",
+            "key": "3550-4457",
+            "error": ""
+          },
+          {
+            "label": "Administrative &amp; Operational Services",
+            "value": "Administrative &amp; Operational Services",
+            "limit": "",
+            "default": "",
+            "key": "1881-4997",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "radio-9",
+            "rule": "is",
+            "value": "Financial &amp; Administrative Services"
+          }
+        ],
+        "wrapper_id": "wrapper-1056-6371",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Financial & Administrative Services",
+        "layout": "vertical",
+        "options_bulk_editor": "Financial Supervision &amp; Monitoring;إشراف ومتابعة مالية; 0\nFinancial Consulting;استشارات مالية; 0\nFinancial Structuring &amp; Feasibility Studies;هيكلة ودراسات مالية; 0\nAdministrative &amp; Operational Services;خدمات إدارية وتشغيلية; 0",
+        "options_expanded": "1",
+        "required": "1",
+        "calculations": "false",
+        "formid": "wrapper-1056-6371"
+      },
+      {
+        "id": "checkbox-4",
+        "element_id": "checkbox-4",
+        "form_id": "wrapper-9316-2609",
+        "parent_group": "",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Organizational Structures &amp; Policies",
+            "value": "Organizational Structures &amp; Policies",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Process Restructuring (Financial / Administrative / Operational)",
+            "value": "Process Restructuring (Financial / Administrative / Operational)",
+            "limit": "",
+            "default": "",
+            "key": "6060-7147",
+            "error": ""
+          },
+          {
+            "label": "Executive Management Consulting &amp; Strategic Planning",
+            "value": "Executive Management Consulting &amp; Strategic Planning",
+            "limit": "",
+            "default": "",
+            "key": "3550-4457",
+            "error": ""
+          },
+          {
+            "label": "Revenue Cycle Analysis &amp; Optimization",
+            "value": "Revenue Cycle Analysis &amp; Optimization",
+            "limit": "",
+            "default": "",
+            "key": "1881-4997",
+            "error": ""
+          },
+          {
+            "label": "Operational Task &amp; Office Services Management",
+            "value": "Operational Task &amp; Office Services Management",
+            "limit": "",
+            "default": "",
+            "key": "9912-5651",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "radio-9",
+            "rule": "is",
+            "value": "Corporate Management &amp; Consulting Services"
+          }
+        ],
+        "wrapper_id": "wrapper-9316-2609",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Corporate Management & Consulting Services",
+        "layout": "vertical",
+        "options_bulk_editor": "Organizational Structures &amp; Policies;إعداد الهياكل التنظيمية وسياسات العم; 0\nProcess Restructuring (Financial / Administrative / Operational);إعادة هيكلة العمليات; 0\nExecutive Management Consulting &amp; Strategic Planning;استشارات إدارية عليا وتخطيط استراتيجي; 0\nRevenue Cycle Analysis &amp; Optimization;تحليل دورة الإيرادات وتحسينها; 0\nOperational Task &amp; Office Services Management;إدارة المهام التشغيلية والخدمات المكتبية المتكاملة; 0",
+        "options_expanded": "1",
+        "required": "1",
+        "calculations": "false",
+        "formid": "wrapper-9316-2609"
+      },
+      {
+        "id": "page-break-1",
+        "element_id": "page-break-1",
+        "form_id": "wrapper-1660-6163",
+        "parent_group": "",
+        "type": "page-break",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-1660-6163",
+        "btn_left": "« Previous Step",
+        "btn_right": "Next Step »"
+      },
+      {
+        "id": "group-2",
+        "element_id": "group-2",
+        "form_id": "wrapper-7828-9780",
+        "parent_group": "",
+        "type": "group",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-1",
+            "rule": "is",
+            "value": "إدارة حسابات التواصل الاجتماعي"
+          }
+        ],
+        "wrapper_id": "wrapper-7828-9780",
+        "field_label": "Social Media Account Management",
+        "is_repeater": "false",
+        "min_limit_type": "variable",
+        "max_limit": "6"
+      },
+      {
+        "id": "group-3",
+        "element_id": "group-3",
+        "form_id": "wrapper-3397-1070",
+        "parent_group": "",
+        "type": "group",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-1",
+            "rule": "is",
+            "value": "تصميم الهوية البصرية"
+          }
+        ],
+        "wrapper_id": "wrapper-3397-1070",
+        "field_label": "Visual Identity Design",
+        "is_repeater": "false",
+        "formid": "wrapper-3397-1070"
+      },
+      {
+        "id": "group-6",
+        "element_id": "group-6",
+        "form_id": "wrapper-7561-2550",
+        "parent_group": "",
+        "type": "group",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-1",
+            "rule": "is",
+            "value": "تصميم موقع إلكتروني"
+          }
+        ],
+        "wrapper_id": "wrapper-7561-2550",
+        "field_label": "Website Design",
+        "is_repeater": "false",
+        "formid": "wrapper-7561-2550"
+      },
+      {
+        "id": "radio-12",
+        "element_id": "radio-12",
+        "form_id": "wrapper-2265-3127",
+        "parent_group": "group-6",
+        "type": "radio",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "Yes",
+            "key": "3161-6222",
+            "error": ""
+          },
+          {
+            "label": "No",
+            "value": "No",
+            "key": "2633-4786",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-2265-3127",
+        "hidden_behavior": "zero",
+        "value_type": "radio",
+        "field_label": "Do you have a registered domain name?",
+        "layout": "vertical",
+        "options_bulk_editor": "Yes;نعم; 0\nNo;لا; 0",
+        "options_expanded": "1",
+        "required": "1"
+      },
+      {
+        "id": "radio-13",
+        "element_id": "radio-13",
+        "form_id": "wrapper-5349-5362",
+        "parent_group": "group-6",
+        "type": "radio",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "Yes",
+            "key": "3161-6222",
+            "error": ""
+          },
+          {
+            "label": "No",
+            "value": "No",
+            "key": "2633-4786",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-5349-5362",
+        "hidden_behavior": "zero",
+        "value_type": "radio",
+        "field_label": "Do you have hosting set up?",
+        "layout": "vertical",
+        "options_bulk_editor": "Yes;نعم; 0\nNo;لا; 0",
+        "options_expanded": "1",
+        "required": "1"
+      },
+      {
+        "id": "text-6",
+        "element_id": "text-6",
+        "form_id": "wrapper-5900-7719",
+        "parent_group": "group-6",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-5900-7719",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "Approximate number of pages (e.g. Home, About Us, Services, Contact Us)",
+        "formid": "wrapper-2265-3127",
+        "required": "1"
+      },
+      {
+        "id": "checkbox-9",
+        "element_id": "checkbox-9",
+        "form_id": "wrapper-2400-9701",
+        "parent_group": "group-6",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Arabic",
+            "value": "Arabic",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "English",
+            "value": "English",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Both",
+            "value": "Both",
+            "limit": "",
+            "default": "",
+            "key": "7746-5919",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-2400-9701",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Required website language:",
+        "layout": "vertical",
+        "options_bulk_editor": "Arabic;العربية; 0\nEnglish;الإنجليزية; 0\nBoth;كلا اللغتين; 0",
+        "formid": "wrapper-8438-4029",
+        "options_expanded": "1",
+        "required": "1"
+      },
+      {
+        "id": "group-5",
+        "element_id": "group-5",
+        "form_id": "wrapper-3947-6109",
+        "parent_group": "",
+        "type": "group",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-1",
+            "rule": "is",
+            "value": "إعداد محتوى تسويقي"
+          }
+        ],
+        "wrapper_id": "wrapper-3947-6109",
+        "field_label": "Marketing Content Creation",
+        "is_repeater": "false",
+        "formid": "wrapper-3947-6109"
+      },
+      {
+        "id": "checkbox-8",
+        "element_id": "checkbox-8",
+        "form_id": "wrapper-2302-8447",
+        "parent_group": "group-5",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Social posts",
+            "value": "Social posts",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Website copy",
+            "value": "Website copy",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Articles/blogs",
+            "value": "Articles/blogs",
+            "limit": "",
+            "default": "",
+            "key": "4489-5575",
+            "error": ""
+          },
+          {
+            "label": "Ad copy",
+            "value": "Ad copy",
+            "limit": "",
+            "default": "",
+            "key": "2051-2605",
+            "error": ""
+          },
+          {
+            "label": "Other",
+            "value": "Other",
+            "limit": "",
+            "default": "",
+            "key": "7886-8976",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-2302-8447",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Type of content:",
+        "layout": "vertical",
+        "options_bulk_editor": "Social posts;منشورات منصات التواصل; 0\nWebsite copy;محتوى تعريفي للموقع; 0\nArticles/blogs;مقالات/مدونات; 0\nAd copy;نصوص إعلانية; 0\nOther;غير ذلك (يرجى التوضيح); 0",
+        "formid": "wrapper-4590-8705",
+        "options_expanded": "1",
+        "required": "1"
+      },
+      {
+        "id": "text-40",
+        "element_id": "text-40",
+        "form_id": "wrapper-6134-5386",
+        "parent_group": "group-15",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-6134-5386",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "What kind of processes would you like to automate? (e.g. leave requests, approvals, daily tasks...)",
+        "required": "1",
+        "formid": "wrapper-7376-7035"
+      },
+      {
+        "id": "group-19",
+        "element_id": "group-19",
+        "form_id": "wrapper-6660-6662",
+        "parent_group": "",
+        "type": "group",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-3",
+            "rule": "is",
+            "value": "هيكلة ودراسات مالية"
+          }
+        ],
+        "wrapper_id": "wrapper-6660-6662",
+        "field_label": "Structuring and financial studies",
+        "is_repeater": "false",
+        "formid": "wrapper-6660-6662"
+      },
+      {
+        "id": "checkbox-41",
+        "element_id": "checkbox-41",
+        "form_id": "wrapper-2744-7912",
+        "parent_group": "group-19",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Commercial",
+            "value": "Commercial",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Service sector",
+            "value": "Service sector",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Industrial",
+            "value": "Industrial",
+            "limit": "",
+            "default": "",
+            "key": "2940-6876",
+            "error": ""
+          },
+          {
+            "label": "Technical / Digital",
+            "value": "Technical / Digital",
+            "limit": "",
+            "default": "",
+            "key": "8111-1558",
+            "error": ""
+          },
+          {
+            "label": "Other (please specify)",
+            "key": "custom_option",
+            "value": "Other (please specify)",
+            "placeholder": "التوضيخ",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-2744-7912",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "What type of business or project do you have?",
+        "layout": "vertical",
+        "options_bulk_editor": "Commercial;تجاري; 0\nService sector;خدمي; 0\nIndustrial;صناعي; 0\nTechnical / Digital;تقني / رقمي; 0",
+        "options_expanded": "1",
+        "required": "1",
+        "formid": "wrapper-6992-5904",
+        "enable_custom_option": "1"
+      },
+      {
+        "id": "checkbox-40",
+        "element_id": "checkbox-40",
+        "form_id": "wrapper-7613-8798",
+        "parent_group": "group-19",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Individual",
+            "value": "Individual",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Small (fewer than 10 employees)",
+            "value": "Small (fewer than 10 employees)",
+            "limit": "",
+            "default": "",
+            "key": "3810-6332",
+            "error": ""
+          },
+          {
+            "label": "Medium (10–50 employees)",
+            "value": "Medium (10–50 employees)",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Large (more than 50 employees)",
+            "value": "Large (more than 50 employees)",
+            "limit": "",
+            "default": "",
+            "key": "6912-6181",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-7613-8798",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "How big is your facility?",
+        "layout": "vertical",
+        "options_bulk_editor": "Individual;فردية; 0\nSmall (fewer than 10 employees);صغيرة (أقل من 10 موظفين); 0\nMedium (10–50 employees);متوسطة (10 - 50 موظف); 0\nLarge (more than 50 employees);كبيرة (أكثر من 50 موظف); 0",
+        "formid": "wrapper-2014-4970",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "checkbox-43",
+        "element_id": "checkbox-43",
+        "form_id": "wrapper-7777-3335",
+        "parent_group": "group-19",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Financial feasibility study",
+            "value": "Financial feasibility study",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Financial restructuring plan for the company",
+            "value": "Financial restructuring plan for the company",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Financial analysis of the current situation",
+            "value": "Financial analysis of the current situation",
+            "limit": "",
+            "default": "",
+            "key": "2681-1114",
+            "error": ""
+          },
+          {
+            "label": "Cash flow study",
+            "value": "Cash flow study",
+            "limit": "",
+            "default": "",
+            "key": "8972-1819",
+            "error": ""
+          },
+          {
+            "label": "Other (please specify)",
+            "key": "custom_option",
+            "value": "Other (please specify)",
+            "placeholder": "",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-7777-3335",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "What service do you require?",
+        "layout": "vertical",
+        "options_bulk_editor": "Financial feasibility study;دراسة جدوى مالية; 0\nFinancial restructuring plan for the company;خطة هيكلة مالية للشركة; 0\nFinancial analysis of the current situation;تحليل مالي للوضع الحالي; 0\nCash flow study;دراسة تدفقات نقدية; 0",
+        "required": "1",
+        "options_expanded": "1",
+        "enable_custom_option": "1"
+      },
+      {
+        "id": "radio-40",
+        "element_id": "radio-40",
+        "form_id": "wrapper-9800-1028",
+        "parent_group": "group-19",
+        "type": "radio",
+        "options": [
+          {
+            "label": "Yes, in detail.",
+            "value": "Yes, in detail.",
+            "key": "3161-6222",
+            "error": ""
+          },
+          {
+            "label": "Partially",
+            "value": "Partially",
+            "key": "2633-4786",
+            "error": ""
+          },
+          {
+            "label": "No, we need to prepare it from scratch.",
+            "value": "No, we need to prepare it from scratch.",
+            "limit": "",
+            "default": "",
+            "key": "7140-1174",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-9800-1028",
+        "hidden_behavior": "zero",
+        "value_type": "radio",
+        "field_label": "Do you have financial data ready (financial statements, bank statements, etc.)?",
+        "layout": "vertical",
+        "options_bulk_editor": "Yes, in detail.;نعم، بشكل مفصل; 0\nPartially;جزئيًا; 0\nNo, we need to prepare it from scratch.;لا، نحتاج إعدادها من الصفر; 0",
+        "options_expanded": "1",
+        "required": "1"
+      },
+      {
+        "id": "radio-39",
+        "element_id": "radio-39",
+        "form_id": "wrapper-2052-1646",
+        "parent_group": "group-19",
+        "type": "radio",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "Yes",
+            "key": "3161-6222",
+            "error": ""
+          },
+          {
+            "label": "No",
+            "value": "No",
+            "key": "2633-4786",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-2052-1646",
+        "hidden_behavior": "zero",
+        "value_type": "radio",
+        "field_label": "Has a previous study or financial plan been prepared during the past two years?",
+        "layout": "vertical",
+        "formid": "wrapper-2052-1646",
+        "options_bulk_editor": "Yes;نعم; 0\nNo;لا; 0",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "checkbox-39",
+        "element_id": "checkbox-39",
+        "form_id": "wrapper-9796-5520",
+        "parent_group": "group-18",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "General finance organisation",
+            "value": "General finance organisation",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Financial restructuring",
+            "value": "Financial restructuring",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Preparation of a financial model",
+            "value": "Preparation of a financial model",
+            "limit": "",
+            "default": "",
+            "key": "2940-6876",
+            "error": ""
+          },
+          {
+            "label": "Preparation of a feasibility study",
+            "value": "Preparation of a feasibility study",
+            "limit": "",
+            "default": "",
+            "key": "8111-1558",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-9796-5520",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "What type of consultation is required?",
+        "layout": "vertical",
+        "options_bulk_editor": "General finance organisation;تنظيم مالي عام; 0\nFinancial restructuring;إعادة هيكلة مالية; 0\nPreparation of a financial model;إعداد نموذج مالي; 0\nPreparation of a feasibility study;إعداد دراسة جدوى; 0",
+        "options_expanded": "1",
+        "required": "1",
+        "formid": "wrapper-9796-5520"
+      },
+      {
+        "id": "text-53",
+        "element_id": "text-53",
+        "form_id": "wrapper-7891-1059",
+        "parent_group": "group-18",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-7891-1059",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "What does the company do?",
+        "required": "1",
+        "formid": "wrapper-7891-1059"
+      },
+      {
+        "id": "radio-38",
+        "element_id": "radio-38",
+        "form_id": "wrapper-6973-5975",
+        "parent_group": "group-18",
+        "type": "radio",
+        "options": [
+          {
+            "label": "Growth",
+            "value": "Growth",
+            "key": "3161-6222",
+            "error": ""
+          },
+          {
+            "label": "Stumble",
+            "value": "Stumble",
+            "key": "2633-4786",
+            "error": ""
+          },
+          {
+            "label": "Stability",
+            "value": "Stability",
+            "limit": "",
+            "default": "",
+            "key": "3849-4706",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-6973-5975",
+        "hidden_behavior": "zero",
+        "value_type": "radio",
+        "field_label": "Is the company going through a phase:",
+        "layout": "vertical",
+        "formid": "wrapper-7865-1164",
+        "options_bulk_editor": "Growth;نمو; 0\nStumble;تعثر; 0\nStability ;استقرار; 0",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "checkbox-38",
+        "element_id": "checkbox-38",
+        "form_id": "wrapper-1129-5324",
+        "parent_group": "group-18",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Preparing reports for investors",
+            "value": "Preparing reports for investors",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Raise the company's readiness for financing or valuation",
+            "value": "Raise the company's readiness for financing or valuation",
+            "key": "7169-6762",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-1129-5324",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Do you need:",
+        "layout": "vertical",
+        "options_bulk_editor": "Preparing reports for investors;إعداد تقارير للمستثمرين; 0\nRaise the company's readiness for financing or valuation;رفع جاهزية الشركة للتمويل أو التقييم; 0",
+        "formid": "wrapper-1129-5324",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "radio-33",
+        "element_id": "radio-33",
+        "form_id": "wrapper-9798-3110",
+        "parent_group": "group-17",
+        "type": "radio",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "Yes",
+            "key": "3161-6222",
+            "error": ""
+          },
+          {
+            "label": "No",
+            "value": "No",
+            "key": "2633-4786",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-9798-3110",
+        "hidden_behavior": "zero",
+        "value_type": "radio",
+        "field_label": "Do you have an accountant or financial officer within the company?",
+        "layout": "vertical",
+        "formid": "wrapper-9888-1496",
+        "options_bulk_editor": "Yes;نعم; 0\nNo;لا; 0",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "checkbox-37",
+        "element_id": "checkbox-37",
+        "form_id": "wrapper-9718-6809",
+        "parent_group": "group-17",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Excel programme",
+            "value": "Excel programme",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Accounting software (state name)",
+            "value": "Accounting software (state name)",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Nothing",
+            "value": "Nothing",
+            "limit": "",
+            "default": "",
+            "key": "2940-6876",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-9718-6809",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "What tools are you currently using?",
+        "layout": "vertical",
+        "options_bulk_editor": "Excel programme;برنامج اكسل ( Excel); 0\nAccounting software (state name);برنامج محاسبي (اذكر اسمه); 0\nNothing;لا شيء; 0",
+        "options_expanded": "1",
+        "required": "1",
+        "formid": "wrapper-9798-3110"
+      },
+      {
+        "id": "text-52",
+        "element_id": "text-52",
+        "form_id": "wrapper-7430-7524",
+        "parent_group": "group-17",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-37",
+            "rule": "is",
+            "value": "برنامج محاسبي (اذكر اسمه)"
+          }
+        ],
+        "wrapper_id": "wrapper-7430-7524",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "Name the program",
+        "required": "1"
+      },
+      {
+        "id": "checkbox-36",
+        "element_id": "checkbox-36",
+        "form_id": "wrapper-2309-1758",
+        "parent_group": "group-17",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Controlling expenses",
+            "value": "Controlling expenses",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Revenue tracking",
+            "value": "Revenue tracking",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Organizating the invoices",
+            "value": "Organizating the invoices",
+            "limit": "",
+            "default": "",
+            "key": "9394-8378",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-2309-1758",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Are you experiencing problems with:",
+        "layout": "vertical",
+        "options_bulk_editor": "Controlling expenses;ضبط المصروفات; 0\nRevenue tracking;تتبع الإيرادات; 0\nOrganizating the invoices;تنظيم الفواتير; 0",
+        "formid": "wrapper-2309-1758",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "checkbox-33",
+        "element_id": "checkbox-33",
+        "form_id": "wrapper-8738-2311",
+        "parent_group": "group-16",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Website monitoring and maintenance",
+            "value": "Website monitoring and maintenance",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Support for a system or application",
+            "value": "Support for a system or application",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Emergency response",
+            "value": "Emergency response",
+            "limit": "",
+            "default": "",
+            "key": "2940-6876",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-8738-2311",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "What kind of support is required?",
+        "layout": "vertical",
+        "options_bulk_editor": "Website monitoring and maintenance;متابعة وصيانة موقع إلكتروني; 0\nSupport for a system or application;دعم نظام أو تطبيق; 0\nEmergency response;استجابة لحالات طارئة; 0",
+        "options_expanded": "1",
+        "required": "1",
+        "formid": "wrapper-8738-2311"
+      },
+      {
+        "id": "checkbox-32",
+        "element_id": "checkbox-32",
+        "form_id": "wrapper-4801-2823",
+        "parent_group": "group-16",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "During working hours",
+            "value": "During working hours",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "24/7",
+            "value": "24/7",
+            "key": "7169-6762",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-4801-2823",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Are there specific hours for support?",
+        "layout": "vertical",
+        "options_bulk_editor": "During working hours;خلال ساعات العمل; 0\n24/7;24/7; 0",
+        "formid": "wrapper-4801-2823",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "radio-32",
+        "element_id": "radio-32",
+        "form_id": "wrapper-8788-8211",
+        "parent_group": "group-16",
+        "type": "radio",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "Yes",
+            "key": "3161-6222",
+            "error": ""
+          },
+          {
+            "label": "No",
+            "value": "No",
+            "key": "2633-4786",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-8788-8211",
+        "hidden_behavior": "zero",
+        "value_type": "radio",
+        "field_label": "Do you have an existing system or website?",
+        "layout": "vertical",
+        "formid": "wrapper-8788-8211",
+        "options_bulk_editor": "Yes;نعم; 0\nNo;لا; 0",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "checkbox-27",
+        "element_id": "checkbox-27",
+        "form_id": "wrapper-9905-5495",
+        "parent_group": "group-14",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Mobile app (iOS – Android)",
+            "value": "Mobile app (iOS – Android)",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Web App",
+            "value": "Web App",
+            "key": "7169-6762",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-9905-5495",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "What kind of application would you like to develop?",
+        "layout": "vertical",
+        "options_bulk_editor": "Mobile app (iOS – Android);تطبيق جوال  (iOS – Android); 0\nWeb App;تطبيق ويب  (Web App); 0",
+        "options_expanded": "1",
+        "required": "1",
+        "formid": "wrapper-9905-5495"
+      },
+      {
+        "id": "checkbox-26",
+        "element_id": "checkbox-26",
+        "form_id": "wrapper-4450-8691",
+        "parent_group": "group-14",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Commercial (sales, reservations, customer follow-up, etc.)",
+            "value": "Commercial (sales, reservations, customer follow-up, etc.)",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Domestic servant",
+            "value": "Domestic servant",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Educational or informative",
+            "value": "Educational or informative",
+            "limit": "",
+            "default": "",
+            "key": "7978-7119",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-4450-8691",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "What is the purpose of the application?",
+        "layout": "vertical",
+        "options_bulk_editor": "Commercial (sales, reservations, customer follow-up, etc.);تجاري (بيع، حجز، متابعة عملاء...); 0\nDomestic servant;خدمي داخلي; 0\nEducational or informative;توعوي أو تعليمي; 0",
+        "formid": "wrapper-4450-8691",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "text-39",
+        "element_id": "text-39",
+        "form_id": "wrapper-5839-6997",
+        "parent_group": "group-14",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-5839-6997",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "Do you have a complete idea, or shall we start from scratch?",
+        "required": "1",
+        "formid": "wrapper-5839-6997"
+      },
+      {
+        "id": "checkbox-24",
+        "element_id": "checkbox-24",
+        "form_id": "wrapper-6285-4862",
+        "parent_group": "group-13",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Customer Relationship Management (CRM)",
+            "value": "Customer Relationship Management (CRM)",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Enterprise Resource Planning (ERP)",
+            "value": "Enterprise Resource Planning (ERP)",
+            "key": "7169-6762",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-6285-4862",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "What type of system do you need?",
+        "layout": "vertical",
+        "options_bulk_editor": "Customer Relationship Management (CRM);إدارة علاقات العملاء( CRM); 0\nEnterprise Resource Planning (ERP);نظام متكامل لإدارة الأعمال( ERP); 0",
+        "options_expanded": "1",
+        "required": "1",
+        "formid": "wrapper-6285-4862"
+      },
+      {
+        "id": "checkbox-23",
+        "element_id": "checkbox-23",
+        "form_id": "wrapper-6565-1767",
+        "parent_group": "group-13",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Sales",
+            "value": "Sales",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "Procurement",
+            "value": "Procurement",
+            "key": "7169-6762",
+            "error": ""
+          },
+          {
+            "label": "Human Resources",
+            "value": "Human Resources",
+            "limit": "",
+            "default": "",
+            "key": "7978-7119",
+            "error": ""
+          },
+          {
+            "label": "Finance",
+            "value": "Finance",
+            "limit": "",
+            "default": "",
+            "key": "4781-3873",
+            "error": ""
+          },
+          {
+            "label": "Inventory",
+            "value": "Inventory",
+            "limit": "",
+            "default": "",
+            "key": "5612-7043",
+            "error": ""
+          },
+          {
+            "label": "Other (please specify)",
+            "value": "Other (please specify)",
+            "limit": "",
+            "default": "",
+            "key": "7948-2317",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-6565-1767",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Which departments do you need to manage within the system?",
+        "layout": "vertical",
+        "options_bulk_editor": "Sales;مبيعات; 0\nProcurement;مشتريات; 0\nHuman Resources;موارد بشرية; 0\nFinance;مالية; 0\nInventory;مخزون; 0\nOther (please specify);أخرى (اذكرها); 0",
+        "formid": "wrapper-6565-1767",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "text-38",
+        "element_id": "text-38",
+        "form_id": "wrapper-8728-5974",
+        "parent_group": "group-13",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-23",
+            "rule": "is",
+            "value": "أخرى (اذكرها)"
+          }
+        ],
+        "wrapper_id": "wrapper-8728-5974",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "Please specify the departments",
+        "required": "1",
+        "formid": "wrapper-2140-2292"
+      },
+      {
+        "id": "radio-26",
+        "element_id": "radio-26",
+        "form_id": "wrapper-8680-4435",
+        "parent_group": "group-13",
+        "type": "radio",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "Yes",
+            "key": "3161-6222",
+            "error": ""
+          },
+          {
+            "label": "No",
+            "value": "No",
+            "key": "2633-4786",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-8680-4435",
+        "hidden_behavior": "zero",
+        "value_type": "radio",
+        "field_label": "Are you currently using another system ?",
+        "layout": "vertical",
+        "formid": "wrapper-8475-6189",
+        "options_bulk_editor": "Yes;نعم; 0\nNo;لا; 0",
+        "required": "1",
+        "options_expanded": "1"
+      },
+      {
+        "id": "text-42",
+        "element_id": "text-42",
+        "form_id": "wrapper-8597-3953",
+        "parent_group": "group-13",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "radio-26",
+            "rule": "is",
+            "value": "نعم"
+          }
+        ],
+        "wrapper_id": "wrapper-8597-3953",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "Name of the current system:",
+        "required": "1"
+      },
+      {
+        "id": "checkbox-22",
+        "element_id": "checkbox-22",
+        "form_id": "wrapper-3002-7416",
+        "parent_group": "group-13",
+        "type": "checkbox",
+        "options": [
+          {
+            "label": "Web-based (Online)",
+            "value": "Web-based (Online)",
+            "key": "7556-7948",
+            "error": ""
+          },
+          {
+            "label": "On-Premise (Internal Application)",
+            "value": "On-Premise (Internal Application)",
+            "key": "7169-6762",
+            "error": ""
+          }
+        ],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-3002-7416",
+        "hidden_behavior": "zero",
+        "value_type": "checkbox",
+        "field_label": "Do you need the system to be",
+        "layout": "vertical",
+        "options_bulk_editor": "Web-based (Online);عربيعبر الإنترنت (Web-based); 0\nOn-Premise (Internal Application);تطبيق داخلي (On-Premise); 0",
+        "options_expanded": "1",
+        "required": "1",
+        "formid": "wrapper-5800-9430"
+      },
+      {
+        "id": "text-43",
+        "element_id": "text-43",
+        "form_id": "wrapper-9367-9879",
+        "parent_group": "group-13",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-9367-9879",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "Do you need the system to integrate with external platforms or systems (accounting, POS, payment gateways, etc.)?",
+        "required": "1"
+      },
+      {
+        "id": "group-20",
+        "element_id": "group-20",
+        "form_id": "wrapper-8542-9139",
+        "parent_group": "",
+        "type": "group",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-3",
+            "rule": "is",
+            "value": "خدمات إدارية وتشغيلية"
+          }
+        ],
+        "wrapper_id": "wrapper-8542-9139",
+        "field_label": "Administrative services",
+        "is_repeater": "false",
+        "formid": "wrapper-1097-1782"
+      },
+      {
+        "id": "group-8",
+        "element_id": "group-8",
+        "form_id": "wrapper-1745-1451",
+        "parent_group": "",
+        "type": "group",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-4",
+            "rule": "is",
+            "value": "إعداد الهياكل التنظيمية وسياسات العم"
+          }
+        ],
+        "wrapper_id": "wrapper-1745-1451",
+        "field_label": "Preparation of organisational structures and policies",
+        "is_repeater": "false",
+        "formid": "wrapper-1745-1451"
+      },
+      {
+        "id": "group-9",
+        "element_id": "group-9",
+        "form_id": "wrapper-9569-9663",
+        "parent_group": "",
+        "type": "group",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-4",
+            "rule": "is",
+            "value": "إعادة هيكلة العمليات"
+          }
+        ],
+        "wrapper_id": "wrapper-9569-9663",
+        "field_label": "Business Process Reengineering",
+        "is_repeater": "false",
+        "formid": "wrapper-9569-9663"
+      },
+      {
+        "id": "group-10",
+        "element_id": "group-10",
+        "form_id": "wrapper-9977-4032",
+        "parent_group": "",
+        "type": "group",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-4",
+            "rule": "is",
+            "value": "استشارات إدارية عليا وتخطيط استراتيجي"
+          }
+        ],
+        "wrapper_id": "wrapper-9977-4032",
+        "field_label": "Senior Management Consultancy / Strategic Planning",
+        "is_repeater": "false",
+        "formid": "wrapper-9977-4032"
+      },
+      {
+        "id": "group-11",
+        "element_id": "group-11",
+        "form_id": "wrapper-2112-6257",
+        "parent_group": "",
+        "type": "group",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-4",
+            "rule": "is",
+            "value": "تحليل دورة الإيرادات وتحسينها"
+          }
+        ],
+        "wrapper_id": "wrapper-2112-6257",
+        "field_label": "Revenue cycle analysis and optimisation",
+        "is_repeater": "false",
+        "formid": "wrapper-2112-6257"
+      },
+      {
+        "id": "group-12",
+        "element_id": "group-12",
+        "form_id": "wrapper-3784-3868",
+        "parent_group": "",
+        "type": "group",
+        "options": [],
+        "cols": "12",
+        "conditions": [
+          {
+            "element_id": "checkbox-4",
+            "rule": "is",
+            "value": "إدارة المهام التشغيلية والخدمات المكتبية المتكاملة"
+          }
+        ],
+        "wrapper_id": "wrapper-3784-3868",
+        "field_label": "Operational Management / Office Services",
+        "is_repeater": "false",
+        "formid": "wrapper-3784-3868"
+      },
+      {
+        "id": "text-37",
+        "element_id": "text-37",
+        "form_id": "wrapper-9779-1050",
+        "parent_group": "group-12",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-9779-1050",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "What kind of daily operations need to be organised or managed?",
+        "required": "1",
+        "formid": "wrapper-9779-1050"
+      },
+      {
+        "id": "text-36",
+        "element_id": "text-36",
+        "form_id": "wrapper-6735-2564",
+        "parent_group": "group-12",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-6735-2564",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "How many employees or departments are involved in these processes?",
+        "required": "1",
+        "formid": "wrapper-6735-2564"
+      },
+      {
+        "id": "text-35",
+        "element_id": "text-35",
+        "form_id": "wrapper-6089-1961",
+        "parent_group": "group-12",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-6089-1961",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "Does the establishment currently use tools to track productivity or tasks?",
+        "required": "1",
+        "formid": "wrapper-6089-1961"
+      },
+      {
+        "id": "text-34",
+        "element_id": "text-34",
+        "form_id": "wrapper-7015-8941",
+        "parent_group": "group-11",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-7015-8941",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "What are the main sources of income for the establishment?",
+        "required": "1",
+        "formid": "wrapper-7015-8941"
+      },
+      {
+        "id": "text-33",
+        "element_id": "text-33",
+        "form_id": "wrapper-6225-4124",
+        "parent_group": "group-11",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-6225-4124",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "Is your business facing problems with collection, invoicing, or financial leakage?",
+        "required": "1",
+        "formid": "wrapper-6225-4124"
+      },
+      {
+        "id": "text-32",
+        "element_id": "text-32",
+        "form_id": "wrapper-9308-8808",
+        "parent_group": "group-11",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-9308-8808",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "Is there a system for monitoring revenue flow?",
+        "required": "1",
+        "formid": "wrapper-9308-8808"
+      },
+      {
+        "id": "text-31",
+        "element_id": "text-31",
+        "form_id": "wrapper-7906-5774",
+        "parent_group": "group-10",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-7906-5774",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "What are the organisation's objectives for the coming period? For Alia / Strategic Planning",
+        "required": "1",
+        "formid": "wrapper-7906-5774"
+      },
+      {
+        "id": "text-30",
+        "element_id": "text-30",
+        "form_id": "wrapper-9807-4809",
+        "parent_group": "group-10",
+        "type": "text",
+        "options": [],
+        "cols": "12",
+        "conditions": [],
+        "wrapper_id": "wrapper-9807-4809",
+        "input_type": "line",
+        "limit_type": "characters",
+        "field_label": "Is there an approved strategic plan?",
+        "required": "1",
+        "formid": "wrapper-9807-4809"
+      },
+      .
+      .
+      .
+        "cols": "12",
+      "conditions": [],
+      "wrapper_id": "wrapper-5975-3202",
+      "hidden_behavior": "zero",
+      "value_type": "checkbox",
+      "field_label": "Presentation type:",
+      "layout": "vertical",
+      "options_bulk_editor": "Company profile;عرض تعريفي للشركة; 0\nBusiness plan;عرض لخطة عمل; 0\nMarketing campaign;عرض تسويقي لحملة; 0\nProduct/service pitch;عرض تقديم منتج أو خدمة; 0\nOther;غير ذلك; 0",
+      "options_expanded": "1",
+      "required": "1"
+    },
+    {
+      "id": "radio-6",
+      "element_id": "radio-6",
+      "form_id": "wrapper-2064-7136",
+      "parent_group": "group-7",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Yes",
+          "value": "Yes",
+          "key": "3161-6222",
+          "error": ""
+        },
+        {
+          "label": "No, need help",
+          "value": "No, need help",
+          "key": "2633-4786",
+          "error": ""
+        }
+      ],
+      "cols": "12",
+      "conditions": [],
+      "wrapper_id": "wrapper-2064-7136",
+      "hidden_behavior": "zero",
+      "value_type": "radio",
+      "field_label": "Is content written and ready?",
+      "layout": "vertical",
+      "formid": "wrapper-2064-7136",
+      "options_bulk_editor": "Yes;نعم; 0\nNo, need help;لا; 0",
+      "required": "1",
+      "options_expanded": "1"
+    },
+    {
+      "id": "checkbox-7",
+      "element_id": "checkbox-7",
+      "form_id": "wrapper-9662-3016",
+        .
+        .
+        .
+            "rule": "is",
+      "value": "جزئيًا (يرجى التوضيح)"
+    }
+  ],
+  "wrapper_id": "wrapper-7786-7786",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Specification",
+  "required": "1"
+},
+{
+  "id": "checkbox-16",
+  "element_id": "checkbox-16",
+  "form_id": "wrapper-7525-9954",
+  "parent_group": "group-5",
+  "type": "checkbox",
+  "options": [
+    {
+      "label": "Brand awareness",
+      "value": "Brand awareness",
+      "key": "7556-7948",
+      "error": ""
+    },
+    {
+      "label": "Engagement",
+      "value": "Engagement",
+      "key": "7169-6762",
+      "error": ""
+    },
+    {
+      "label": "Lead generation",
+      "value": "Lead generation",
+      "limit": "",
+      "default": "",
+      "key": "1471-6306",
+      "error": ""
+    },
+    {
+      "label": "Product/service explanation",
+      "value": "Product/service explanation",
+      "limit": "",
+      "default": "",
+      "key": "1598-7856",
+      "error": ""
+    },
+    {
+      "label": "Other",
+      "value": "Other",
+      "limit": "",
+      "default": "",
+      "key": "5123-4335",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-7525-9954",
+  "hidden_behavior": "zero",
+  "value_type": "checkbox",
+  "field_label": "Content goal",
+  "layout": "vertical",
+  "options_bulk_editor": "Brand awareness;رفع الوعي بالعلامة التجارية; 0\nEngagement;زيادة التفاعل على منصات التواصل; 0\nLead generation;جذب عملاء محتملين; 0\nProduct/service explanation;شرح خدمات/منتجات; 0\nOther;غير ذلك; 0",
+  "required": "1",
+  "options_expanded": "1"
+},
+{
+  "id": "checkbox-17",
+  "element_id": "checkbox-17",
+  "form_id": "wrapper-2633-1579",
+  "parent_group": "group-5",
+  "type": "checkbox",
+  "options": [
+    {
+      "label": "Arabic",
+      "value": "Arabic",
+      "key": "7556-7948",
+      "error": ""
+    },
+    {
+      "label": "English",
+      "value": "English",
+      "key": "7169-6762",
+      "error": ""
+    },
+    {
+      "label": "Both",
+      "value": "Both",
+      "limit": "",
+      "default": "",
+      "key": "4687-3862",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-2633-1579",
+  "hidden_behavior": "zero",
+  "value_type": "checkbox",
+  "field_label": "Required language",
+  "layout": "vertical",
+  "options_bulk_editor": "Arabic;عربي; 0\nEnglish;إنجليزي; 0\nBoth;كلاهما; 0",
+  "options_expanded": "1",
+  "required": "1"
+},
+{
+  "id": "text-15",
+  "element_id": "text-15",
+  "form_id": "wrapper-9275-6027",
+  "parent_group": "group-5",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-9275-6027",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Do you have examples or references we should follow?",
+  "required": "1"
+},
+{
+  "id": "checkbox-10",
+  "element_id": "checkbox-10",
+  "form_id": "wrapper-8384-8561",
+  "parent_group": "group-7",
+  "type": "checkbox",
+  "options": [
+    {
+      "label": "&lt;10",
+      "value": "&lt;10",
+      "key": "7556-7948",
+      "error": ""
+    },
+    {
+      "label": "10–20",
+      "value": "10–20",
+      "key": "7169-6762",
+      "error": ""
+    },
+    {
+      "label": "20+",
+      "value": "20+",
+      "limit": "",
+      "default": "",
+      "key": "7978-7119",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-8384-8561",
+  "hidden_behavior": "zero",
+  "value_type": "checkbox",
+  "field_label": "Approximate number of slides:",
+  "layout": "vertical",
+  "options_bulk_editor": "&lt;10;أقل من 10; 0\n10–20;من 10 إلى 20; 0\n20+;أكثر من 20; 0",
+  "formid": "wrapper-4960-6033",
+  "required": "1",
+  "options_expanded": "1"
+},
+{
+  "id": "radio-15",
+  "element_id": "radio-15",
+  "form_id": "wrapper-7362-3614",
+  "parent_group": "group-7",
+  "type": "radio",
+  "options": [
+    {
+      "label": "Upload file",
+      "value": "Upload file",
+      "key": "3161-6222",
+      "error": ""
+    },
+    {
+      "label": "provide link",
+      "value": "provide link",
+      "key": "2633-4786",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-7362-3614",
+  "hidden_behavior": "zero",
+  "value_type": "radio",
+  "field_label": "Do you have design references?",
+  "layout": "vertical",
+  "options_bulk_editor": "Upload file ;تحميل ملف; 0\nprovide link;رابط الموقع; 0",
+  "required": "1",
+  "options_expanded": "1"
+},
+{
+  "id": "upload-6",
+  "element_id": "upload-6",
+  "form_id": "wrapper-7985-9599",
+  "parent_group": "group-7",
+  "type": "upload",
+  "options": [],
+  "cols": "12",
+  "conditions": [
+    {
+      "element_id": "radio-15",
+      "rule": "is",
+      "value": "تحميل ملف"
+    }
+  ],
+  "wrapper_id": "wrapper-7985-9599",
+  "field_label": "Upload file",
+  "filetypes": [
+    "all-image",
+    "all-video",
+    "all-document",
+    "all-audio",
+    "all-archive",
+    "all-text",
+    "all-spreadsheet",
+    "all-interactive",
+    "jpg|jpeg|jpe",
+    "gif",
+    "png",
+    "bmp",
+    "tiff|tif",
+    "webp",
+    "avif",
+    "ico",
+    "heic",
+    "heif",
+    "heics",
+    "heifs",
+    "asf|asx",
+    "wmv",
+    "wmx",
+    "wm",
+    "avi",
+    "divx",
+    "flv",
+    "mov|qt",
+    "mpeg|mpg|mpe",
+    "mp4|m4v",
+    "ogv",
+    "ods",
+    "odg",
+    "odc",
+    "odb",
+    "odf",
+    "wp|wpd",
+    "key",
+    "numbers",
+    "pages"
+  ],
+  "file-type": "single",
+  "file-limit": "unlimited",
+  "upload-limit": "8",
+  "filesize": "MB",
+  "formid": "wrapper-2999-8464",
+  "required": "1"
+},
+{
+  "id": "text-17",
+  "element_id": "text-17",
+  "form_id": "wrapper-4563-6966",
+  "parent_group": "group-7",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [
+    {
+      "element_id": "radio-15",
+      "rule": "is",
+      "value": "رابط الموقع"
+    }
+  ],
+  "wrapper_id": "wrapper-4563-6966",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "website link",
+  "required": "1"
+},
+{
+  "id": "checkbox-20",
+  "element_id": "checkbox-20",
+  "form_id": "wrapper-3710-5806",
+  "parent_group": "group-7",
+  "type": "checkbox",
+  "options": [
+    {
+      "label": "Arabic",
+      "value": "Arabic",
+      "key": "7556-7948",
+      "error": ""
+    },
+    {
+      "label": "English",
+      "value": "English",
+      "key": "7169-6762",
+      "error": ""
+    },
+    {
+      "label": "Both",
+      "value": "Both",
+      "limit": "",
+      "default": "",
+      "key": "7139-8115",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-3710-5806",
+  "hidden_behavior": "zero",
+  "value_type": "checkbox",
+  "field_label": "Required language:",
+  "layout": "vertical",
+  "options_bulk_editor": "Arabic;عربي; 0\nEnglish;انجليزي; 0\nBoth;كلاهما; 0",
+  "options_expanded": "1",
+  "required": "1"
+},
+{
+  "id": "text-23",
+  "element_id": "text-23",
+  "form_id": "wrapper-7043-5530",
+  "parent_group": "group-8",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-7043-5530",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "What is the current organisational structure of the establishment?",
+  "required": "1"
+},
+{
+  "id": "text-24",
+  "element_id": "text-24",
+  "form_id": "wrapper-1516-7378",
+  "parent_group": "group-8",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-1516-7378",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Are there any departments or roles that you would like to reorganise or add?",
+  "required": "1"
+},
+{
+  "id": "text-25",
+  "element_id": "text-25",
+  "form_id": "wrapper-3370-7093",
+  "parent_group": "group-8",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-3370-7093",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Do you currently have written policies and procedures?",
+  "required": "1"
+},
+{
+  "id": "radio-24",
+  "element_id": "radio-24",
+  "form_id": "wrapper-1331-1073",
+  "parent_group": "group-8",
+  "type": "radio",
+  "options": [
+    {
+      "label": "Yes",
+      "value": "Yes",
+      "key": "3161-6222",
+      "error": ""
+    },
+    {
+      "label": "No",
+      "value": "No",
+      "key": "2633-4786",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-1331-1073",
+  "hidden_behavior": "zero",
+  "value_type": "radio",
+  "field_label": "Are there currently any job descriptions available?",
+  "layout": "vertical",
+  "options_bulk_editor": "Yes;نعم; 0\nNo;لا; 0",
+  "required": "1",
+  "options_expanded": "1",
+  "formid": "wrapper-8797-3732"
+},
+{
+  "id": "text-44",
+  "element_id": "text-44",
+  "form_id": "wrapper-2509-4466",
+  "parent_group": "group-13",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-2509-4466",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Expected number of users for the system?",
+  "required": "1"
+},
+{
+  "id": "text-45",
+  "element_id": "text-45",
+  "form_id": "wrapper-7711-7937",
+  "parent_group": "group-13",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-7711-7937",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Do you need training for your team on how to use the system?",
+  "required": "1"
+},
+{
+  "id": "text-46",
+  "element_id": "text-46",
+  "form_id": "wrapper-9240-2535",
+  "parent_group": "group-15",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-9240-2535",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Are you currently using management tools (such as Trello, Notion, Monday, Zoho)?",
+  "default": "",
+  "required": "1"
+},
+{
+  "id": "text-47",
+  "element_id": "text-47",
+  "form_id": "wrapper-3095-3572",
+  "parent_group": "group-15",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-3095-3572",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Would you rather build the system from scratch or use customised off-the-shelf solutions?",
+  "required": "1"
+},
+{
+  "id": "checkbox-29",
+  "element_id": "checkbox-29",
+  "form_id": "wrapper-7492-4598",
+  "parent_group": "group-15",
+  "type": "checkbox",
+  "options": [
+    {
+      "label": "Reduction of manual effort",
+      "value": "Reduction of manual effort",
+      "key": "7556-7948",
+      "error": ""
+    },
+    {
+      "label": "Improving efficiency",
+      "value": "Improving efficiency",
+      "key": "7169-6762",
+      "error": ""
+    },
+    {
+      "label": "Minimising errors",
+      "value": "Minimising errors",
+      "limit": "",
+      "default": "",
+      "key": "7978-7119",
+      "error": ""
+    },
+    {
+      "label": "Improving the employee experience",
+      "value": "Improving the employee experience",
+      "limit": "",
+      "default": "",
+      "key": "3975-1535",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-7492-4598",
+  "hidden_behavior": "zero",
+  "value_type": "checkbox",
+  "field_label": "What are your goals for automation?",
+  "layout": "vertical",
+  "options_bulk_editor": "Reduction of manual effort;تقليل الجهد اليدوي; 0\nImproving efficiency;تحسين الكفاءة; 0\nMinimising errors;تقليل الأخطاء; 0\nImproving the employee experience;تحسين تجربة الموظف; 0",
+  "formid": "wrapper-7062-5006",
+  "required": "1",
+  "options_expanded": "1"
+},
+{
+  "id": "text-48",
+  "element_id": "text-48",
+  "form_id": "wrapper-4467-8772",
+  "parent_group": "group-14",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-4467-8772",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Are there any similar applications on the market? (Please mention them if available.)",
+  "required": "1"
+},
+{
+  "id": "text-49",
+  "element_id": "text-49",
+  "form_id": "wrapper-3001-3847",
+  "parent_group": "group-14",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-3001-3847",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Do you prefer a specific language for the interface?",
+  "required": "1"
+},
+{
+  "id": "text-50",
+  "element_id": "text-50",
+  "form_id": "wrapper-3647-1351",
+  "parent_group": "group-14",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-3647-1351",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Does the application require a login?",
+  "required": "1"
+},
+{
+  "id": "text-51",
+  "element_id": "text-51",
+  "form_id": "wrapper-6666-8256",
+  "parent_group": "group-14",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-6666-8256",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Is there a required connection with payment gateways, messages, external websites?",
+  "required": "1"
+},
+{
+  "id": "checkbox-34",
+  "element_id": "checkbox-34",
+  "form_id": "wrapper-4713-6941",
+  "parent_group": "group-16",
+  "type": "checkbox",
+  "options": [
+    {
+      "label": "Slow / Errors",
+      "value": "Slow / Errors",
+      "key": "7556-7948",
+      "error": ""
+    },
+    {
+      "label": "Integration Problems",
+      "value": "Integration Problems",
+      "key": "7169-6762",
+      "error": ""
+    },
+    {
+      "label": "Delay in updates",
+      "value": "Delay in updates",
+      "limit": "",
+      "default": "",
+      "key": "1528-1388",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-4713-6941",
+  "hidden_behavior": "zero",
+  "value_type": "checkbox",
+  "field_label": "What problems are you currently facing?",
+  "layout": "vertical",
+  "options_bulk_editor": "Slow / Errors;بطء / أخطاء; 0\nIntegration Problems;مشاكل ربط; 0\nDelay in updates;تأخر في التحديثات; 0",
+  "options_expanded": "1"
+},
+{
+  "id": "radio-34",
+  "element_id": "radio-34",
+  "form_id": "wrapper-9019-6916",
+  "parent_group": "group-17",
+  "type": "radio",
+  "options": [
+    {
+      "label": "Yes",
+      "value": "Yes",
+      "key": "3161-6222",
+      "error": ""
+    },
+    {
+      "label": "No",
+      "value": "No",
+      "key": "2633-4786",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-9019-6916",
+  "hidden_behavior": "zero",
+  "value_type": "radio",
+  "field_label": "Do you need someone to supervise the work of the internal accountant?",
+  "layout": "vertical",
+  "options_bulk_editor": "Yes;Yes; 0\nNo;No; 0",
+  "options_expanded": "1",
+  "enable_images": ""
+},
+{
+  "id": "radio-35",
+  "element_id": "radio-35",
+  "form_id": "wrapper-8734-5644",
+  "parent_group": "group-17",
+  "type": "radio",
+  "options": [
+    {
+      "label": "Yes",
+      "value": "Yes",
+      "key": "3161-6222",
+      "error": ""
+    },
+    {
+      "label": "No",
+      "value": "No",
+      "key": "2633-4786",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-8734-5644",
+  "hidden_behavior": "zero",
+  "value_type": "radio",
+  "field_label": "Do you require monthly reports?",
+  "layout": "vertical",
+  "options_bulk_editor": "Yes;نعم; 0\nNo;لا; 0",
+  "options_expanded": "1"
+},
+{
+  "id": "checkbox-42",
+  "element_id": "checkbox-42",
+  "form_id": "wrapper-8515-6688",
+  "parent_group": "group-19",
+  "type": "checkbox",
+  "options": [
+    {
+      "label": "Assessment of the current financial situation",
+      "value": "Assessment of the current financial situation",
+      "key": "7556-7948",
+      "error": ""
+    },
+    {
+      "label": "Arranging commitments and improving cash flows",
+      "value": "Arranging commitments and improving cash flows",
+      "key": "7169-6762",
+      "error": ""
+    },
+    {
+      "label": "Preparing the company for investment or expansion",
+      "value": "Preparing the company for investment or expansion",
+      "limit": "",
+      "default": "",
+      "key": "1010-4163",
+      "error": ""
+    },
+    {
+      "label": "Request for funding or partnership",
+      "value": "Request for funding or partnership",
+      "limit": "",
+      "default": "",
+      "key": "6815-3494",
+      "error": ""
+    },
+    {
+      "label": "Other",
+      "key": "custom_option",
+      "value": "Other",
+      "placeholder": "",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-8515-6688",
+  "hidden_behavior": "zero",
+  "value_type": "checkbox",
+  "field_label": "What is the purpose of the study or required restructuring?",
+  "layout": "vertical",
+  "options_bulk_editor": "Assessment of the current financial situation;تقييم الوضع المالي الحالي; 0\nArranging commitments and improving cash flows;ترتيب الالتزامات وتحسين التدفقات; 0\nPreparing the company for investment or expansion;تجهيز الشركة للاستثمار أو التوسع; 0\nRequest for funding or partnership;طلب تمويل أو شراكة; 0",
+  "required": "1",
+  "enable_custom_option": "1",
+  "options_expanded": ""
+},
+{
+  "id": "radio-41",
+  "element_id": "radio-41",
+  "form_id": "wrapper-5728-8397",
+  "parent_group": "group-19",
+  "type": "radio",
+  "options": [
+    {
+      "label": "No",
+      "value": "No",
+      "key": "2633-4786",
+      "error": ""
+    },
+    {
+      "label": "Yes",
+      "key": "custom_option",
+      "value": "Yes",
+      "placeholder": "تحديد",
+      "error": ""
+    }
+  ],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-5728-8397",
+  "hidden_behavior": "zero",
+  "value_type": "radio",
+  "field_label": "Do you have a specific timeline for completing or submitting the study?",
+  "layout": "vertical",
+  "options_bulk_editor": "No;لا; 0",
+  "required": "1",
+  "enable_images": "",
+  "options_expanded": "1",
+  "enable_custom_option": "1"
+},
+{
+  "id": "text-54",
+  "element_id": "text-54",
+  "form_id": "wrapper-5145-5963",
+  "parent_group": "group-19",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-5145-5963",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Are there any additional comments or information that would help us better understand your needs?",
+  "required": "1",
+  "formid": "wrapper-2744-7912"
+},
+{
+  "id": "text-56",
+  "element_id": "text-56",
+  "form_id": "wrapper-4458-3482",
+  "parent_group": "group-20",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-4458-3482",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Do you have an internal system for managing employees?",
+  "required": "1"
+},
+{
+  "id": "text-57",
+  "element_id": "text-57",
+  "form_id": "wrapper-4801-4690",
+  "parent_group": "group-20",
+  "type": "text",
+  "options": [],
+  "cols": "12",
+  "conditions": [],
+  "wrapper_id": "wrapper-4801-4690",
+  "input_type": "line",
+  "limit_type": "characters",
+  "field_label": "Do you require assistance in complying with government regulations (Qwa, Madad, Zakat, Taxes)?",
+  "required": "1"
+}
+]
+},
+"version": "1.46.2"
+}

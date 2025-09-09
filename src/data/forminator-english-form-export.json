@@ -1,0 +1,4233 @@
+{
+    "type": "form",
+    "data": {
+        "fields": [
+            {
+                "id": "checkbox-5",
+                "element_id": "checkbox-5",
+                "form_id": "wrapper-4624-5764",
+                "parent_group": "group-2",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Instagram",
+                        "value": "\u0627\u0646\u0633\u062a\u0642\u0631\u0627\u0645 ( Instagram)",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Twitter",
+                        "value": "\u0645\u0646\u0635\u0629 \u0623\u0643\u0633 (Twitter)",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "TikTok",
+                        "value": "\u062a\u064a\u0643 \u062a\u0648\u0643 ( TikTok)",
+                        "limit": "",
+                        "default": "",
+                        "key": "3082-6600",
+                        "error": ""
+                    },
+                    {
+                        "label": "LinkedIn",
+                        "value": "\u0644\u064a\u0646\u0643\u062f \u0627\u0646 ( LinkedIn)",
+                        "limit": "",
+                        "default": "",
+                        "key": "3083-6656",
+                        "error": ""
+                    },
+                    {
+                        "label": "Facebook",
+                        "value": "\u0641\u064a\u0633\u0628\u0648\u0643 ( Facebook)",
+                        "limit": "",
+                        "default": "",
+                        "key": "4108-8995",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-1",
+                        "rule": "is",
+                        "value": "\u0625\u062f\u0627\u0631\u0629 \u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a"
+                    }
+                ],
+                "wrapper_id": "wrapper-4624-5764",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Which platforms?",
+                "layout": "vertical",
+                "options_bulk_editor": "Instagram;\u0627\u0646\u0633\u062a\u0642\u0631\u0627\u0645 ( Instagram); 0\nTwitter;\u0645\u0646\u0635\u0629 \u0623\u0643\u0633 (Twitter); 0\nTikTok;\u062a\u064a\u0643 \u062a\u0648\u0643 ( TikTok); 0\nLinkedIn;\u0644\u064a\u0646\u0643\u062f \u0627\u0646 ( LinkedIn); 0\nFacebook;\u0641\u064a\u0633\u0628\u0648\u0643 ( Facebook); 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "checkbox-13",
+                "element_id": "checkbox-13",
+                "form_id": "wrapper-1944-8811",
+                "parent_group": "group-2",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Static designs",
+                        "value": "\u062a\u0635\u0627\u0645\u064a\u0645 \u062b\u0627\u0628\u062a\u0629",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "short videos",
+                        "value": "\u0641\u064a\u062f\u064a\u0648\u0647\u0627\u062a \u0642\u0635\u064a\u0631\u0629",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "interactive content",
+                        "value": "\u0645\u062d\u062a\u0648\u0649 \u062a\u0641\u0627\u0639\u0644\u064a (\u0642\u0635\u0635\u060c \u0645\u0633\u0627\u0628\u0642\u0627\u062a...)",
+                        "limit": "",
+                        "default": "",
+                        "key": "8940-2045",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-1",
+                        "rule": "is",
+                        "value": "\u0625\u062f\u0627\u0631\u0629 \u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a"
+                    }
+                ],
+                "wrapper_id": "wrapper-1944-8811",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What type of content?",
+                "layout": "vertical",
+                "options_bulk_editor": "Static designs;\u062a\u0635\u0627\u0645\u064a\u0645 \u062b\u0627\u0628\u062a\u0629; 0\nshort videos;\u0641\u064a\u062f\u064a\u0648\u0647\u0627\u062a \u0642\u0635\u064a\u0631\u0629; 0\ninteractive content;\u0645\u062d\u062a\u0648\u0649 \u062a\u0641\u0627\u0639\u0644\u064a (\u0642\u0635\u0635\u060c \u0645\u0633\u0627\u0628\u0642\u0627\u062a...); 0",
+                "formid": "wrapper-9266-7854",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "radio-1",
+                "element_id": "radio-1",
+                "form_id": "wrapper-3849-5053",
+                "parent_group": "group-2",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3849-5053",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you already have a visual identity ?",
+                "layout": "vertical",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "text-1",
+                "element_id": "text-1",
+                "form_id": "wrapper-1082-7944",
+                "parent_group": "group-2",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-1082-7944",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Any upcoming campaigns or events?",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-12",
+                "element_id": "checkbox-12",
+                "form_id": "wrapper-5664-1300",
+                "parent_group": "group-2",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Increase followers",
+                        "value": "\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u0645\u062a\u0627\u0628\u0639\u064a\u0646",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Engagement",
+                        "value": "\u062a\u0641\u0627\u0639\u0644 \u0648\u0645\u0634\u0627\u0631\u0643\u0627\u062a",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Service inquiries",
+                        "value": "\u0637\u0644\u0628\u0627\u062a \u0639\u0644\u0649 \u0627\u0644\u062e\u062f\u0645\u0627\u062a",
+                        "limit": "",
+                        "default": "",
+                        "key": "7510-3462",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-5664-1300",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Goals of management ?",
+                "layout": "vertical",
+                "options_bulk_editor": "Increase followers;\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u0645\u062a\u0627\u0628\u0639\u064a\u0646; 0\n Engagement;\u062a\u0641\u0627\u0639\u0644 \u0648\u0645\u0634\u0627\u0631\u0643\u0627\u062a; 0\nService inquiries;\u0637\u0644\u0628\u0627\u062a \u0639\u0644\u0649 \u0627\u0644\u062e\u062f\u0645\u0627\u062a; 0",
+                "formid": "wrapper-3073-7239",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "radio-7",
+                "element_id": "radio-7",
+                "form_id": "wrapper-6441-5485",
+                "parent_group": "group-2",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-6441-5485",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you want monthly performance reports ?",
+                "layout": "vertical",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "required": "1",
+                "options_expanded": "1",
+                "formid": "wrapper-3189-4501"
+            },
+            {
+                "id": "radio-9",
+                "element_id": "radio-9",
+                "form_id": "wrapper-1518-3238",
+                "parent_group": "",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Marketing &amp; Creative Services",
+                        "value": "Marketing &amp; Creative Services",
+                        "key": "3161-6222",
+                        "error": "",
+                        "default": "1"
+                    },
+                    {
+                        "label": "Technical &amp; Digital Transformation Services",
+                        "value": "Technical &amp; Digital Transformation Services",
+                        "key": "2633-4786",
+                        "error": "",
+                        "default": ""
+                    },
+                    {
+                        "label": "Financial &amp; Administrative Services",
+                        "value": "Financial &amp; Administrative Services",
+                        "limit": "",
+                        "default": "",
+                        "key": "9347-8831",
+                        "error": ""
+                    },
+                    {
+                        "label": "Corporate Management &amp; Consulting Services",
+                        "value": "Corporate Management &amp; Consulting Services",
+                        "limit": "",
+                        "default": "",
+                        "key": "2148-6923",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-1518-3238",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Select Main Service Type",
+                "layout": "vertical",
+                "options_bulk_editor": "Marketing &amp; Creative Services;Marketing &amp; Creative Services; 1\nTechnical &amp; Digital Transformation Services;Technical &amp; Digital Transformation Services; 0\nFinancial &amp; Administrative Services;Financial &amp; Administrative Services; 0\nCorporate Management &amp; Consulting Services;Corporate Management &amp; Consulting Services; 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "checkbox-1",
+                "element_id": "checkbox-1",
+                "form_id": "wrapper-4382-5975",
+                "parent_group": "",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Social Media Account Management",
+                        "value": "\u0625\u062f\u0627\u0631\u0629 \u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Visual Identity Design",
+                        "value": "\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0647\u0648\u064a\u0629 \u0627\u0644\u0628\u0635\u0631\u064a\u0629",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Website Design",
+                        "value": "\u062a\u0635\u0645\u064a\u0645 \u0645\u0648\u0642\u0639 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a",
+                        "limit": "",
+                        "default": "",
+                        "key": "3550-4457",
+                        "error": ""
+                    },
+                    {
+                        "label": "Marketing Content Creation",
+                        "value": "\u0625\u0639\u062f\u0627\u062f \u0645\u062d\u062a\u0648\u0649 \u062a\u0633\u0648\u064a\u0642\u064a",
+                        "limit": "",
+                        "default": "",
+                        "key": "1881-4997",
+                        "error": ""
+                    },
+                    {
+                        "label": "Advertising Campaign Management",
+                        "value": "\u0625\u062f\u0627\u0631\u0629 \u062d\u0645\u0644\u0627\u062a \u0625\u0639\u0644\u0627\u0646\u064a\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "9912-5651",
+                        "error": ""
+                    },
+                    {
+                        "label": "Presentation Design",
+                        "value": "\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0639\u0631\u0648\u0636 \u0627\u0644\u062a\u0642\u062f\u064a\u0645\u064a\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "5008-2019",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "radio-9",
+                        "rule": "is",
+                        "value": "Marketing &amp; Creative Services"
+                    }
+                ],
+                "wrapper_id": "wrapper-4382-5975",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Marketing & Creative Services",
+                "layout": "vertical",
+                "options_bulk_editor": "Social Media Account Management;\u0625\u062f\u0627\u0631\u0629 \u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a; 0\nVisual Identity Design;\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0647\u0648\u064a\u0629 \u0627\u0644\u0628\u0635\u0631\u064a\u0629; 0\nWebsite Design;\u062a\u0635\u0645\u064a\u0645 \u0645\u0648\u0642\u0639 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a; 0\nMarketing Content Creation;\u0625\u0639\u062f\u0627\u062f \u0645\u062d\u062a\u0648\u0649 \u062a\u0633\u0648\u064a\u0642\u064a; 0\nAdvertising Campaign Management;\u0625\u062f\u0627\u0631\u0629 \u062d\u0645\u0644\u0627\u062a \u0625\u0639\u0644\u0627\u0646\u064a\u0629; 0\nPresentation Design;\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0639\u0631\u0648\u0636 \u0627\u0644\u062a\u0642\u062f\u064a\u0645\u064a\u0629; 0",
+                "options_expanded": "1",
+                "required": "1",
+                "calculations": "false"
+            },
+            {
+                "id": "checkbox-2",
+                "element_id": "checkbox-2",
+                "form_id": "wrapper-6245-5495",
+                "parent_group": "",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Custom Management Systems (CRM \u2013 ERP)",
+                        "value": "\u062a\u0635\u0645\u064a\u0645 \u0623\u0646\u0638\u0645\u0629 \u0625\u062f\u0627\u0631\u0629 \u0645\u062e\u0635\u0635\u0629 (CRM \u2013 ERP)",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Process Automation",
+                        "value": "\u0623\u062a\u0645\u062a\u0629 \u0627\u0644\u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0644\u0625\u062f\u0627\u0631\u064a\u0629 \u0648\u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a\u0629",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Application Development",
+                        "value": "\u062a\u0635\u0645\u064a\u0645 \u062a\u0637\u0628\u064a\u0642\u0627\u062a",
+                        "limit": "",
+                        "default": "",
+                        "key": "3550-4457",
+                        "error": ""
+                    },
+                    {
+                        "label": "Ongoing Technical &amp; Operational Support",
+                        "value": "\u062f\u0639\u0645 \u062a\u0642\u0646\u064a \u0648\u062a\u0634\u063a\u064a\u0644\u064a \u0645\u0633\u062a\u0645\u0631",
+                        "limit": "",
+                        "default": "",
+                        "key": "1881-4997",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "radio-9",
+                        "rule": "is",
+                        "value": "Technical &amp; Digital Transformation Services"
+                    }
+                ],
+                "wrapper_id": "wrapper-6245-5495",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Technical & Digital Transformation Services",
+                "layout": "vertical",
+                "options_bulk_editor": "Custom Management Systems (CRM \u2013 ERP);\u062a\u0635\u0645\u064a\u0645 \u0623\u0646\u0638\u0645\u0629 \u0625\u062f\u0627\u0631\u0629 \u0645\u062e\u0635\u0635\u0629 (CRM \u2013 ERP); 0\nProcess Automation;\u0623\u062a\u0645\u062a\u0629 \u0627\u0644\u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0644\u0625\u062f\u0627\u0631\u064a\u0629 \u0648\u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a\u0629; 0\nApplication Development;\u062a\u0635\u0645\u064a\u0645 \u062a\u0637\u0628\u064a\u0642\u0627\u062a; 0\nOngoing Technical &amp; Operational Support;\u062f\u0639\u0645 \u062a\u0642\u0646\u064a \u0648\u062a\u0634\u063a\u064a\u0644\u064a \u0645\u0633\u062a\u0645\u0631; 0",
+                "options_expanded": "1",
+                "required": "1",
+                "calculations": "false",
+                "formid": "wrapper-6245-5495"
+            },
+            {
+                "id": "checkbox-3",
+                "element_id": "checkbox-3",
+                "form_id": "wrapper-1056-6371",
+                "parent_group": "",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Financial Supervision &amp; Monitoring",
+                        "value": "\u0625\u0634\u0631\u0627\u0641 \u0648\u0645\u062a\u0627\u0628\u0639\u0629 \u0645\u0627\u0644\u064a\u0629",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Financial Consulting",
+                        "value": "\u0627\u0633\u062a\u0634\u0627\u0631\u0627\u062a \u0645\u0627\u0644\u064a\u0629",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Financial Structuring &amp; Feasibility Studies",
+                        "value": "\u0647\u064a\u0643\u0644\u0629 \u0648\u062f\u0631\u0627\u0633\u0627\u062a \u0645\u0627\u0644\u064a\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "3550-4457",
+                        "error": ""
+                    },
+                    {
+                        "label": "Administrative &amp; Operational Services",
+                        "value": "\u062e\u062f\u0645\u0627\u062a \u0625\u062f\u0627\u0631\u064a\u0629 \u0648\u062a\u0634\u063a\u064a\u0644\u064a\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "1881-4997",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "radio-9",
+                        "rule": "is",
+                        "value": "Financial &amp; Administrative Services"
+                    }
+                ],
+                "wrapper_id": "wrapper-1056-6371",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Financial & Administrative Services",
+                "layout": "vertical",
+                "options_bulk_editor": "Financial Supervision &amp; Monitoring;\u0625\u0634\u0631\u0627\u0641 \u0648\u0645\u062a\u0627\u0628\u0639\u0629 \u0645\u0627\u0644\u064a\u0629; 0\nFinancial Consulting;\u0627\u0633\u062a\u0634\u0627\u0631\u0627\u062a \u0645\u0627\u0644\u064a\u0629; 0\nFinancial Structuring &amp; Feasibility Studies;\u0647\u064a\u0643\u0644\u0629 \u0648\u062f\u0631\u0627\u0633\u0627\u062a \u0645\u0627\u0644\u064a\u0629; 0\nAdministrative &amp; Operational Services;\u062e\u062f\u0645\u0627\u062a \u0625\u062f\u0627\u0631\u064a\u0629 \u0648\u062a\u0634\u063a\u064a\u0644\u064a\u0629; 0",
+                "options_expanded": "1",
+                "required": "1",
+                "calculations": "false",
+                "formid": "wrapper-1056-6371"
+            },
+            {
+                "id": "checkbox-4",
+                "element_id": "checkbox-4",
+                "form_id": "wrapper-9316-2609",
+                "parent_group": "",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Organizational Structures &amp; Policies",
+                        "value": "\u0625\u0639\u062f\u0627\u062f \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u062a\u0646\u0638\u064a\u0645\u064a\u0629 \u0648\u0633\u064a\u0627\u0633\u0627\u062a \u0627\u0644\u0639\u0645",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Process Restructuring (Financial \/ Administrative \/ Operational)",
+                        "value": "\u0625\u0639\u0627\u062f\u0629 \u0647\u064a\u0643\u0644\u0629 \u0627\u0644\u0639\u0645\u0644\u064a\u0627\u062a",
+                        "limit": "",
+                        "default": "",
+                        "key": "6060-7147",
+                        "error": ""
+                    },
+                    {
+                        "label": "Executive Management Consulting &amp; Strategic Planning",
+                        "value": "\u0627\u0633\u062a\u0634\u0627\u0631\u0627\u062a \u0625\u062f\u0627\u0631\u064a\u0629 \u0639\u0644\u064a\u0627 \u0648\u062a\u062e\u0637\u064a\u0637 \u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a",
+                        "limit": "",
+                        "default": "",
+                        "key": "3550-4457",
+                        "error": ""
+                    },
+                    {
+                        "label": "Revenue Cycle Analysis &amp; Optimization",
+                        "value": "\u062a\u062d\u0644\u064a\u0644 \u062f\u0648\u0631\u0629 \u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0648\u062a\u062d\u0633\u064a\u0646\u0647\u0627",
+                        "limit": "",
+                        "default": "",
+                        "key": "1881-4997",
+                        "error": ""
+                    },
+                    {
+                        "label": "Operational Task &amp; Office Services Management",
+                        "value": "\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u0647\u0627\u0645 \u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a\u0629 \u0648\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0645\u0643\u062a\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u0643\u0627\u0645\u0644\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "9912-5651",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "radio-9",
+                        "rule": "is",
+                        "value": "Corporate Management &amp; Consulting Services"
+                    }
+                ],
+                "wrapper_id": "wrapper-9316-2609",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Corporate Management & Consulting Services",
+                "layout": "vertical",
+                "options_bulk_editor": "Organizational Structures &amp; Policies;\u0625\u0639\u062f\u0627\u062f \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u062a\u0646\u0638\u064a\u0645\u064a\u0629 \u0648\u0633\u064a\u0627\u0633\u0627\u062a \u0627\u0644\u0639\u0645; 0\nProcess Restructuring (Financial \/ Administrative \/ Operational);\u0625\u0639\u0627\u062f\u0629 \u0647\u064a\u0643\u0644\u0629 \u0627\u0644\u0639\u0645\u0644\u064a\u0627\u062a; 0\nExecutive Management Consulting &amp; Strategic Planning;\u0627\u0633\u062a\u0634\u0627\u0631\u0627\u062a \u0625\u062f\u0627\u0631\u064a\u0629 \u0639\u0644\u064a\u0627 \u0648\u062a\u062e\u0637\u064a\u0637 \u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a; 0\nRevenue Cycle Analysis &amp; Optimization;\u062a\u062d\u0644\u064a\u0644 \u062f\u0648\u0631\u0629 \u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0648\u062a\u062d\u0633\u064a\u0646\u0647\u0627; 0\nOperational Task &amp; Office Services Management;\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u0647\u0627\u0645 \u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a\u0629 \u0648\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0645\u0643\u062a\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u0643\u0627\u0645\u0644\u0629; 0",
+                "options_expanded": "1",
+                "required": "1",
+                "calculations": "false",
+                "formid": "wrapper-9316-2609"
+            },
+            {
+                "id": "page-break-1",
+                "element_id": "page-break-1",
+                "form_id": "wrapper-1660-6163",
+                "parent_group": "",
+                "type": "page-break",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-1660-6163",
+                "btn_left": "\u00ab Previous Step",
+                "btn_right": "Next Step \u00bb"
+            },
+            {
+                "id": "group-2",
+                "element_id": "group-2",
+                "form_id": "wrapper-7828-9780",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-1",
+                        "rule": "is",
+                        "value": "\u0625\u062f\u0627\u0631\u0629 \u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a"
+                    }
+                ],
+                "wrapper_id": "wrapper-7828-9780",
+                "field_label": "Social Media Account Management",
+                "is_repeater": "false",
+                "min_limit_type": "variable",
+                "max_limit": "6"
+            },
+            {
+                "id": "group-3",
+                "element_id": "group-3",
+                "form_id": "wrapper-3397-1070",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-1",
+                        "rule": "is",
+                        "value": "\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0647\u0648\u064a\u0629 \u0627\u0644\u0628\u0635\u0631\u064a\u0629"
+                    }
+                ],
+                "wrapper_id": "wrapper-3397-1070",
+                "field_label": "Visual Identity Design",
+                "is_repeater": "false",
+                "formid": "wrapper-3397-1070"
+            },
+            {
+                "id": "group-6",
+                "element_id": "group-6",
+                "form_id": "wrapper-7561-2550",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-1",
+                        "rule": "is",
+                        "value": "\u062a\u0635\u0645\u064a\u0645 \u0645\u0648\u0642\u0639 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a"
+                    }
+                ],
+                "wrapper_id": "wrapper-7561-2550",
+                "field_label": "Website Design",
+                "is_repeater": "false",
+                "formid": "wrapper-7561-2550"
+            },
+            {
+                "id": "radio-12",
+                "element_id": "radio-12",
+                "form_id": "wrapper-2265-3127",
+                "parent_group": "group-6",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2265-3127",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you have a registered domain name?",
+                "layout": "vertical",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "radio-13",
+                "element_id": "radio-13",
+                "form_id": "wrapper-5349-5362",
+                "parent_group": "group-6",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-5349-5362",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you have hosting set up?",
+                "layout": "vertical",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "text-6",
+                "element_id": "text-6",
+                "form_id": "wrapper-5900-7719",
+                "parent_group": "group-6",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-5900-7719",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Approximate number of pages (e.g. Home, About Us, Services, Contact Us)",
+                "formid": "wrapper-2265-3127",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-9",
+                "element_id": "checkbox-9",
+                "form_id": "wrapper-2400-9701",
+                "parent_group": "group-6",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Arabic",
+                        "value": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "English",
+                        "value": "\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Both",
+                        "value": "\u0643\u0644\u0627 \u0627\u0644\u0644\u063a\u062a\u064a\u0646",
+                        "limit": "",
+                        "default": "",
+                        "key": "7746-5919",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2400-9701",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Required website language:",
+                "layout": "vertical",
+                "options_bulk_editor": "Arabic;\u0627\u0644\u0639\u0631\u0628\u064a\u0629; 0\nEnglish;\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629; 0\nBoth;\u0643\u0644\u0627 \u0627\u0644\u0644\u063a\u062a\u064a\u0646; 0",
+                "formid": "wrapper-8438-4029",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "group-5",
+                "element_id": "group-5",
+                "form_id": "wrapper-3947-6109",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-1",
+                        "rule": "is",
+                        "value": "\u0625\u0639\u062f\u0627\u062f \u0645\u062d\u062a\u0648\u0649 \u062a\u0633\u0648\u064a\u0642\u064a"
+                    }
+                ],
+                "wrapper_id": "wrapper-3947-6109",
+                "field_label": "Marketing Content Creation",
+                "is_repeater": "false",
+                "formid": "wrapper-3947-6109"
+            },
+            {
+                "id": "checkbox-8",
+                "element_id": "checkbox-8",
+                "form_id": "wrapper-2302-8447",
+                "parent_group": "group-5",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Social posts",
+                        "value": "\u0645\u0646\u0634\u0648\u0631\u0627\u062a \u0645\u0646\u0635\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Website copy",
+                        "value": "\u0645\u062d\u062a\u0648\u0649 \u062a\u0639\u0631\u064a\u0641\u064a \u0644\u0644\u0645\u0648\u0642\u0639",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Articles\/blogs",
+                        "value": "\u0645\u0642\u0627\u0644\u0627\u062a\/\u0645\u062f\u0648\u0646\u0627\u062a",
+                        "limit": "",
+                        "default": "",
+                        "key": "4489-5575",
+                        "error": ""
+                    },
+                    {
+                        "label": "Ad copy",
+                        "value": "\u0646\u0635\u0648\u0635 \u0625\u0639\u0644\u0627\u0646\u064a\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "2051-2605",
+                        "error": ""
+                    },
+                    {
+                        "label": "Other",
+                        "value": "\u063a\u064a\u0631 \u0630\u0644\u0643 (\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0648\u0636\u064a\u062d)",
+                        "limit": "",
+                        "default": "",
+                        "key": "7886-8976",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2302-8447",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Type of content:",
+                "layout": "vertical",
+                "options_bulk_editor": "Social posts;\u0645\u0646\u0634\u0648\u0631\u0627\u062a \u0645\u0646\u0635\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644; 0\nWebsite copy;\u0645\u062d\u062a\u0648\u0649 \u062a\u0639\u0631\u064a\u0641\u064a \u0644\u0644\u0645\u0648\u0642\u0639; 0\nArticles\/blogs;\u0645\u0642\u0627\u0644\u0627\u062a\/\u0645\u062f\u0648\u0646\u0627\u062a; 0\nAd copy;\u0646\u0635\u0648\u0635 \u0625\u0639\u0644\u0627\u0646\u064a\u0629; 0\nOther;\u063a\u064a\u0631 \u0630\u0644\u0643 (\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0648\u0636\u064a\u062d); 0",
+                "formid": "wrapper-4590-8705",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "text-5",
+                "element_id": "text-5",
+                "form_id": "wrapper-4802-1033",
+                "parent_group": "group-5",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-8",
+                        "rule": "is",
+                        "value": "\u063a\u064a\u0631 \u0630\u0644\u0643 (\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0648\u0636\u064a\u062d)"
+                    }
+                ],
+                "wrapper_id": "wrapper-4802-1033",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "explanation",
+                "formid": "wrapper-4802-1033",
+                "required": "1"
+            },
+            {
+                "id": "text-13",
+                "element_id": "text-13",
+                "form_id": "wrapper-7019-9865",
+                "parent_group": "group-5",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7019-9865",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Your business activity or target field ?",
+                "required": "1"
+            },
+            {
+                "id": "radio-8",
+                "element_id": "radio-8",
+                "form_id": "wrapper-3961-1027",
+                "parent_group": "group-5",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "no",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    },
+                    {
+                        "label": "Partially \u2013 specify",
+                        "value": "\u062c\u0632\u0626\u064a\u064b\u0627 (\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0648\u0636\u064a\u062d)",
+                        "limit": "",
+                        "default": "",
+                        "key": "3193-9556",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3961-1027",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you have a brand identity to follow?",
+                "layout": "vertical",
+                "options_bulk_editor": "yes;\u0646\u0639\u0645; 0\nno;\u0644\u0627; 0\nPartially \u2013 specify;\u062c\u0632\u0626\u064a\u064b\u0627 (\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0648\u0636\u064a\u062d); 0",
+                "required": "1",
+                "options_expanded": "1",
+                "formid": "wrapper-3776-3959"
+            },
+            {
+                "id": "group-4",
+                "element_id": "group-4",
+                "form_id": "wrapper-3386-3677",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-1",
+                        "rule": "is",
+                        "value": "\u0625\u062f\u0627\u0631\u0629 \u062d\u0645\u0644\u0627\u062a \u0625\u0639\u0644\u0627\u0646\u064a\u0629"
+                    }
+                ],
+                "wrapper_id": "wrapper-3386-3677",
+                "field_label": "Advertising Campaign Management",
+                "is_repeater": "false",
+                "formid": "wrapper-3386-3677"
+            },
+            {
+                "id": "group-7",
+                "element_id": "group-7",
+                "form_id": "wrapper-4286-7357",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-1",
+                        "rule": "is",
+                        "value": "\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0639\u0631\u0648\u0636 \u0627\u0644\u062a\u0642\u062f\u064a\u0645\u064a\u0629"
+                    }
+                ],
+                "wrapper_id": "wrapper-4286-7357",
+                "field_label": "Presentation Design",
+                "is_repeater": "false",
+                "formid": "wrapper-4286-7357"
+            },
+            {
+                "id": "group-13",
+                "element_id": "group-13",
+                "form_id": "wrapper-9108-5456",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-2",
+                        "rule": "is",
+                        "value": "\u062a\u0635\u0645\u064a\u0645 \u0623\u0646\u0638\u0645\u0629 \u0625\u062f\u0627\u0631\u0629 \u0645\u062e\u0635\u0635\u0629 (CRM \u2013 ERP)"
+                    }
+                ],
+                "wrapper_id": "wrapper-9108-5456",
+                "field_label": "Custom Management Systems (CRM \u2013 ERP)",
+                "is_repeater": "false",
+                "formid": "wrapper-9108-5456"
+            },
+            {
+                "id": "group-15",
+                "element_id": "group-15",
+                "form_id": "wrapper-8651-8213",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-2",
+                        "rule": "is",
+                        "value": "\u0623\u062a\u0645\u062a\u0629 \u0627\u0644\u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0644\u0625\u062f\u0627\u0631\u064a\u0629 \u0648\u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a\u0629"
+                    }
+                ],
+                "wrapper_id": "wrapper-8651-8213",
+                "field_label": "Process Automation",
+                "is_repeater": "false",
+                "formid": "wrapper-8651-8213"
+            },
+            {
+                "id": "text-40",
+                "element_id": "text-40",
+                "form_id": "wrapper-6134-5386",
+                "parent_group": "group-15",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-6134-5386",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "What kind of processes would you like to automate? (e.g. leave requests, approvals, daily tasks...)",
+                "required": "1",
+                "formid": "wrapper-7376-7035"
+            },
+            {
+                "id": "group-14",
+                "element_id": "group-14",
+                "form_id": "wrapper-6792-4735",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-2",
+                        "rule": "is",
+                        "value": "\u062a\u0635\u0645\u064a\u0645 \u062a\u0637\u0628\u064a\u0642\u0627\u062a"
+                    }
+                ],
+                "wrapper_id": "wrapper-6792-4735",
+                "field_label": "Application Development",
+                "is_repeater": "false",
+                "formid": "wrapper-6792-4735"
+            },
+            {
+                "id": "group-16",
+                "element_id": "group-16",
+                "form_id": "wrapper-5968-8445",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-2",
+                        "rule": "is",
+                        "value": "\u062f\u0639\u0645 \u062a\u0642\u0646\u064a \u0648\u062a\u0634\u063a\u064a\u0644\u064a \u0645\u0633\u062a\u0645\u0631"
+                    }
+                ],
+                "wrapper_id": "wrapper-5968-8445",
+                "field_label": "Ongoing Technical & Operational Support",
+                "is_repeater": "false",
+                "formid": "wrapper-5968-8445"
+            },
+            {
+                "id": "group-17",
+                "element_id": "group-17",
+                "form_id": "wrapper-5721-6560",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-3",
+                        "rule": "is",
+                        "value": "\u0625\u0634\u0631\u0627\u0641 \u0648\u0645\u062a\u0627\u0628\u0639\u0629 \u0645\u0627\u0644\u064a\u0629"
+                    }
+                ],
+                "wrapper_id": "wrapper-5721-6560",
+                "field_label": "Financial supervision and monitoring",
+                "is_repeater": "false",
+                "formid": "wrapper-5721-6560"
+            },
+            {
+                "id": "group-18",
+                "element_id": "group-18",
+                "form_id": "wrapper-5753-4479",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-3",
+                        "rule": "is",
+                        "value": "\u0627\u0633\u062a\u0634\u0627\u0631\u0627\u062a \u0645\u0627\u0644\u064a\u0629"
+                    }
+                ],
+                "wrapper_id": "wrapper-5753-4479",
+                "field_label": "Financial consultancy",
+                "is_repeater": "false",
+                "formid": "wrapper-5753-4479"
+            },
+            {
+                "id": "checkbox-45",
+                "element_id": "checkbox-45",
+                "form_id": "wrapper-2900-8341",
+                "parent_group": "group-20",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Internal operations management",
+                        "value": "\u062a\u0646\u0638\u064a\u0645 \u0639\u0645\u0644\u064a\u0627\u062a \u062f\u0627\u062e\u0644\u064a\u0629",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Organising contracts and documents",
+                        "value": "\u062a\u0646\u0638\u064a\u0645 \u0639\u0642\u0648\u062f \u0648\u0645\u0633\u062a\u0646\u062f\u0627\u062a",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Preparation of policies and procedures",
+                        "value": "\u0625\u0639\u062f\u0627\u062f \u0633\u064a\u0627\u0633\u0627\u062a \u0648\u0625\u062c\u0631\u0627\u0621\u0627\u062a",
+                        "limit": "",
+                        "default": "",
+                        "key": "2940-6876",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2900-8341",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Do you need:",
+                "layout": "vertical",
+                "options_bulk_editor": "Internal operations management;\u062a\u0646\u0638\u064a\u0645 \u0639\u0645\u0644\u064a\u0627\u062a \u062f\u0627\u062e\u0644\u064a\u0629; 0\nOrganising contracts and documents;\u062a\u0646\u0638\u064a\u0645 \u0639\u0642\u0648\u062f \u0648\u0645\u0633\u062a\u0646\u062f\u0627\u062a; 0\nPreparation of policies and procedures;\u0625\u0639\u062f\u0627\u062f \u0633\u064a\u0627\u0633\u0627\u062a \u0648\u0625\u062c\u0631\u0627\u0621\u0627\u062a; 0",
+                "options_expanded": "1",
+                "required": "1",
+                "formid": "wrapper-2900-8341"
+            },
+            {
+                "id": "text-55",
+                "element_id": "text-55",
+                "form_id": "wrapper-3881-3635",
+                "parent_group": "group-20",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3881-3635",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "How many employees are there currently?",
+                "required": "1",
+                "formid": "wrapper-3881-3635"
+            },
+            {
+                "id": "group-19",
+                "element_id": "group-19",
+                "form_id": "wrapper-6660-6662",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-3",
+                        "rule": "is",
+                        "value": "\u0647\u064a\u0643\u0644\u0629 \u0648\u062f\u0631\u0627\u0633\u0627\u062a \u0645\u0627\u0644\u064a\u0629"
+                    }
+                ],
+                "wrapper_id": "wrapper-6660-6662",
+                "field_label": "Structuring and financial studies",
+                "is_repeater": "false",
+                "formid": "wrapper-6660-6662"
+            },
+            {
+                "id": "checkbox-41",
+                "element_id": "checkbox-41",
+                "form_id": "wrapper-2744-7912",
+                "parent_group": "group-19",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Commercial",
+                        "value": "\u062a\u062c\u0627\u0631\u064a",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Service sector",
+                        "value": "\u062e\u062f\u0645\u064a",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Industrial",
+                        "value": "\u0635\u0646\u0627\u0639\u064a",
+                        "limit": "",
+                        "default": "",
+                        "key": "2940-6876",
+                        "error": ""
+                    },
+                    {
+                        "label": "Technical \/ Digital",
+                        "value": "\u062a\u0642\u0646\u064a \/ \u0631\u0642\u0645\u064a",
+                        "limit": "",
+                        "default": "",
+                        "key": "8111-1558",
+                        "error": ""
+                    },
+                    {
+                        "label": "Other (please specify)",
+                        "key": "custom_option",
+                        "value": "custom_option",
+                        "placeholder": "\u0627\u0644\u062a\u0648\u0636\u064a\u062e",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2744-7912",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What type of business or project do you have?",
+                "layout": "vertical",
+                "options_bulk_editor": "Commercial;\u062a\u062c\u0627\u0631\u064a; 0\nService sector;\u062e\u062f\u0645\u064a; 0\nIndustrial;\u0635\u0646\u0627\u0639\u064a; 0\nTechnical \/ Digital;\u062a\u0642\u0646\u064a \/ \u0631\u0642\u0645\u064a; 0",
+                "options_expanded": "1",
+                "required": "1",
+                "formid": "wrapper-6992-5904",
+                "enable_custom_option": "1"
+            },
+            {
+                "id": "checkbox-40",
+                "element_id": "checkbox-40",
+                "form_id": "wrapper-7613-8798",
+                "parent_group": "group-19",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Individual",
+                        "value": "\u0641\u0631\u062f\u064a\u0629",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Small (fewer than 10 employees)",
+                        "value": "\u0635\u063a\u064a\u0631\u0629 (\u0623\u0642\u0644 \u0645\u0646 10 \u0645\u0648\u0638\u0641\u064a\u0646)",
+                        "limit": "",
+                        "default": "",
+                        "key": "3810-6332",
+                        "error": ""
+                    },
+                    {
+                        "label": "Medium (10\u201350 employees)",
+                        "value": "\u0645\u062a\u0648\u0633\u0637\u0629 (10 - 50 \u0645\u0648\u0638\u0641)",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Large (more than 50 employees)",
+                        "value": "\u0643\u0628\u064a\u0631\u0629 (\u0623\u0643\u062b\u0631 \u0645\u0646 50 \u0645\u0648\u0638\u0641)",
+                        "limit": "",
+                        "default": "",
+                        "key": "6912-6181",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7613-8798",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "How big is your facility?",
+                "layout": "vertical",
+                "options_bulk_editor": "Individual;\u0641\u0631\u062f\u064a\u0629; 0\nSmall (fewer than 10 employees);\u0635\u063a\u064a\u0631\u0629 (\u0623\u0642\u0644 \u0645\u0646 10 \u0645\u0648\u0638\u0641\u064a\u0646); 0\nMedium (10\u201350 employees);\u0645\u062a\u0648\u0633\u0637\u0629 (10 - 50 \u0645\u0648\u0638\u0641); 0\nLarge (more than 50 employees);\u0643\u0628\u064a\u0631\u0629 (\u0623\u0643\u062b\u0631 \u0645\u0646 50 \u0645\u0648\u0638\u0641); 0",
+                "formid": "wrapper-2014-4970",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "checkbox-43",
+                "element_id": "checkbox-43",
+                "form_id": "wrapper-7777-3335",
+                "parent_group": "group-19",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Financial feasibility study",
+                        "value": "\u062f\u0631\u0627\u0633\u0629 \u062c\u062f\u0648\u0649 \u0645\u0627\u0644\u064a\u0629",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Financial restructuring plan for the company",
+                        "value": "\u062e\u0637\u0629 \u0647\u064a\u0643\u0644\u0629 \u0645\u0627\u0644\u064a\u0629 \u0644\u0644\u0634\u0631\u0643\u0629",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Financial analysis of the current situation",
+                        "value": "\u062a\u062d\u0644\u064a\u0644 \u0645\u0627\u0644\u064a \u0644\u0644\u0648\u0636\u0639 \u0627\u0644\u062d\u0627\u0644\u064a",
+                        "limit": "",
+                        "default": "",
+                        "key": "2681-1114",
+                        "error": ""
+                    },
+                    {
+                        "label": "Cash flow study",
+                        "value": "\u062f\u0631\u0627\u0633\u0629 \u062a\u062f\u0641\u0642\u0627\u062a \u0646\u0642\u062f\u064a\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "8972-1819",
+                        "error": ""
+                    },
+                    {
+                        "label": "Other (please specify)",
+                        "key": "custom_option",
+                        "value": "custom_option",
+                        "placeholder": "",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7777-3335",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What service do you require?",
+                "layout": "vertical",
+                "options_bulk_editor": "Financial feasibility study;\u062f\u0631\u0627\u0633\u0629 \u062c\u062f\u0648\u0649 \u0645\u0627\u0644\u064a\u0629; 0\nFinancial restructuring plan for the company;\u062e\u0637\u0629 \u0647\u064a\u0643\u0644\u0629 \u0645\u0627\u0644\u064a\u0629 \u0644\u0644\u0634\u0631\u0643\u0629; 0\nFinancial analysis of the current situation;\u062a\u062d\u0644\u064a\u0644 \u0645\u0627\u0644\u064a \u0644\u0644\u0648\u0636\u0639 \u0627\u0644\u062d\u0627\u0644\u064a; 0\nCash flow study;\u062f\u0631\u0627\u0633\u0629 \u062a\u062f\u0641\u0642\u0627\u062a \u0646\u0642\u062f\u064a\u0629; 0",
+                "required": "1",
+                "options_expanded": "1",
+                "enable_custom_option": "1"
+            },
+            {
+                "id": "radio-40",
+                "element_id": "radio-40",
+                "form_id": "wrapper-9800-1028",
+                "parent_group": "group-19",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes, in detail.",
+                        "value": "\u0646\u0639\u0645\u060c \u0628\u0634\u0643\u0644 \u0645\u0641\u0635\u0644",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "Partially",
+                        "value": "\u062c\u0632\u0626\u064a\u064b\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    },
+                    {
+                        "label": "No, we need to prepare it from scratch.",
+                        "value": "\u0644\u0627\u060c \u0646\u062d\u062a\u0627\u062c \u0625\u0639\u062f\u0627\u062f\u0647\u0627 \u0645\u0646 \u0627\u0644\u0635\u0641\u0631",
+                        "limit": "",
+                        "default": "",
+                        "key": "7140-1174",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9800-1028",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you have financial data ready (financial statements, bank statements, etc.)?",
+                "layout": "vertical",
+                "options_bulk_editor": "Yes, in detail.;\u0646\u0639\u0645\u060c \u0628\u0634\u0643\u0644 \u0645\u0641\u0635\u0644; 0\nPartially;\u062c\u0632\u0626\u064a\u064b\u0627; 0\nNo, we need to prepare it from scratch.;\u0644\u0627\u060c \u0646\u062d\u062a\u0627\u062c \u0625\u0639\u062f\u0627\u062f\u0647\u0627 \u0645\u0646 \u0627\u0644\u0635\u0641\u0631; 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "radio-39",
+                "element_id": "radio-39",
+                "form_id": "wrapper-2052-1646",
+                "parent_group": "group-19",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2052-1646",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Has a previous study or financial plan been prepared during the past two years?",
+                "layout": "vertical",
+                "formid": "wrapper-2052-1646",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "checkbox-39",
+                "element_id": "checkbox-39",
+                "form_id": "wrapper-9796-5520",
+                "parent_group": "group-18",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "General finance organisation",
+                        "value": "\u062a\u0646\u0638\u064a\u0645 \u0645\u0627\u0644\u064a \u0639\u0627\u0645",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Financial restructuring",
+                        "value": "\u0625\u0639\u0627\u062f\u0629 \u0647\u064a\u0643\u0644\u0629 \u0645\u0627\u0644\u064a\u0629",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Preparation of a financial model",
+                        "value": "\u0625\u0639\u062f\u0627\u062f \u0646\u0645\u0648\u0630\u062c \u0645\u0627\u0644\u064a",
+                        "limit": "",
+                        "default": "",
+                        "key": "2940-6876",
+                        "error": ""
+                    },
+                    {
+                        "label": "Preparation of a feasibility study",
+                        "value": "\u0625\u0639\u062f\u0627\u062f \u062f\u0631\u0627\u0633\u0629 \u062c\u062f\u0648\u0649",
+                        "limit": "",
+                        "default": "",
+                        "key": "8111-1558",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9796-5520",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What type of consultation is required?",
+                "layout": "vertical",
+                "options_bulk_editor": "General finance organisation;\u062a\u0646\u0638\u064a\u0645 \u0645\u0627\u0644\u064a \u0639\u0627\u0645; 0\nFinancial restructuring;\u0625\u0639\u0627\u062f\u0629 \u0647\u064a\u0643\u0644\u0629 \u0645\u0627\u0644\u064a\u0629; 0\nPreparation of a financial model;\u0625\u0639\u062f\u0627\u062f \u0646\u0645\u0648\u0630\u062c \u0645\u0627\u0644\u064a; 0\nPreparation of a feasibility study;\u0625\u0639\u062f\u0627\u062f \u062f\u0631\u0627\u0633\u0629 \u062c\u062f\u0648\u0649; 0",
+                "options_expanded": "1",
+                "required": "1",
+                "formid": "wrapper-9796-5520"
+            },
+            {
+                "id": "text-53",
+                "element_id": "text-53",
+                "form_id": "wrapper-7891-1059",
+                "parent_group": "group-18",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7891-1059",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "What does the company do?",
+                "required": "1",
+                "formid": "wrapper-7891-1059"
+            },
+            {
+                "id": "radio-38",
+                "element_id": "radio-38",
+                "form_id": "wrapper-6973-5975",
+                "parent_group": "group-18",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Growth",
+                        "value": "\u0646\u0645\u0648",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "Stumble",
+                        "value": "\u062a\u0639\u062b\u0631",
+                        "key": "2633-4786",
+                        "error": ""
+                    },
+                    {
+                        "label": "Stability",
+                        "value": "\u0627\u0633\u062a\u0642\u0631\u0627\u0631",
+                        "limit": "",
+                        "default": "",
+                        "key": "3849-4706",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-6973-5975",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Is the company going through a phase:",
+                "layout": "vertical",
+                "formid": "wrapper-7865-1164",
+                "options_bulk_editor": "Growth;\u0646\u0645\u0648; 0\nStumble;\u062a\u0639\u062b\u0631; 0\nStability ;\u0627\u0633\u062a\u0642\u0631\u0627\u0631; 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "checkbox-38",
+                "element_id": "checkbox-38",
+                "form_id": "wrapper-1129-5324",
+                "parent_group": "group-18",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Preparing reports for investors",
+                        "value": "\u0625\u0639\u062f\u0627\u062f \u062a\u0642\u0627\u0631\u064a\u0631 \u0644\u0644\u0645\u0633\u062a\u062b\u0645\u0631\u064a\u0646",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Raise the company's readiness for financing or valuation",
+                        "value": "\u0631\u0641\u0639 \u062c\u0627\u0647\u0632\u064a\u0629 \u0627\u0644\u0634\u0631\u0643\u0629 \u0644\u0644\u062a\u0645\u0648\u064a\u0644 \u0623\u0648 \u0627\u0644\u062a\u0642\u064a\u064a\u0645",
+                        "key": "7169-6762",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-1129-5324",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Do you need:",
+                "layout": "vertical",
+                "options_bulk_editor": "Preparing reports for investors;\u0625\u0639\u062f\u0627\u062f \u062a\u0642\u0627\u0631\u064a\u0631 \u0644\u0644\u0645\u0633\u062a\u062b\u0645\u0631\u064a\u0646; 0\nRaise the company's readiness for financing or valuation;\u0631\u0641\u0639 \u062c\u0627\u0647\u0632\u064a\u0629 \u0627\u0644\u0634\u0631\u0643\u0629 \u0644\u0644\u062a\u0645\u0648\u064a\u0644 \u0623\u0648 \u0627\u0644\u062a\u0642\u064a\u064a\u0645; 0",
+                "formid": "wrapper-1129-5324",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "radio-33",
+                "element_id": "radio-33",
+                "form_id": "wrapper-9798-3110",
+                "parent_group": "group-17",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9798-3110",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you have an accountant or financial officer within the company?",
+                "layout": "vertical",
+                "formid": "wrapper-9888-1496",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "checkbox-37",
+                "element_id": "checkbox-37",
+                "form_id": "wrapper-9718-6809",
+                "parent_group": "group-17",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Excel programme",
+                        "value": "\u0628\u0631\u0646\u0627\u0645\u062c \u0627\u0643\u0633\u0644 ( Excel)",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Accounting software (state name)",
+                        "value": "\u0628\u0631\u0646\u0627\u0645\u062c \u0645\u062d\u0627\u0633\u0628\u064a (\u0627\u0630\u0643\u0631 \u0627\u0633\u0645\u0647)",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Nothing",
+                        "value": "\u0644\u0627 \u0634\u064a\u0621",
+                        "limit": "",
+                        "default": "",
+                        "key": "2940-6876",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9718-6809",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What tools are you currently using?",
+                "layout": "vertical",
+                "options_bulk_editor": "Excel programme;\u0628\u0631\u0646\u0627\u0645\u062c \u0627\u0643\u0633\u0644 ( Excel); 0\nAccounting software (state name);\u0628\u0631\u0646\u0627\u0645\u062c \u0645\u062d\u0627\u0633\u0628\u064a (\u0627\u0630\u0643\u0631 \u0627\u0633\u0645\u0647); 0\nNothing;\u0644\u0627 \u0634\u064a\u0621; 0",
+                "options_expanded": "1",
+                "required": "1",
+                "formid": "wrapper-9798-3110"
+            },
+            {
+                "id": "text-52",
+                "element_id": "text-52",
+                "form_id": "wrapper-7430-7524",
+                "parent_group": "group-17",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-37",
+                        "rule": "is",
+                        "value": "\u0628\u0631\u0646\u0627\u0645\u062c \u0645\u062d\u0627\u0633\u0628\u064a (\u0627\u0630\u0643\u0631 \u0627\u0633\u0645\u0647)"
+                    }
+                ],
+                "wrapper_id": "wrapper-7430-7524",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Name the program",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-36",
+                "element_id": "checkbox-36",
+                "form_id": "wrapper-2309-1758",
+                "parent_group": "group-17",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Controlling expenses",
+                        "value": "\u0636\u0628\u0637 \u0627\u0644\u0645\u0635\u0631\u0648\u0641\u0627\u062a",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Revenue tracking",
+                        "value": "\u062a\u062a\u0628\u0639 \u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Organizating the invoices",
+                        "value": "\u062a\u0646\u0638\u064a\u0645 \u0627\u0644\u0641\u0648\u0627\u062a\u064a\u0631",
+                        "limit": "",
+                        "default": "",
+                        "key": "9394-8378",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2309-1758",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Are you experiencing problems with:",
+                "layout": "vertical",
+                "options_bulk_editor": "Controlling expenses;\u0636\u0628\u0637 \u0627\u0644\u0645\u0635\u0631\u0648\u0641\u0627\u062a; 0\nRevenue tracking;\u062a\u062a\u0628\u0639 \u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a; 0\nOrganizating the invoices;\u062a\u0646\u0638\u064a\u0645 \u0627\u0644\u0641\u0648\u0627\u062a\u064a\u0631; 0",
+                "formid": "wrapper-2309-1758",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "checkbox-33",
+                "element_id": "checkbox-33",
+                "form_id": "wrapper-8738-2311",
+                "parent_group": "group-16",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Website monitoring and maintenance",
+                        "value": "\u0645\u062a\u0627\u0628\u0639\u0629 \u0648\u0635\u064a\u0627\u0646\u0629 \u0645\u0648\u0642\u0639 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Support for a system or application",
+                        "value": "\u062f\u0639\u0645 \u0646\u0638\u0627\u0645 \u0623\u0648 \u062a\u0637\u0628\u064a\u0642",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Emergency response",
+                        "value": "\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0644\u062d\u0627\u0644\u0627\u062a \u0637\u0627\u0631\u0626\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "2940-6876",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-8738-2311",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What kind of support is required?",
+                "layout": "vertical",
+                "options_bulk_editor": "Website monitoring and maintenance;\u0645\u062a\u0627\u0628\u0639\u0629 \u0648\u0635\u064a\u0627\u0646\u0629 \u0645\u0648\u0642\u0639 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a; 0\nSupport for a system or application;\u062f\u0639\u0645 \u0646\u0638\u0627\u0645 \u0623\u0648 \u062a\u0637\u0628\u064a\u0642; 0\nEmergency response;\u0627\u0633\u062a\u062c\u0627\u0628\u0629 \u0644\u062d\u0627\u0644\u0627\u062a \u0637\u0627\u0631\u0626\u0629; 0",
+                "options_expanded": "1",
+                "required": "1",
+                "formid": "wrapper-8738-2311"
+            },
+            {
+                "id": "checkbox-32",
+                "element_id": "checkbox-32",
+                "form_id": "wrapper-4801-2823",
+                "parent_group": "group-16",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "During working hours",
+                        "value": "\u062e\u0644\u0627\u0644 \u0633\u0627\u0639\u0627\u062a \u0627\u0644\u0639\u0645\u0644",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "24\/7",
+                        "value": "24\/7",
+                        "key": "7169-6762",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-4801-2823",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Are there specific hours for support?",
+                "layout": "vertical",
+                "options_bulk_editor": "During working hours;\u062e\u0644\u0627\u0644 \u0633\u0627\u0639\u0627\u062a \u0627\u0644\u0639\u0645\u0644; 0\n24\/7;24\/7; 0",
+                "formid": "wrapper-4801-2823",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "radio-32",
+                "element_id": "radio-32",
+                "form_id": "wrapper-8788-8211",
+                "parent_group": "group-16",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-8788-8211",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you have an existing system or website?",
+                "layout": "vertical",
+                "formid": "wrapper-8788-8211",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "checkbox-27",
+                "element_id": "checkbox-27",
+                "form_id": "wrapper-9905-5495",
+                "parent_group": "group-14",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Mobile app (iOS \u2013 Android)",
+                        "value": "\u062a\u0637\u0628\u064a\u0642 \u062c\u0648\u0627\u0644  (iOS \u2013 Android)",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Web App",
+                        "value": "\u062a\u0637\u0628\u064a\u0642 \u0648\u064a\u0628  (Web App)",
+                        "key": "7169-6762",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9905-5495",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What kind of application would you like to develop?",
+                "layout": "vertical",
+                "options_bulk_editor": "Mobile app (iOS \u2013 Android);\u062a\u0637\u0628\u064a\u0642 \u062c\u0648\u0627\u0644  (iOS \u2013 Android); 0\nWeb App;\u062a\u0637\u0628\u064a\u0642 \u0648\u064a\u0628  (Web App); 0",
+                "options_expanded": "1",
+                "required": "1",
+                "formid": "wrapper-9905-5495"
+            },
+            {
+                "id": "checkbox-26",
+                "element_id": "checkbox-26",
+                "form_id": "wrapper-4450-8691",
+                "parent_group": "group-14",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Commercial (sales, reservations, customer follow-up, etc.)",
+                        "value": "\u062a\u062c\u0627\u0631\u064a (\u0628\u064a\u0639\u060c \u062d\u062c\u0632\u060c \u0645\u062a\u0627\u0628\u0639\u0629 \u0639\u0645\u0644\u0627\u0621...)",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Domestic servant",
+                        "value": "\u062e\u062f\u0645\u064a \u062f\u0627\u062e\u0644\u064a",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Educational or informative",
+                        "value": "\u062a\u0648\u0639\u0648\u064a \u0623\u0648 \u062a\u0639\u0644\u064a\u0645\u064a",
+                        "limit": "",
+                        "default": "",
+                        "key": "7978-7119",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-4450-8691",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What is the purpose of the application?",
+                "layout": "vertical",
+                "options_bulk_editor": "Commercial (sales, reservations, customer follow-up, etc.);\u062a\u062c\u0627\u0631\u064a (\u0628\u064a\u0639\u060c \u062d\u062c\u0632\u060c \u0645\u062a\u0627\u0628\u0639\u0629 \u0639\u0645\u0644\u0627\u0621...); 0\nDomestic servant;\u062e\u062f\u0645\u064a \u062f\u0627\u062e\u0644\u064a; 0\nEducational or informative;\u062a\u0648\u0639\u0648\u064a \u0623\u0648 \u062a\u0639\u0644\u064a\u0645\u064a; 0",
+                "formid": "wrapper-4450-8691",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "text-39",
+                "element_id": "text-39",
+                "form_id": "wrapper-5839-6997",
+                "parent_group": "group-14",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-5839-6997",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Do you have a complete idea, or shall we start from scratch?",
+                "required": "1",
+                "formid": "wrapper-5839-6997"
+            },
+            {
+                "id": "checkbox-24",
+                "element_id": "checkbox-24",
+                "form_id": "wrapper-6285-4862",
+                "parent_group": "group-13",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Customer Relationship Management (CRM)",
+                        "value": "\u0625\u062f\u0627\u0631\u0629 \u0639\u0644\u0627\u0642\u0627\u062a \u0627\u0644\u0639\u0645\u0644\u0627\u0621( CRM)",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Enterprise Resource Planning (ERP)",
+                        "value": "\u0646\u0638\u0627\u0645 \u0645\u062a\u0643\u0627\u0645\u0644 \u0644\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0623\u0639\u0645\u0627\u0644( ERP)",
+                        "key": "7169-6762",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-6285-4862",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What type of system do you need?",
+                "layout": "vertical",
+                "options_bulk_editor": "Customer Relationship Management (CRM);\u0625\u062f\u0627\u0631\u0629 \u0639\u0644\u0627\u0642\u0627\u062a \u0627\u0644\u0639\u0645\u0644\u0627\u0621( CRM); 0\nEnterprise Resource Planning (ERP);\u0646\u0638\u0627\u0645 \u0645\u062a\u0643\u0627\u0645\u0644 \u0644\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0623\u0639\u0645\u0627\u0644( ERP); 0",
+                "options_expanded": "1",
+                "required": "1",
+                "formid": "wrapper-6285-4862"
+            },
+            {
+                "id": "checkbox-23",
+                "element_id": "checkbox-23",
+                "form_id": "wrapper-6565-1767",
+                "parent_group": "group-13",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Sales",
+                        "value": "\u0645\u0628\u064a\u0639\u0627\u062a",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Procurement",
+                        "value": "\u0645\u0634\u062a\u0631\u064a\u0627\u062a",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Human Resources",
+                        "value": "\u0645\u0648\u0627\u0631\u062f \u0628\u0634\u0631\u064a\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "7978-7119",
+                        "error": ""
+                    },
+                    {
+                        "label": "Finance",
+                        "value": "\u0645\u0627\u0644\u064a\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "4781-3873",
+                        "error": ""
+                    },
+                    {
+                        "label": "Inventory",
+                        "value": "\u0645\u062e\u0632\u0648\u0646",
+                        "limit": "",
+                        "default": "",
+                        "key": "5612-7043",
+                        "error": ""
+                    },
+                    {
+                        "label": "Other (please specify)",
+                        "value": "\u0623\u062e\u0631\u0649 (\u0627\u0630\u0643\u0631\u0647\u0627)",
+                        "limit": "",
+                        "default": "",
+                        "key": "7948-2317",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-6565-1767",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Which departments do you need to manage within the system?",
+                "layout": "vertical",
+                "options_bulk_editor": "Sales;\u0645\u0628\u064a\u0639\u0627\u062a; 0\nProcurement;\u0645\u0634\u062a\u0631\u064a\u0627\u062a; 0\nHuman Resources;\u0645\u0648\u0627\u0631\u062f \u0628\u0634\u0631\u064a\u0629; 0\nFinance;\u0645\u0627\u0644\u064a\u0629; 0\nInventory;\u0645\u062e\u0632\u0648\u0646; 0\nOther (please specify);\u0623\u062e\u0631\u0649 (\u0627\u0630\u0643\u0631\u0647\u0627); 0",
+                "formid": "wrapper-6565-1767",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "text-38",
+                "element_id": "text-38",
+                "form_id": "wrapper-8728-5974",
+                "parent_group": "group-13",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-23",
+                        "rule": "is",
+                        "value": "\u0623\u062e\u0631\u0649 (\u0627\u0630\u0643\u0631\u0647\u0627)"
+                    }
+                ],
+                "wrapper_id": "wrapper-8728-5974",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Please specify the departments",
+                "required": "1",
+                "formid": "wrapper-2140-2292"
+            },
+            {
+                "id": "radio-26",
+                "element_id": "radio-26",
+                "form_id": "wrapper-8680-4435",
+                "parent_group": "group-13",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-8680-4435",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Are you currently using another system ?",
+                "layout": "vertical",
+                "formid": "wrapper-8475-6189",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "text-42",
+                "element_id": "text-42",
+                "form_id": "wrapper-8597-3953",
+                "parent_group": "group-13",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "radio-26",
+                        "rule": "is",
+                        "value": "\u0646\u0639\u0645"
+                    }
+                ],
+                "wrapper_id": "wrapper-8597-3953",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Name of the current system:",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-22",
+                "element_id": "checkbox-22",
+                "form_id": "wrapper-3002-7416",
+                "parent_group": "group-13",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Web-based (Online)",
+                        "value": "\u0639\u0631\u0628\u064a\u0639\u0628\u0631 \u0627\u0644\u0625\u0646\u062a\u0631\u0646\u062a (Web-based)",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "On-Premise (Internal Application)",
+                        "value": "\u062a\u0637\u0628\u064a\u0642 \u062f\u0627\u062e\u0644\u064a (On-Premise)",
+                        "key": "7169-6762",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3002-7416",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Do you need the system to be",
+                "layout": "vertical",
+                "options_bulk_editor": "Web-based (Online);\u0639\u0631\u0628\u064a\u0639\u0628\u0631 \u0627\u0644\u0625\u0646\u062a\u0631\u0646\u062a (Web-based); 0\nOn-Premise (Internal Application);\u062a\u0637\u0628\u064a\u0642 \u062f\u0627\u062e\u0644\u064a (On-Premise); 0",
+                "options_expanded": "1",
+                "required": "1",
+                "formid": "wrapper-5800-9430"
+            },
+            {
+                "id": "text-43",
+                "element_id": "text-43",
+                "form_id": "wrapper-9367-9879",
+                "parent_group": "group-13",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9367-9879",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Do you need the system to integrate with external platforms or systems (accounting, POS, payment gateways, etc.)?",
+                "required": "1"
+            },
+            {
+                "id": "group-20",
+                "element_id": "group-20",
+                "form_id": "wrapper-8542-9139",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-3",
+                        "rule": "is",
+                        "value": "\u062e\u062f\u0645\u0627\u062a \u0625\u062f\u0627\u0631\u064a\u0629 \u0648\u062a\u0634\u063a\u064a\u0644\u064a\u0629"
+                    }
+                ],
+                "wrapper_id": "wrapper-8542-9139",
+                "field_label": "Administrative services",
+                "is_repeater": "false",
+                "formid": "wrapper-1097-1782"
+            },
+            {
+                "id": "group-8",
+                "element_id": "group-8",
+                "form_id": "wrapper-1745-1451",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-4",
+                        "rule": "is",
+                        "value": "\u0625\u0639\u062f\u0627\u062f \u0627\u0644\u0647\u064a\u0627\u0643\u0644 \u0627\u0644\u062a\u0646\u0638\u064a\u0645\u064a\u0629 \u0648\u0633\u064a\u0627\u0633\u0627\u062a \u0627\u0644\u0639\u0645"
+                    }
+                ],
+                "wrapper_id": "wrapper-1745-1451",
+                "field_label": "Preparation of organisational structures and policies",
+                "is_repeater": "false",
+                "formid": "wrapper-1745-1451"
+            },
+            {
+                "id": "group-9",
+                "element_id": "group-9",
+                "form_id": "wrapper-9569-9663",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-4",
+                        "rule": "is",
+                        "value": "\u0625\u0639\u0627\u062f\u0629 \u0647\u064a\u0643\u0644\u0629 \u0627\u0644\u0639\u0645\u0644\u064a\u0627\u062a"
+                    }
+                ],
+                "wrapper_id": "wrapper-9569-9663",
+                "field_label": "Business Process Reengineering",
+                "is_repeater": "false",
+                "formid": "wrapper-9569-9663"
+            },
+            {
+                "id": "group-10",
+                "element_id": "group-10",
+                "form_id": "wrapper-9977-4032",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-4",
+                        "rule": "is",
+                        "value": "\u0627\u0633\u062a\u0634\u0627\u0631\u0627\u062a \u0625\u062f\u0627\u0631\u064a\u0629 \u0639\u0644\u064a\u0627 \u0648\u062a\u062e\u0637\u064a\u0637 \u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a"
+                    }
+                ],
+                "wrapper_id": "wrapper-9977-4032",
+                "field_label": "Senior Management Consultancy \/ Strategic Planning",
+                "is_repeater": "false",
+                "formid": "wrapper-9977-4032"
+            },
+            {
+                "id": "group-11",
+                "element_id": "group-11",
+                "form_id": "wrapper-2112-6257",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-4",
+                        "rule": "is",
+                        "value": "\u062a\u062d\u0644\u064a\u0644 \u062f\u0648\u0631\u0629 \u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0648\u062a\u062d\u0633\u064a\u0646\u0647\u0627"
+                    }
+                ],
+                "wrapper_id": "wrapper-2112-6257",
+                "field_label": "Revenue cycle analysis and optimisation",
+                "is_repeater": "false",
+                "formid": "wrapper-2112-6257"
+            },
+            {
+                "id": "group-12",
+                "element_id": "group-12",
+                "form_id": "wrapper-3784-3868",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-4",
+                        "rule": "is",
+                        "value": "\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u0647\u0627\u0645 \u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a\u0629 \u0648\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0645\u0643\u062a\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u0643\u0627\u0645\u0644\u0629"
+                    }
+                ],
+                "wrapper_id": "wrapper-3784-3868",
+                "field_label": "Operational Management \/ Office Services",
+                "is_repeater": "false",
+                "formid": "wrapper-3784-3868"
+            },
+            {
+                "id": "text-37",
+                "element_id": "text-37",
+                "form_id": "wrapper-9779-1050",
+                "parent_group": "group-12",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9779-1050",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "What kind of daily operations need to be organised or managed?",
+                "required": "1",
+                "formid": "wrapper-9779-1050"
+            },
+            {
+                "id": "text-36",
+                "element_id": "text-36",
+                "form_id": "wrapper-6735-2564",
+                "parent_group": "group-12",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-6735-2564",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "How many employees or departments are involved in these processes?",
+                "required": "1",
+                "formid": "wrapper-6735-2564"
+            },
+            {
+                "id": "text-35",
+                "element_id": "text-35",
+                "form_id": "wrapper-6089-1961",
+                "parent_group": "group-12",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-6089-1961",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Does the establishment currently use tools to track productivity or tasks?",
+                "required": "1",
+                "formid": "wrapper-6089-1961"
+            },
+            {
+                "id": "text-34",
+                "element_id": "text-34",
+                "form_id": "wrapper-7015-8941",
+                "parent_group": "group-11",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7015-8941",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "What are the main sources of income for the establishment?",
+                "required": "1",
+                "formid": "wrapper-7015-8941"
+            },
+            {
+                "id": "text-33",
+                "element_id": "text-33",
+                "form_id": "wrapper-6225-4124",
+                "parent_group": "group-11",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-6225-4124",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Is your business facing problems with collection, invoicing, or financial leakage?",
+                "required": "1",
+                "formid": "wrapper-6225-4124"
+            },
+            {
+                "id": "text-32",
+                "element_id": "text-32",
+                "form_id": "wrapper-9308-8808",
+                "parent_group": "group-11",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9308-8808",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Is there a system for monitoring revenue flow?",
+                "required": "1",
+                "formid": "wrapper-9308-8808"
+            },
+            {
+                "id": "text-31",
+                "element_id": "text-31",
+                "form_id": "wrapper-7906-5774",
+                "parent_group": "group-10",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7906-5774",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "What are the organisation's objectives for the coming period? For Alia \/ Strategic Planning",
+                "required": "1",
+                "formid": "wrapper-7906-5774"
+            },
+            {
+                "id": "text-30",
+                "element_id": "text-30",
+                "form_id": "wrapper-9807-4809",
+                "parent_group": "group-10",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9807-4809",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Is there an approved strategic plan?",
+                "required": "1",
+                "formid": "wrapper-9807-4809"
+            },
+            {
+                "id": "text-29",
+                "element_id": "text-29",
+                "form_id": "wrapper-2384-5859",
+                "parent_group": "group-10",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2384-5859",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Is the organisation undergoing growth, expansion or transformation?",
+                "required": "1",
+                "formid": "wrapper-2384-5859"
+            },
+            {
+                "id": "text-28",
+                "element_id": "text-28",
+                "form_id": "wrapper-1793-5828",
+                "parent_group": "group-9",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-1793-5828",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Which areas need restructuring? (Financial, administrative, operational?)",
+                "required": "1",
+                "formid": "wrapper-1793-5828"
+            },
+            {
+                "id": "text-27",
+                "element_id": "text-27",
+                "form_id": "wrapper-2932-1927",
+                "parent_group": "group-9",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2932-1927",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "What are the main challenges facing the organisation in these areas?",
+                "required": "1",
+                "formid": "wrapper-2932-1927"
+            },
+            {
+                "id": "text-26",
+                "element_id": "text-26",
+                "form_id": "wrapper-9505-3527",
+                "parent_group": "group-9",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9505-3527",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Do you have documentation describing current processes?",
+                "required": "1",
+                "formid": "wrapper-9505-3527"
+            },
+            {
+                "id": "checkbox-21",
+                "element_id": "checkbox-21",
+                "form_id": "wrapper-5975-3202",
+                "parent_group": "group-7",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Company profile",
+                        "value": "\u0639\u0631\u0636 \u062a\u0639\u0631\u064a\u0641\u064a \u0644\u0644\u0634\u0631\u0643\u0629",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Business plan",
+                        "value": "\u0639\u0631\u0636 \u0644\u062e\u0637\u0629 \u0639\u0645\u0644",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Marketing campaign",
+                        "value": "\u0639\u0631\u0636 \u062a\u0633\u0648\u064a\u0642\u064a \u0644\u062d\u0645\u0644\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "2940-6876",
+                        "error": ""
+                    },
+                    {
+                        "label": "Product\/service pitch",
+                        "value": "\u0639\u0631\u0636 \u062a\u0642\u062f\u064a\u0645 \u0645\u0646\u062a\u062c \u0623\u0648 \u062e\u062f\u0645\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "8742-6595",
+                        "error": ""
+                    },
+                    {
+                        "label": "Other",
+                        "value": "\u063a\u064a\u0631 \u0630\u0644\u0643",
+                        "limit": "",
+                        "default": "",
+                        "key": "3305-3314",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-5975-3202",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Presentation type:",
+                "layout": "vertical",
+                "options_bulk_editor": "Company profile;\u0639\u0631\u0636 \u062a\u0639\u0631\u064a\u0641\u064a \u0644\u0644\u0634\u0631\u0643\u0629; 0\nBusiness plan;\u0639\u0631\u0636 \u0644\u062e\u0637\u0629 \u0639\u0645\u0644; 0\nMarketing campaign;\u0639\u0631\u0636 \u062a\u0633\u0648\u064a\u0642\u064a \u0644\u062d\u0645\u0644\u0629; 0\nProduct\/service pitch;\u0639\u0631\u0636 \u062a\u0642\u062f\u064a\u0645 \u0645\u0646\u062a\u062c \u0623\u0648 \u062e\u062f\u0645\u0629; 0\nOther;\u063a\u064a\u0631 \u0630\u0644\u0643; 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "radio-6",
+                "element_id": "radio-6",
+                "form_id": "wrapper-2064-7136",
+                "parent_group": "group-7",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No, need help",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2064-7136",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Is content written and ready?",
+                "layout": "vertical",
+                "formid": "wrapper-2064-7136",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo, need help;\u0644\u0627; 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "checkbox-7",
+                "element_id": "checkbox-7",
+                "form_id": "wrapper-9662-3016",
+                "parent_group": "group-4",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Google Ads",
+                        "value": "Google Ads",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Instagram \/ Facebook",
+                        "value": "Instagram \/ Facebook",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "LinkedIn",
+                        "value": "LinkedIn",
+                        "limit": "",
+                        "default": "",
+                        "key": "8048-5696",
+                        "error": ""
+                    },
+                    {
+                        "label": "TikTok",
+                        "value": "TikTok",
+                        "limit": "",
+                        "default": "",
+                        "key": "9492-8112",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9662-3016",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Platforms:",
+                "layout": "vertical",
+                "options_bulk_editor": "Google Ads;Google Ads; 0\nInstagram \/ Facebook;Instagram \/ Facebook; 0\nLinkedIn;LinkedIn; 0\nTikTok;TikTok; 0",
+                "formid": "wrapper-8401-7421",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-18",
+                "element_id": "checkbox-18",
+                "form_id": "wrapper-2948-4982",
+                "parent_group": "group-4",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Website visits",
+                        "value": "\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u0632\u064a\u0627\u0631\u0627\u062a \u0644\u0644\u0645\u0648\u0642\u0639",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Lead generation",
+                        "value": "\u062a\u0648\u0644\u064a\u062f \u0639\u0645\u0644\u0627\u0621 \u0645\u062d\u062a\u0645\u0644\u064a\u0646 (Leads)",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Sales",
+                        "value": "\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u0645\u0628\u064a\u0639\u0627\u062a",
+                        "limit": "",
+                        "default": "",
+                        "key": "9439-5869",
+                        "error": ""
+                    },
+                    {
+                        "label": "Brand awareness",
+                        "value": "\u0631\u0641\u0639 \u0627\u0644\u0648\u0639\u064a \u0628\u0627\u0644\u0639\u0644\u0627\u0645\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "4009-7495",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2948-4982",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Campaign goal:",
+                "layout": "vertical",
+                "options_bulk_editor": "Website visits;\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u0632\u064a\u0627\u0631\u0627\u062a \u0644\u0644\u0645\u0648\u0642\u0639; 0\nLead generation;\u062a\u0648\u0644\u064a\u062f \u0639\u0645\u0644\u0627\u0621 \u0645\u062d\u062a\u0645\u0644\u064a\u0646 (Leads); 0\nSales;\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u0645\u0628\u064a\u0639\u0627\u062a; 0\nBrand awareness;\u0631\u0641\u0639 \u0627\u0644\u0648\u0639\u064a \u0628\u0627\u0644\u0639\u0644\u0627\u0645\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629; 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "radio-14",
+                "element_id": "radio-14",
+                "form_id": "wrapper-4874-3084",
+                "parent_group": "group-4",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-4874-3084",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Have you run campaigns before?",
+                "layout": "vertical",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "text-16",
+                "element_id": "text-16",
+                "form_id": "wrapper-6319-5018",
+                "parent_group": "group-4",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-6319-5018",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Estimated budget?",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-19",
+                "element_id": "checkbox-19",
+                "form_id": "wrapper-1503-2437",
+                "parent_group": "group-4",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "1 week",
+                        "value": "\u0623\u0633\u0628\u0648\u0639",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "2 weeks",
+                        "value": "\u0623\u0633\u0628\u0648\u0639\u0627\u0646",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "1 month",
+                        "value": "\u0634\u0647\u0631",
+                        "limit": "",
+                        "default": "",
+                        "key": "2132-9629",
+                        "error": ""
+                    },
+                    {
+                        "label": "full plan",
+                        "value": "\u062a\u062d\u062a\u0627\u062c \u062e\u0637\u0629 \u0643\u0627\u0645\u0644\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "9567-1779",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-1503-2437",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Campaign duration:",
+                "layout": "vertical",
+                "options_bulk_editor": "1 week;\u0623\u0633\u0628\u0648\u0639; 0\n2 weeks;\u0623\u0633\u0628\u0648\u0639\u0627\u0646; 0\n1 month;\u0634\u0647\u0631; 0\nfull plan;\u062a\u062d\u062a\u0627\u062c \u062e\u0637\u0629 \u0643\u0627\u0645\u0644\u0629; 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "radio-3",
+                "element_id": "radio-3",
+                "form_id": "wrapper-9796-2797",
+                "parent_group": "group-4",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No, we need your help",
+                        "value": "\u0644\u0627\u060c \u0646\u062d\u062a\u0627\u062c \u0645\u0633\u0627\u0639\u062f\u062a\u0643\u0645",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9796-2797",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you have content\/designs ready?",
+                "layout": "vertical",
+                "formid": "wrapper-9796-2797",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo, we need your help;\u0644\u0627\u060c \u0646\u062d\u062a\u0627\u062c \u0645\u0633\u0627\u0639\u062f\u062a\u0643\u0645; 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "text-3",
+                "element_id": "text-3",
+                "form_id": "wrapper-2972-9659",
+                "parent_group": "group-3",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2972-9659",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "What is the brand name for the identity design?",
+                "formid": "wrapper-2972-9659",
+                "required": "1"
+            },
+            {
+                "id": "radio-2",
+                "element_id": "radio-2",
+                "form_id": "wrapper-7172-9490",
+                "parent_group": "group-3",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Symbolic (icon)",
+                        "value": "\u0631\u0645\u0632\u064a (\u0623\u064a\u0642\u0648\u0646\u0629)",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "Text (brand name written out)",
+                        "value": "\u0646\u0635\u064a (\u0643\u062a\u0627\u0628\u0629 \u0627\u0633\u0645 \u0627\u0644\u0639\u0644\u0627\u0645\u0629)",
+                        "key": "2633-4786",
+                        "error": ""
+                    },
+                    {
+                        "label": "Mixed (text + icon)",
+                        "value": "\u0645\u062e\u062a\u0644\u0637 (\u0646\u0635 + \u0631\u0645\u0632)",
+                        "limit": "",
+                        "default": "",
+                        "key": "3424-8503",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7172-9490",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "What type of logo do you prefer?",
+                "layout": "vertical",
+                "formid": "wrapper-7172-9490",
+                "options_bulk_editor": "Symbolic (icon);\u0631\u0645\u0632\u064a (\u0623\u064a\u0642\u0648\u0646\u0629); 0\nText (brand name written out);\u0646\u0635\u064a (\u0643\u062a\u0627\u0628\u0629 \u0627\u0633\u0645 \u0627\u0644\u0639\u0644\u0627\u0645\u0629); 0\nMixed (text + icon);\u0645\u062e\u062a\u0644\u0637 (\u0646\u0635 + \u0631\u0645\u0632); 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "radio-5",
+                "element_id": "radio-5",
+                "form_id": "wrapper-2974-1849",
+                "parent_group": "group-3",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Upload files",
+                        "value": "one",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "provide links",
+                        "value": "two",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2974-1849",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you have logo samples you like? (Upload files or provide links)",
+                "layout": "vertical",
+                "formid": "wrapper-2681-6205",
+                "options_bulk_editor": "Upload files;one; 0\nprovide links;two; 0",
+                "options_expanded": ""
+            },
+            {
+                "id": "upload-2",
+                "element_id": "upload-2",
+                "form_id": "wrapper-6737-6212",
+                "parent_group": "group-3",
+                "type": "upload",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "radio-5",
+                        "rule": "is",
+                        "value": "one"
+                    }
+                ],
+                "wrapper_id": "wrapper-6737-6212",
+                "field_label": "Upload file",
+                "filetypes": [
+                    "all-image",
+                    "all-video",
+                    "all-document",
+                    "all-audio",
+                    "all-archive",
+                    "all-text",
+                    "all-spreadsheet",
+                    "all-interactive",
+                    "jpg|jpeg|jpe",
+                    "gif",
+                    "png",
+                    "bmp",
+                    "tiff|tif",
+                    "webp",
+                    "avif",
+                    "ico",
+                    "heic",
+                    "heif",
+                    "heics",
+                    "heifs",
+                    "asf|asx",
+                    "wmv",
+                    "wmx",
+                    "wm",
+                    "avi",
+                    "divx",
+                    "flv",
+                    "mov|qt",
+                    "mpeg|mpg|mpe",
+                    "mp4|m4v",
+                    "ogv",
+                    "webm",
+                    "mkv",
+                    "3gp|3gpp",
+                    "3g2|3gp2",
+                    "txt|asc|c|cc|h|srt",
+                    "csv",
+                    "tsv",
+                    "ics",
+                    "rtx",
+                    "vtt",
+                    "mp3|m4a|m4b",
+                    "aac",
+                    "ra|ram",
+                    "wav|x-wav",
+                    "ogg|oga",
+                    "flac",
+                    "mid|midi",
+                    "wma",
+                    "wax",
+                    "mka",
+                    "rtf",
+                    "pdf",
+                    "class",
+                    "tar",
+                    "zip",
+                    "gz|gzip",
+                    "7z",
+                    "psd",
+                    "xcf",
+                    "doc",
+                    "pot|pps|ppt",
+                    "wri",
+                    "xla|xls|xlt|xlw",
+                    "mdb",
+                    "mpp",
+                    "docx",
+                    "docm",
+                    "dotx",
+                    "dotm",
+                    "xlsx",
+                    "xlsm",
+                    "xlsb",
+                    "xltx",
+                    "xltm",
+                    "xlam",
+                    "pptx",
+                    "pptm",
+                    "ppsx",
+                    "ppsm",
+                    "potx",
+                    "potm",
+                    "ppam",
+                    "sldx",
+                    "sldm",
+                    "onetoc|onetoc2|onetmp|onepkg",
+                    "oxps",
+                    "xps",
+                    "odt",
+                    "odp",
+                    "ods",
+                    "odg",
+                    "odc",
+                    "odb",
+                    "odf",
+                    "wp|wpd",
+                    "key",
+                    "numbers",
+                    "pages"
+                ],
+                "file-type": "single",
+                "file-limit": "unlimited",
+                "upload-limit": "8",
+                "filesize": "MB",
+                "formid": "wrapper-2974-1849",
+                "required": "1"
+            },
+            {
+                "id": "name-2",
+                "element_id": "name-2",
+                "form_id": "wrapper-3202-7023",
+                "parent_group": "group-1",
+                "type": "name",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3202-7023",
+                "field_label": "Full Name:",
+                "prefix_label": "Prefix",
+                "fname_label": "First Name",
+                "mname_label": "Middle Name",
+                "lname_label": "Last Name",
+                "prefix": "true",
+                "fname": "true",
+                "mname": "true",
+                "lname": "true",
+                "layout_columns": "2",
+                "required": "1"
+            },
+            {
+                "id": "email-2",
+                "element_id": "email-2",
+                "form_id": "wrapper-5986-9071",
+                "parent_group": "group-1",
+                "type": "email",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-5986-9071",
+                "validation": "",
+                "field_label": "Email Address:",
+                "confirm-email-label": "Confirm Email Address",
+                "confirm-email-placeholder": "Re-type Email Address",
+                "confirm-email-mismatch": "Your email addresses do not match",
+                "required_confirm_message": "You must confirm your email address",
+                "required": "1"
+            },
+            {
+                "id": "phone-2",
+                "element_id": "phone-2",
+                "form_id": "wrapper-4128-6582",
+                "parent_group": "group-1",
+                "type": "phone",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-4128-6582",
+                "required": "1",
+                "limit": "10",
+                "limit_type": "characters",
+                "validation": "none",
+                "field_label": "Mobile Number:"
+            },
+            {
+                "id": "text-2",
+                "element_id": "text-2",
+                "form_id": "wrapper-8538-4003",
+                "parent_group": "group-1",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-8538-4003",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Company Name (if applicable):"
+            },
+            {
+                "id": "page-break-2",
+                "element_id": "page-break-2",
+                "form_id": "wrapper-3323-3631",
+                "parent_group": "",
+                "type": "page-break",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3323-3631",
+                "btn_left": "\u00ab Previous Step",
+                "btn_right": "Next Step \u00bb"
+            },
+            {
+                "id": "group-1",
+                "element_id": "group-1",
+                "form_id": "wrapper-7508-4948",
+                "parent_group": "",
+                "type": "group",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7508-4948",
+                "field_label": "User data",
+                "is_repeater": "false"
+            },
+            {
+                "id": "text-8",
+                "element_id": "text-8",
+                "form_id": "wrapper-6024-8854",
+                "parent_group": "group-3",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "radio-5",
+                        "rule": "is",
+                        "value": "two"
+                    }
+                ],
+                "wrapper_id": "wrapper-6024-8854",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "provide links",
+                "required": "1"
+            },
+            {
+                "id": "text-9",
+                "element_id": "text-9",
+                "form_id": "wrapper-8427-6835",
+                "parent_group": "group-3",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-8427-6835",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "What colors do you prefer? Any colors to avoid?",
+                "required": "1"
+            },
+            {
+                "id": "text-10",
+                "element_id": "text-10",
+                "form_id": "wrapper-3694-9260",
+                "parent_group": "group-3",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3694-9260",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "What type of business activity does your company engage in?",
+                "required": "1"
+            },
+            {
+                "id": "radio-10",
+                "element_id": "radio-10",
+                "form_id": "wrapper-8132-3920",
+                "parent_group": "group-3",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "no",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-8132-3920",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you need a brand guidelines booklet?",
+                "layout": "vertical",
+                "options_bulk_editor": "yes;\u0646\u0639\u0645; 0\nno;\u0644\u0627; 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "radio-11",
+                "element_id": "radio-11",
+                "form_id": "wrapper-4556-2430",
+                "parent_group": "group-3",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-4556-2430",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you already have a logo you\u2019d like to redesign?",
+                "layout": "vertical",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-14",
+                "element_id": "checkbox-14",
+                "form_id": "wrapper-7777-5445",
+                "parent_group": "group-6",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Company profile only",
+                        "value": "\u062a\u0639\u0631\u064a\u0641 \u0628\u0627\u0644\u0634\u0631\u0643\u0629 \u0641\u0642\u0637 (\u0639\u0631\u0636)",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Services with booking options",
+                        "value": "\u0639\u0631\u0636 \u062e\u062f\u0645\u0627\u062a \u0645\u0639 \u0625\u0645\u0643\u0627\u0646\u064a\u0629 \u0627\u0644\u062d\u062c\u0632",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "E-commerce store",
+                        "value": "\u0645\u062a\u062c\u0631 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a (\u0628\u064a\u0639 \u0645\u0646\u062a\u062c\u0627\u062a)",
+                        "limit": "",
+                        "default": "",
+                        "key": "7346-8661",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7777-5445",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Purpose of the website:",
+                "layout": "vertical",
+                "options_bulk_editor": "Company profile only;\u062a\u0639\u0631\u064a\u0641 \u0628\u0627\u0644\u0634\u0631\u0643\u0629 \u0641\u0642\u0637 (\u0639\u0631\u0636); 0\nServices with booking options;\u0639\u0631\u0636 \u062e\u062f\u0645\u0627\u062a \u0645\u0639 \u0625\u0645\u0643\u0627\u0646\u064a\u0629 \u0627\u0644\u062d\u062c\u0632; 0\nE-commerce store;\u0645\u062a\u062c\u0631 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a (\u0628\u064a\u0639 \u0645\u0646\u062a\u062c\u0627\u062a); 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-15",
+                "element_id": "checkbox-15",
+                "form_id": "wrapper-5972-7259",
+                "parent_group": "group-6",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Payment gateway",
+                        "value": "\u0628\u0648\u0627\u0628\u0629 \u062f\u0641\u0639 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "SMS system",
+                        "value": "\u0646\u0638\u0627\u0645 \u0631\u0633\u0627\u0626\u0644 SMS",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Appointment booking platform",
+                        "value": "\u0645\u0646\u0635\u0629 \u062d\u062c\u0632 \u0645\u0648\u0627\u0639\u064a\u062f",
+                        "limit": "",
+                        "default": "",
+                        "key": "8298-8555",
+                        "error": ""
+                    },
+                    {
+                        "label": "Other (please specify)",
+                        "value": "\u063a\u064a\u0631 \u0630\u0644\u0643 (\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0648\u0636\u064a\u062d)",
+                        "limit": "",
+                        "default": "",
+                        "key": "6876-6047",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-5972-7259",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Do you need integrations?",
+                "layout": "vertical",
+                "options_bulk_editor": "Payment gateway;\u0628\u0648\u0627\u0628\u0629 \u062f\u0641\u0639 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a; 0\nSMS system;\u0646\u0638\u0627\u0645 \u0631\u0633\u0627\u0626\u0644 SMS; 0\nAppointment booking platform;\u0645\u0646\u0635\u0629 \u062d\u062c\u0632 \u0645\u0648\u0627\u0639\u064a\u062f; 0\nOther (please specify);\u063a\u064a\u0631 \u0630\u0644\u0643 (\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0648\u0636\u064a\u062d); 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "text-11",
+                "element_id": "text-11",
+                "form_id": "wrapper-1760-4331",
+                "parent_group": "group-6",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "checkbox-15",
+                        "rule": "is",
+                        "value": "\u063a\u064a\u0631 \u0630\u0644\u0643 (\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0648\u0636\u064a\u062d)"
+                    }
+                ],
+                "wrapper_id": "wrapper-1760-4331",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "please specify",
+                "required": "1"
+            },
+            {
+                "id": "text-12",
+                "element_id": "text-12",
+                "form_id": "wrapper-7357-4277",
+                "parent_group": "group-6",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7357-4277",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Do you have design references or websites you like?",
+                "required": "1"
+            },
+            {
+                "id": "text-14",
+                "element_id": "text-14",
+                "form_id": "wrapper-7786-7786",
+                "parent_group": "group-5",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "radio-8",
+                        "rule": "is",
+                        "value": "\u062c\u0632\u0626\u064a\u064b\u0627 (\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0648\u0636\u064a\u062d)"
+                    }
+                ],
+                "wrapper_id": "wrapper-7786-7786",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Specification",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-16",
+                "element_id": "checkbox-16",
+                "form_id": "wrapper-7525-9954",
+                "parent_group": "group-5",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Brand awareness",
+                        "value": "\u0631\u0641\u0639 \u0627\u0644\u0648\u0639\u064a \u0628\u0627\u0644\u0639\u0644\u0627\u0645\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Engagement",
+                        "value": "\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u062a\u0641\u0627\u0639\u0644 \u0639\u0644\u0649 \u0645\u0646\u0635\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Lead generation",
+                        "value": "\u062c\u0630\u0628 \u0639\u0645\u0644\u0627\u0621 \u0645\u062d\u062a\u0645\u0644\u064a\u0646",
+                        "limit": "",
+                        "default": "",
+                        "key": "1471-6306",
+                        "error": ""
+                    },
+                    {
+                        "label": "Product\/service explanation",
+                        "value": "\u0634\u0631\u062d \u062e\u062f\u0645\u0627\u062a\/\u0645\u0646\u062a\u062c\u0627\u062a",
+                        "limit": "",
+                        "default": "",
+                        "key": "1598-7856",
+                        "error": ""
+                    },
+                    {
+                        "label": "Other",
+                        "value": "\u063a\u064a\u0631 \u0630\u0644\u0643",
+                        "limit": "",
+                        "default": "",
+                        "key": "5123-4335",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7525-9954",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Content goal",
+                "layout": "vertical",
+                "options_bulk_editor": "Brand awareness;\u0631\u0641\u0639 \u0627\u0644\u0648\u0639\u064a \u0628\u0627\u0644\u0639\u0644\u0627\u0645\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629; 0\nEngagement;\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u062a\u0641\u0627\u0639\u0644 \u0639\u0644\u0649 \u0645\u0646\u0635\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644; 0\nLead generation;\u062c\u0630\u0628 \u0639\u0645\u0644\u0627\u0621 \u0645\u062d\u062a\u0645\u0644\u064a\u0646; 0\nProduct\/service explanation;\u0634\u0631\u062d \u062e\u062f\u0645\u0627\u062a\/\u0645\u0646\u062a\u062c\u0627\u062a; 0\nOther;\u063a\u064a\u0631 \u0630\u0644\u0643; 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "checkbox-17",
+                "element_id": "checkbox-17",
+                "form_id": "wrapper-2633-1579",
+                "parent_group": "group-5",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Arabic",
+                        "value": "\u0639\u0631\u0628\u064a",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "English",
+                        "value": "\u0625\u0646\u062c\u0644\u064a\u0632\u064a",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Both",
+                        "value": "\u0643\u0644\u0627\u0647\u0645\u0627",
+                        "limit": "",
+                        "default": "",
+                        "key": "4687-3862",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2633-1579",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Required language",
+                "layout": "vertical",
+                "options_bulk_editor": "Arabic;\u0639\u0631\u0628\u064a; 0\nEnglish;\u0625\u0646\u062c\u0644\u064a\u0632\u064a; 0\nBoth;\u0643\u0644\u0627\u0647\u0645\u0627; 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "text-15",
+                "element_id": "text-15",
+                "form_id": "wrapper-9275-6027",
+                "parent_group": "group-5",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9275-6027",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Do you have examples or references we should follow?",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-10",
+                "element_id": "checkbox-10",
+                "form_id": "wrapper-8384-8561",
+                "parent_group": "group-7",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "&lt;10",
+                        "value": "\u0623\u0642\u0644 \u0645\u0646 10",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "10\u201320",
+                        "value": "\u0645\u0646 10 \u0625\u0644\u0649 20",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "20+",
+                        "value": "\u0623\u0643\u062b\u0631 \u0645\u0646 20",
+                        "limit": "",
+                        "default": "",
+                        "key": "7978-7119",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-8384-8561",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Approximate number of slides:",
+                "layout": "vertical",
+                "options_bulk_editor": "&lt;10;\u0623\u0642\u0644 \u0645\u0646 10; 0\n10\u201320;\u0645\u0646 10 \u0625\u0644\u0649 20; 0\n20+;\u0623\u0643\u062b\u0631 \u0645\u0646 20; 0",
+                "formid": "wrapper-4960-6033",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "radio-15",
+                "element_id": "radio-15",
+                "form_id": "wrapper-7362-3614",
+                "parent_group": "group-7",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Upload file",
+                        "value": "\u062a\u062d\u0645\u064a\u0644 \u0645\u0644\u0641",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "provide link",
+                        "value": "\u0631\u0627\u0628\u0637 \u0627\u0644\u0645\u0648\u0642\u0639",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7362-3614",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you have design references?",
+                "layout": "vertical",
+                "options_bulk_editor": "Upload file ;\u062a\u062d\u0645\u064a\u0644 \u0645\u0644\u0641; 0\nprovide link;\u0631\u0627\u0628\u0637 \u0627\u0644\u0645\u0648\u0642\u0639; 0",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "upload-6",
+                "element_id": "upload-6",
+                "form_id": "wrapper-7985-9599",
+                "parent_group": "group-7",
+                "type": "upload",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "radio-15",
+                        "rule": "is",
+                        "value": "\u062a\u062d\u0645\u064a\u0644 \u0645\u0644\u0641"
+                    }
+                ],
+                "wrapper_id": "wrapper-7985-9599",
+                "field_label": "Upload file",
+                "filetypes": [
+                    "all-image",
+                    "all-video",
+                    "all-document",
+                    "all-audio",
+                    "all-archive",
+                    "all-text",
+                    "all-spreadsheet",
+                    "all-interactive",
+                    "jpg|jpeg|jpe",
+                    "gif",
+                    "png",
+                    "bmp",
+                    "tiff|tif",
+                    "webp",
+                    "avif",
+                    "ico",
+                    "heic",
+                    "heif",
+                    "heics",
+                    "heifs",
+                    "asf|asx",
+                    "wmv",
+                    "wmx",
+                    "wm",
+                    "avi",
+                    "divx",
+                    "flv",
+                    "mov|qt",
+                    "mpeg|mpg|mpe",
+                    "mp4|m4v",
+                    "ogv",
+                    "webm",
+                    "mkv",
+                    "3gp|3gpp",
+                    "3g2|3gp2",
+                    "txt|asc|c|cc|h|srt",
+                    "csv",
+                    "tsv",
+                    "ics",
+                    "rtx",
+                    "vtt",
+                    "mp3|m4a|m4b",
+                    "aac",
+                    "ra|ram",
+                    "wav|x-wav",
+                    "ogg|oga",
+                    "flac",
+                    "mid|midi",
+                    "wma",
+                    "wax",
+                    "mka",
+                    "rtf",
+                    "pdf",
+                    "class",
+                    "tar",
+                    "zip",
+                    "gz|gzip",
+                    "7z",
+                    "psd",
+                    "xcf",
+                    "doc",
+                    "pot|pps|ppt",
+                    "wri",
+                    "xla|xls|xlt|xlw",
+                    "mdb",
+                    "mpp",
+                    "docx",
+                    "docm",
+                    "dotx",
+                    "dotm",
+                    "xlsx",
+                    "xlsm",
+                    "xlsb",
+                    "xltx",
+                    "xltm",
+                    "xlam",
+                    "pptx",
+                    "pptm",
+                    "ppsx",
+                    "ppsm",
+                    "potx",
+                    "potm",
+                    "ppam",
+                    "sldx",
+                    "sldm",
+                    "onetoc|onetoc2|onetmp|onepkg",
+                    "oxps",
+                    "xps",
+                    "odt",
+                    "odp",
+                    "ods",
+                    "odg",
+                    "odc",
+                    "odb",
+                    "odf",
+                    "wp|wpd",
+                    "key",
+                    "numbers",
+                    "pages"
+                ],
+                "file-type": "single",
+                "file-limit": "unlimited",
+                "upload-limit": "8",
+                "filesize": "MB",
+                "formid": "wrapper-2999-8464",
+                "required": "1"
+            },
+            {
+                "id": "text-17",
+                "element_id": "text-17",
+                "form_id": "wrapper-4563-6966",
+                "parent_group": "group-7",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [
+                    {
+                        "element_id": "radio-15",
+                        "rule": "is",
+                        "value": "\u0631\u0627\u0628\u0637 \u0627\u0644\u0645\u0648\u0642\u0639"
+                    }
+                ],
+                "wrapper_id": "wrapper-4563-6966",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "website link",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-20",
+                "element_id": "checkbox-20",
+                "form_id": "wrapper-3710-5806",
+                "parent_group": "group-7",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Arabic",
+                        "value": "\u0639\u0631\u0628\u064a",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "English",
+                        "value": "\u0627\u0646\u062c\u0644\u064a\u0632\u064a",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Both",
+                        "value": "\u0643\u0644\u0627\u0647\u0645\u0627",
+                        "limit": "",
+                        "default": "",
+                        "key": "7139-8115",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3710-5806",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "Required language:",
+                "layout": "vertical",
+                "options_bulk_editor": "Arabic;\u0639\u0631\u0628\u064a; 0\nEnglish;\u0627\u0646\u062c\u0644\u064a\u0632\u064a; 0\nBoth;\u0643\u0644\u0627\u0647\u0645\u0627; 0",
+                "options_expanded": "1",
+                "required": "1"
+            },
+            {
+                "id": "text-23",
+                "element_id": "text-23",
+                "form_id": "wrapper-7043-5530",
+                "parent_group": "group-8",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7043-5530",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "What is the current organisational structure of the establishment?",
+                "required": "1"
+            },
+            {
+                "id": "text-24",
+                "element_id": "text-24",
+                "form_id": "wrapper-1516-7378",
+                "parent_group": "group-8",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-1516-7378",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Are there any departments or roles that you would like to reorganise or add?",
+                "required": "1"
+            },
+            {
+                "id": "text-25",
+                "element_id": "text-25",
+                "form_id": "wrapper-3370-7093",
+                "parent_group": "group-8",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3370-7093",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Do you currently have written policies and procedures?",
+                "required": "1"
+            },
+            {
+                "id": "radio-24",
+                "element_id": "radio-24",
+                "form_id": "wrapper-1331-1073",
+                "parent_group": "group-8",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-1331-1073",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Are there currently any job descriptions available?",
+                "layout": "vertical",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "required": "1",
+                "options_expanded": "1",
+                "formid": "wrapper-8797-3732"
+            },
+            {
+                "id": "text-44",
+                "element_id": "text-44",
+                "form_id": "wrapper-2509-4466",
+                "parent_group": "group-13",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-2509-4466",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Expected number of users for the system?",
+                "required": "1"
+            },
+            {
+                "id": "text-45",
+                "element_id": "text-45",
+                "form_id": "wrapper-7711-7937",
+                "parent_group": "group-13",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7711-7937",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Do you need training for your team on how to use the system?",
+                "required": "1"
+            },
+            {
+                "id": "text-46",
+                "element_id": "text-46",
+                "form_id": "wrapper-9240-2535",
+                "parent_group": "group-15",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9240-2535",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Are you currently using management tools (such as Trello, Notion, Monday, Zoho)?",
+                "default": "",
+                "required": "1"
+            },
+            {
+                "id": "text-47",
+                "element_id": "text-47",
+                "form_id": "wrapper-3095-3572",
+                "parent_group": "group-15",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3095-3572",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Would you rather build the system from scratch or use customised off-the-shelf solutions?",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-29",
+                "element_id": "checkbox-29",
+                "form_id": "wrapper-7492-4598",
+                "parent_group": "group-15",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Reduction of manual effort",
+                        "value": "\u062a\u0642\u0644\u064a\u0644 \u0627\u0644\u062c\u0647\u062f \u0627\u0644\u064a\u062f\u0648\u064a",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Improving efficiency",
+                        "value": "\u062a\u062d\u0633\u064a\u0646 \u0627\u0644\u0643\u0641\u0627\u0621\u0629",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Minimising errors",
+                        "value": "\u062a\u0642\u0644\u064a\u0644 \u0627\u0644\u0623\u062e\u0637\u0627\u0621",
+                        "limit": "",
+                        "default": "",
+                        "key": "7978-7119",
+                        "error": ""
+                    },
+                    {
+                        "label": "Improving the employee experience",
+                        "value": "\u062a\u062d\u0633\u064a\u0646 \u062a\u062c\u0631\u0628\u0629 \u0627\u0644\u0645\u0648\u0638\u0641",
+                        "limit": "",
+                        "default": "",
+                        "key": "3975-1535",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-7492-4598",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What are your goals for automation?",
+                "layout": "vertical",
+                "options_bulk_editor": "Reduction of manual effort;\u062a\u0642\u0644\u064a\u0644 \u0627\u0644\u062c\u0647\u062f \u0627\u0644\u064a\u062f\u0648\u064a; 0\nImproving efficiency;\u062a\u062d\u0633\u064a\u0646 \u0627\u0644\u0643\u0641\u0627\u0621\u0629; 0\nMinimising errors;\u062a\u0642\u0644\u064a\u0644 \u0627\u0644\u0623\u062e\u0637\u0627\u0621; 0\nImproving the employee experience;\u062a\u062d\u0633\u064a\u0646 \u062a\u062c\u0631\u0628\u0629 \u0627\u0644\u0645\u0648\u0638\u0641; 0",
+                "formid": "wrapper-7062-5006",
+                "required": "1",
+                "options_expanded": "1"
+            },
+            {
+                "id": "text-48",
+                "element_id": "text-48",
+                "form_id": "wrapper-4467-8772",
+                "parent_group": "group-14",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-4467-8772",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Are there any similar applications on the market? (Please mention them if available.)",
+                "required": "1"
+            },
+            {
+                "id": "text-49",
+                "element_id": "text-49",
+                "form_id": "wrapper-3001-3847",
+                "parent_group": "group-14",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3001-3847",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Do you prefer a specific language for the interface?",
+                "required": "1"
+            },
+            {
+                "id": "text-50",
+                "element_id": "text-50",
+                "form_id": "wrapper-3647-1351",
+                "parent_group": "group-14",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-3647-1351",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Does the application require a login?",
+                "required": "1"
+            },
+            {
+                "id": "text-51",
+                "element_id": "text-51",
+                "form_id": "wrapper-6666-8256",
+                "parent_group": "group-14",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-6666-8256",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Is there a required connection with payment gateways, messages, external websites?",
+                "required": "1"
+            },
+            {
+                "id": "checkbox-34",
+                "element_id": "checkbox-34",
+                "form_id": "wrapper-4713-6941",
+                "parent_group": "group-16",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Slow \/ Errors",
+                        "value": "\u0628\u0637\u0621 \/ \u0623\u062e\u0637\u0627\u0621",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Integration Problems",
+                        "value": "\u0645\u0634\u0627\u0643\u0644 \u0631\u0628\u0637",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Delay in updates",
+                        "value": "\u062a\u0623\u062e\u0631 \u0641\u064a \u0627\u0644\u062a\u062d\u062f\u064a\u062b\u0627\u062a",
+                        "limit": "",
+                        "default": "",
+                        "key": "1528-1388",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-4713-6941",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What problems are you currently facing?",
+                "layout": "vertical",
+                "options_bulk_editor": "Slow \/ Errors;\u0628\u0637\u0621 \/ \u0623\u062e\u0637\u0627\u0621; 0\nIntegration Problems;\u0645\u0634\u0627\u0643\u0644 \u0631\u0628\u0637; 0\nDelay in updates;\u062a\u0623\u062e\u0631 \u0641\u064a \u0627\u0644\u062a\u062d\u062f\u064a\u062b\u0627\u062a; 0",
+                "options_expanded": "1"
+            },
+            {
+                "id": "radio-34",
+                "element_id": "radio-34",
+                "form_id": "wrapper-9019-6916",
+                "parent_group": "group-17",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "Yes",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "No",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-9019-6916",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you need someone to supervise the work of the internal accountant?",
+                "layout": "vertical",
+                "options_bulk_editor": "Yes;Yes; 0\nNo;No; 0",
+                "options_expanded": "1",
+                "enable_images": ""
+            },
+            {
+                "id": "radio-35",
+                "element_id": "radio-35",
+                "form_id": "wrapper-8734-5644",
+                "parent_group": "group-17",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "\u0646\u0639\u0645",
+                        "key": "3161-6222",
+                        "error": ""
+                    },
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-8734-5644",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you require monthly reports?",
+                "layout": "vertical",
+                "options_bulk_editor": "Yes;\u0646\u0639\u0645; 0\nNo;\u0644\u0627; 0",
+                "options_expanded": "1"
+            },
+            {
+                "id": "checkbox-42",
+                "element_id": "checkbox-42",
+                "form_id": "wrapper-8515-6688",
+                "parent_group": "group-19",
+                "type": "checkbox",
+                "options": [
+                    {
+                        "label": "Assessment of the current financial situation",
+                        "value": "\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0648\u0636\u0639 \u0627\u0644\u0645\u0627\u0644\u064a \u0627\u0644\u062d\u0627\u0644\u064a",
+                        "key": "7556-7948",
+                        "error": ""
+                    },
+                    {
+                        "label": "Arranging commitments and improving cash flows",
+                        "value": "\u062a\u0631\u062a\u064a\u0628 \u0627\u0644\u0627\u0644\u062a\u0632\u0627\u0645\u0627\u062a \u0648\u062a\u062d\u0633\u064a\u0646 \u0627\u0644\u062a\u062f\u0641\u0642\u0627\u062a",
+                        "key": "7169-6762",
+                        "error": ""
+                    },
+                    {
+                        "label": "Preparing the company for investment or expansion",
+                        "value": "\u062a\u062c\u0647\u064a\u0632 \u0627\u0644\u0634\u0631\u0643\u0629 \u0644\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0623\u0648 \u0627\u0644\u062a\u0648\u0633\u0639",
+                        "limit": "",
+                        "default": "",
+                        "key": "1010-4163",
+                        "error": ""
+                    },
+                    {
+                        "label": "Request for funding or partnership",
+                        "value": "\u0637\u0644\u0628 \u062a\u0645\u0648\u064a\u0644 \u0623\u0648 \u0634\u0631\u0627\u0643\u0629",
+                        "limit": "",
+                        "default": "",
+                        "key": "6815-3494",
+                        "error": ""
+                    },
+                    {
+                        "label": "Other",
+                        "key": "custom_option",
+                        "value": "custom_option",
+                        "placeholder": "",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-8515-6688",
+                "hidden_behavior": "zero",
+                "value_type": "checkbox",
+                "field_label": "What is the purpose of the study or required restructuring?",
+                "layout": "vertical",
+                "options_bulk_editor": "Assessment of the current financial situation;\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0648\u0636\u0639 \u0627\u0644\u0645\u0627\u0644\u064a \u0627\u0644\u062d\u0627\u0644\u064a; 0\nArranging commitments and improving cash flows;\u062a\u0631\u062a\u064a\u0628 \u0627\u0644\u0627\u0644\u062a\u0632\u0627\u0645\u0627\u062a \u0648\u062a\u062d\u0633\u064a\u0646 \u0627\u0644\u062a\u062f\u0641\u0642\u0627\u062a; 0\nPreparing the company for investment or expansion;\u062a\u062c\u0647\u064a\u0632 \u0627\u0644\u0634\u0631\u0643\u0629 \u0644\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0623\u0648 \u0627\u0644\u062a\u0648\u0633\u0639; 0\nRequest for funding or partnership;\u0637\u0644\u0628 \u062a\u0645\u0648\u064a\u0644 \u0623\u0648 \u0634\u0631\u0627\u0643\u0629; 0",
+                "required": "1",
+                "enable_custom_option": "1",
+                "options_expanded": ""
+            },
+            {
+                "id": "radio-41",
+                "element_id": "radio-41",
+                "form_id": "wrapper-5728-8397",
+                "parent_group": "group-19",
+                "type": "radio",
+                "options": [
+                    {
+                        "label": "No",
+                        "value": "\u0644\u0627",
+                        "key": "2633-4786",
+                        "error": ""
+                    },
+                    {
+                        "label": "Yes",
+                        "key": "custom_option",
+                        "value": "custom_option",
+                        "placeholder": "\u062a\u062d\u062f\u064a\u062f",
+                        "error": ""
+                    }
+                ],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-5728-8397",
+                "hidden_behavior": "zero",
+                "value_type": "radio",
+                "field_label": "Do you have a specific timeline for completing or submitting the study?",
+                "layout": "vertical",
+                "options_bulk_editor": "No;\u0644\u0627; 0",
+                "required": "1",
+                "enable_images": "",
+                "options_expanded": "1",
+                "enable_custom_option": "1"
+            },
+            {
+                "id": "text-54",
+                "element_id": "text-54",
+                "form_id": "wrapper-5145-5963",
+                "parent_group": "group-19",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-5145-5963",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Are there any additional comments or information that would help us better understand your needs?",
+                "required": "1",
+                "formid": "wrapper-2744-7912"
+            },
+            {
+                "id": "text-56",
+                "element_id": "text-56",
+                "form_id": "wrapper-4458-3482",
+                "parent_group": "group-20",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-4458-3482",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Do you have an internal system for managing employees?",
+                "required": "1"
+            },
+            {
+                "id": "text-57",
+                "element_id": "text-57",
+                "form_id": "wrapper-4801-4690",
+                "parent_group": "group-20",
+                "type": "text",
+                "options": [],
+                "cols": "12",
+                "conditions": [],
+                "wrapper_id": "wrapper-4801-4690",
+                "input_type": "line",
+                "limit_type": "characters",
+                "field_label": "Do you require assistance in complying with government regulations (Qwa, Madad, Zakat, Taxes)?",
+                "required": "1"
+            }
+        ],
+        "settings": {
+            "pagination-header": "nav",
+            "paginationData": {
+                "pagination-header-design": "show",
+                "pagination-header": "nav",
+                "page-break-1-steps": "first step",
+                "page-break-2-steps": "second step",
+                "last-steps": "final step",
+                "pagination-labels": "custom",
+                "page-break-1-next": "next",
+                "page-break-2-next": "next",
+                "page-break-2-previous": "previous",
+                "last-previous": "previous"
+            },
+            "formName": "english \u0627\u0633\u062a\u0628\u064a\u0627\u0646 \u0627\u0644\u0639\u0645\u0644\u0627\u0621",
+            "version": "1.46.2",
+            "form-border-style": "none",
+            "form-padding": "",
+            "form-border": "",
+            "fields-style": "open",
+            "field-image-size": "auto",
+            "validation": "on_submit",
+            "akismet-protection": "0",
+            "form-style": "default",
+            "form-substyle": "material",
+            "enable-ajax": "true",
+            "autoclose": "true",
+            "submission-indicator": "show",
+            "indicator-label": "Submitting...",
+            "cform-color-option": "theme",
+            "basic-field-image-size": "custom",
+            "basic-fields-style": "open",
+            "store_submissions": "1",
+            "description-position": "above",
+            "input-focus-outline-color": "#254DEB",
+            "radio-border-hover": "#097BAA",
+            "radio-background-hover": "#E1F6FF",
+            "radio-outline-focus": "#254DEB",
+            "select-focus-outline-color": "#254DEB",
+            "button-submit-focus-outline-color": "#254DEB",
+            "prev-focus-outline-color": "#254DEB",
+            "next-focus-outline-color": "#254DEB",
+            "button-upload-focus-outline-color": "#254DEB",
+            "button-upload-delete-focus-outline-color": "#254DEB",
+            "multiupload-panel-focus-outline-color": "#254DEB",
+            "multiupload-panel-link-focus-outline-color": "#254DEB",
+            "repeater-button-outline-focus": "#254DEB",
+            "repeater-icon-outline-focus": "#254DEB",
+            "repeater-link-outline-focus": "#254DEB",
+            "consent-cbox-border-hover": "#254DEB",
+            "consent-cbox-background-hover": "#254DEB",
+            "consent-cbox-outline-focus": "#254DEB",
+            "slider-handle-outline-color": "#254DEB",
+            "rating-focus-outline-color": "#254DEB",
+            "dropdown-search-outline-focus": "#254DEB",
+            "dropdown-option-outline-focus": "#254DEB",
+            "multiselect-item-outline-focus": "#254DEB",
+            "steps-outline-focus": "#254DEB",
+            "calendar-outline-focus": "#254DEB",
+            "form-type": "default",
+            "submission-behaviour": "behaviour-thankyou",
+            "thankyou-message": "Thank you for contacting us, we will be in touch shortly.",
+            "submitData": {
+                "custom-submit-text": "Send request",
+                "custom-invalid-form-message": "Error: Your form is not valid, please fix the errors!"
+            },
+            "validation-inline": "1",
+            "form-expire": "no_expire",
+            "form-padding-top": "0",
+            "form-padding-right": "0",
+            "form-padding-bottom": "0",
+            "form-padding-left": "0",
+            "form-border-width": "0",
+            "form-border-radius": "0",
+            "cform-label-font-family": "Roboto",
+            "cform-label-custom-family": "",
+            "cform-label-font-size": "12",
+            "cform-label-font-weight": "bold",
+            "cform-title-font-family": "Roboto",
+            "cform-title-custom-family": "",
+            "cform-title-font-size": "45",
+            "cform-title-font-weight": "normal",
+            "cform-title-text-align": "left",
+            "cform-subtitle-font-family": "Roboto",
+            "cform-subtitle-custom-font": "",
+            "cform-subtitle-font-size": "18",
+            "cform-subtitle-font-weight": "normal",
+            "cform-subtitle-text-align": "left",
+            "cform-input-font-family": "Roboto",
+            "cform-input-custom-font": "",
+            "cform-input-font-size": "16",
+            "cform-input-font-weight": "normal",
+            "cform-radio-font-family": "Roboto",
+            "cform-radio-custom-font": "",
+            "cform-radio-font-size": "14",
+            "cform-radio-font-weight": "normal",
+            "cform-select-font-family": "Roboto",
+            "cform-select-custom-family": "",
+            "cform-select-font-size": "16",
+            "cform-select-font-weight": "normal",
+            "cform-multiselect-font-family": "Roboto",
+            "cform-multiselect-custom-font": "",
+            "cform-multiselect-font-size": "16",
+            "cform-multiselect-font-weight": "normal",
+            "cform-multiselect-tag-font-family": "Roboto",
+            "cform-multiselect-tag-custom-font": "",
+            "cform-multiselect-tag-font-size": "12",
+            "cform-multiselect-tag-font-weight": "medium",
+            "cform-dropdown-font-family": "Roboto",
+            "cform-dropdown-custom-font": "",
+            "cform-dropdown-font-size": "16",
+            "cform-dropdown-font-weight": "normal",
+            "cform-calendar-font-family": "Roboto",
+            "cform-calendar-custom-font": "",
+            "cform-calendar-font-size": "13",
+            "cform-calendar-font-weight": "normal",
+            "cform-button-font-family": "Roboto",
+            "cform-button-custom-font": "",
+            "cform-button-font-size": "14",
+            "cform-button-font-weight": "500",
+            "cform-timeline-font-family": "Roboto",
+            "cform-timeline-custom-font": "",
+            "cform-timeline-font-size": "12",
+            "cform-timeline-font-weight": "normal",
+            "cform-pagination-font-family": "",
+            "cform-pagination-custom-font": "",
+            "cform-pagination-font-size": "16",
+            "cform-pagination-font-weight": "normal",
+            "payment_require_ssl": "",
+            "submission-file": "delete",
+            "trigger_from": "template",
+            "template_type": "preset",
+            "template_name": "Blank Form",
+            "form_name": "english--",
+            "form_status": "publish",
+            "sc_email_link": "1",
+            "sc_message": "<p>Your form has been saved as draft and a resume link has been generated so you can return to the form anytime within {retention_period} days from today. Copy and save the link or enter your email address below to have the link sent to your mail.<\/p><p>These fields weren't saved to your submission draft: Paypal, Stripe, Signature, Password, Captcha, and Upload. Kindly fill them out before submitting the form.<\/p>",
+            "use-custom-css": "1",
+            "custom_css": ".display-center{\n    margin-right: 50%;\n}",
+            "notification_count": 1,
+            "previous_status": "publish"
+        },
+        "client_id": null,
+        "integration_conditions": [],
+        "behaviors": [
+            {
+                "slug": "behavior-1234-4567",
+                "label": "",
+                "autoclose-time": "5",
+                "autoclose": "true",
+                "newtab": "sametab",
+                "thankyou-message": "Thank you for contacting us, we will be in touch shortly.",
+                "email-thankyou-message": "",
+                "manual-thankyou-message": "",
+                "submission-behaviour": "behaviour-thankyou",
+                "redirect-url": ""
+            }
+        ],
+        "notifications": [
+            {
+                "slug": "notification-1234-4567",
+                "label": "Admin Email",
+                "email-recipients": "default",
+                "recipients": "mahmadwpdeveloper@gmail.com",
+                "email-subject": "New Form Entry #{submission_id} for {form_name}",
+                "email-editor": "You have a new website form submission: <br \/> {all_fields} <br \/>---<br \/> This message was sent from {site_url}.",
+                "email-attachment": "true",
+                "type": "default",
+                "conditions": []
+            }
+        ]
+    },
+    "status": "publish",
+    "version": "1.46.2"
+}
