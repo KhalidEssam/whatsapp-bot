@@ -6,12 +6,11 @@ import reportGenerator from "./reportGenerator.js";
 function handleSurveyFlow(session, message, lang = "en") {
 
     // 🔹 Handle system-triggered next step or check_next_service
-    if (!message || session.currentStep === "check_next_service") {
-
-        console.log("🔍 System-triggered next step or check_next_service");
-
+    if (!message) {
         // If multiQueue has items, process the next one
         if (session.multiQueue && session.multiQueue.length > 0) {
+            console.log("🔍 System-triggered next step or check_next_service No of remaining services. ", session.multiQueue.length);
+
             session.currentStep = session.multiQueue.shift();
             const nextQuestion = questionnaireHelper.getQuestion(session.currentStep);
 
@@ -24,15 +23,16 @@ function handleSurveyFlow(session, message, lang = "en") {
             }
         }
 
-        // Queue empty → go to confirmation
-        session.currentStep = "confirmation_review";
-        const confirmQuestion = questionnaireHelper.getQuestion(session.currentStep);
-        const report = reportGenerator.generateReport(session);
+        console.log("🔍 Queue empty → moving to completion steps");
+
+        // Queue empty → go to completion_name FIRST
+        session.currentStep = "completion_name";
+        const completionStart = questionnaireHelper.getQuestion(session.currentStep);
+
         return {
-            reply: confirmQuestion.message[lang].replace("{{report}}", report),
-            answers: session.answers,
-            step: confirmQuestion.id,
-            type: "review"
+            reply: completionStart.question?.[lang] || completionStart.message?.[lang],
+            step: completionStart.id,
+            type: completionStart.type
         };
     }
 
@@ -51,39 +51,6 @@ function handleSurveyFlow(session, message, lang = "en") {
         return { reply: "⚠️ No further questions available. Please type 'restart' to begin again.", done: true };
     }
 
-    // 🔹 Handle end of sub-service queue
-    // if (session.currentStep === "check_next_service") {
-    //     console.log("🔍 Checking next service...");
-    //     console.log("🔍 Current multiQueue:", session.multiQueue);
-
-    //     if (session.multiQueue && session.multiQueue.length > 0) {
-    //         const nextStep = session.multiQueue.shift();
-
-    //         //console.log("🔍 Processing next step from queue:", nextStep);
-    //         session.currentStep = nextStep;
-    //         const nextQuestion = questionnaireHelper.getQuestion(session.currentStep);
-
-    //         if (nextQuestion) {
-    //             return {
-    //                 reply: nextQuestion.question?.[lang] || nextQuestion.message?.[lang],
-    //                 step: nextQuestion.id,
-    //                 type: nextQuestion.type
-    //             };
-    //         }
-    //     }
-
-    //     // If no more items in queue, go to confirmation
-    //     //console.log("🔍 Queue empty, going to confirmation");
-    //     session.currentStep = "confirmation_review";
-    //     const confirmQuestion = questionnaireHelper.getQuestion(session.currentStep);
-    //     const report = reportGenerator.generateReport(session);
-    //     return {
-    //         reply: confirmQuestion.message[lang].replace("{{report}}", report),
-    //         answers: session.answers,
-    //         step: confirmQuestion.id,
-    //         type: "review"
-    //     };
-    // }
     // 🔹 Special handler for system step: check_next_service
     if (session.currentStep === "check_next_service") {
         console.log("🟢 System reached check_next_service");
@@ -109,6 +76,8 @@ function handleSurveyFlow(session, message, lang = "en") {
         session.currentStep = "confirmation_review";
         const confirmQuestion = questionnaireHelper.getQuestion("confirmation_review");
         const report = reportGenerator.generateReport(session);
+        console.log("🟢 Report before replace:", report);
+        console.log("🟢 Confirm Question Text:", confirmQuestion.message[lang]);
 
         return {
             reply: confirmQuestion.message[lang].replace("{{report}}", report),
@@ -139,22 +108,6 @@ function handleSurveyFlow(session, message, lang = "en") {
         return handleChoiceWithMultiple(session, currentQuestion, message, lang);
     }
 
-    // if (currentQuestion.type === "text" && message) {
-    //     const nextQuestion = questionnaireHelper.getQuestion(currentQuestion.nextStep);
-
-    //     session.answers.push({
-    //         step: currentQuestion.id,
-    //         value: message,
-    //         service: currentQuestion.service || session.mode
-    //     });
-
-    //     session.currentStep = currentQuestion.nextStep;
-    //     return {
-    //         reply: nextQuestion.question?.[lang] || nextQuestion.message?.[lang],
-    //         step: nextQuestion.id,
-    //         type: nextQuestion.type
-    //     };
-    // }
     if (currentQuestion.type === "text" && message) {
         session.answers.push({
             step: currentQuestion.id,

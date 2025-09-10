@@ -1,10 +1,11 @@
-import Session from "../models/Session.js"; // mongoose model
+import Session from "../models/Session.js";
 
 let userSessions = {};
 
-// Reset (create new session both in memory + db)
-async function resetSession(userId) {
+// Create a brand-new session in memory + DB
+async function createNewSession(userId) {
     const baseSession = {
+        userId,
         currentStep: "welcomeMenu",
         answers: [],
         active: true,
@@ -13,51 +14,57 @@ async function resetSession(userId) {
         hasSeenMenu: false,
         multiQueue: [],
         multiCurrent: null,
+        status: "active",
+        createdAt: new Date(),
     };
 
-    userSessions[userId] = baseSession;
+    const newDbSession = await Session.create(baseSession);
+    userSessions[userId] = newDbSession.toObject();
 
-    // Also save to MongoDB
-    await Session.findOneAndUpdate(
-        { userId },
-        { ...baseSession, lastActivity: new Date(), status: "active" },
-        { upsert: true, new: true }
-    );
-
-    return baseSession;
+    return userSessions[userId];
 }
 
-// Get session from memory, fallback to DB
+// Get latest session for a user
 async function getSession(userId) {
-    if (userSessions[userId]) {
-        if (userSessions[userId].status === "completed") {
-            return await resetSession(userId); // auto fresh session
-        }
-        return userSessions[userId];
-    }
+    // First check memory
+    if (userSessions[userId]) return userSessions[userId];
 
-    const dbSession = await Session.findOne({ userId });
+    // Get the latest session from DB
+    const dbSession = await Session.findOne({ userId }).sort({ createdAt: -1 });
+
     if (dbSession) {
-        if (dbSession.status === "completed") {
-            return await resetSession(userId);
-        }
         userSessions[userId] = dbSession.toObject();
         return userSessions[userId];
     }
 
-    return await resetSession(userId);
+    // No session found → create new one
+    return await createNewSession(userId);
 }
 
+// Reset or start a new session if last one is completed
+async function resetSession(userId) {
+    // Check latest session
+    const latestSession = await Session.findOne({ userId }).sort({ createdAt: -1 });
 
-// Update session (memory + DB)
+    if (latestSession && latestSession.status !== "completed") {
+        // If not completed, just return the existing session
+        userSessions[userId] = latestSession.toObject();
+        return userSessions[userId];
+    }
+
+    // If completed or no session, create new
+    return await createNewSession(userId);
+}
+
+// Update session both memory + DB
 async function updateSession(userId, updates) {
     const current = await getSession(userId);
     const updated = { ...current, ...updates, lastActivity: new Date() };
 
     userSessions[userId] = updated;
 
-    await Session.findOneAndUpdate({ userId }, updated, { new: true });
+    await Session.findByIdAndUpdate(current._id, updated, { new: true });
     return updated;
 }
 
-export default { resetSession, getSession, updateSession };
+export default { createNewSession, getSession, resetSession, updateSession };

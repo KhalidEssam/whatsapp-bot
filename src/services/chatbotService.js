@@ -13,17 +13,19 @@ function detectLanguage(message) {
     return "en"; // fallback
 }
 
-
 async function processMessage(userId, message) {
-    const session = await sessionManager.getSession(userId);
+    let session = await sessionManager.getSession(userId);
     const normalized = message?.toLowerCase().trim();
 
     // 🟢 Restart handling
     if (normalized === "restart") {
-        sessionManager.resetSession(userId);
+        await sessionManager.resetSession(userId);
         const newSession = await sessionManager.getSession(userId);
         newSession.hasSeenMenu = false;
         newSession.lang = null;
+
+        await sessionManager.updateSession(userId, newSession); // 🔥 persist
+
         return {
             reply: "🔄 Session restarted! Please say Hi / أهلا وسهلا to set your language.",
             step: "lang_detect",
@@ -41,29 +43,64 @@ async function processMessage(userId, message) {
             session.lang = detectLanguage(message); // fallback detection
 
             if (user) {
-                // update existing user
                 await User.findOneAndUpdate(
                     { phoneNumber: userId },
                     { preferredLanguage: session.lang }
                 );
             } else {
-                // create new user if not found
                 user = await User.create({
                     phoneNumber: userId,
                     preferredLanguage: session.lang
                 });
             }
         }
+
+        await sessionManager.updateSession(userId, session); // 🔥 persist
     }
+
+
+
+    // 🟢 Language change mid-session
+    if (normalized.startsWith("lang")) {
+        const parts = normalized.split(" ");
+        const newLang = parts[1];
+
+        if (!["en", "ar"].includes(newLang)) {
+            return {
+                reply: lang === "ar"
+                    ? "❌ صيغة غير صحيحة. اكتب: lang en أو lang ar"
+                    : "❌ Invalid format. Use: lang en or lang ar",
+                step: session.currentStep,
+                type: questionnaireHelper.getQuestion(session.currentStep)?.type || "text"
+            };
+        }
+
+        // Update session + DB
+        session.lang = newLang;
+        await sessionManager.updateSession(userId, session);
+        await User.findOneAndUpdate(
+            { phoneNumber: userId },
+            { preferredLanguage: newLang },
+            { upsert: true }
+        );
+
+        return {
+            reply: newLang === "ar"
+                ? "✅ تم تغيير اللغة إلى العربية."
+                : "✅ Language changed to English.",
+            step: session.currentStep,
+            type: questionnaireHelper.getQuestion(session.currentStep)?.type || "text"
+        };
+    }
+
+
+
 
     const lang = session.lang;
 
-    // 🟢 Report command (doesn't reset session)
+    // 🟢 Report command
     if (normalized === "report") {
-        console.log("🔍 Generating report...");
         const report = reportGenerator.generateReport(session, session.lang);
-        console.log("🔍 Report generated:", report);
-
         return {
             reply: `📑 Report of answers:\n${report}`,
             answers: session.answers,
@@ -72,11 +109,10 @@ async function processMessage(userId, message) {
         };
     }
 
-
     // 🟢 Finish command
     if (normalized === "finish") {
         session.active = false;
-        session.status = "completed";   // NEW
+        session.status = "completed";
         session.completedAt = new Date();
 
         const reportText = reportGenerator.generateReport(session, session.lang);
@@ -89,12 +125,12 @@ async function processMessage(userId, message) {
                 language: session.lang,
             });
 
-            // ✅ Update session in DB + memory
             await sessionManager.updateSession(userId, {
+                ...session,
                 active: false,
                 status: "completed",
                 completedAt: new Date(),
-                lastReport: reportText, // optional
+                lastReport: reportText,
             });
 
             console.log("✅ Report + session update saved for:", userId);
@@ -113,26 +149,30 @@ async function processMessage(userId, message) {
         };
     }
 
-
-
-    // Stop / Delay / Resume
+    // 🛑 Stop
     if (normalized === "stop") {
-        await sessionManager.updateSession(userId, { active: false });
+        session.active = false;
+        await sessionManager.updateSession(userId, session);
         return { reply: lang === "ar" ? "🛑 تم إيقاف الجلسة." : "🛑 Session stopped." };
     }
+
+    // ⏸️ Delay
     if (normalized === "delay") {
-        await sessionManager.updateSession(userId, { delayed: true });
+        session.delayed = true;
+        await sessionManager.updateSession(userId, session);
         return { reply: lang === "ar" ? "⏸️ الجلسة مؤجلة. اكتب 'resume' لاحقاً." : "⏸️ Delayed. Type 'resume' later." };
     }
+
+    // ▶️ Resume
     if (normalized === "resume") {
-        const updated = await sessionManager.updateSession(userId, { delayed: false });
+        session.delayed = false;
+        const updated = await sessionManager.updateSession(userId, session);
         return {
             reply: lang === "ar" ? "▶️ استئناف..." : "▶️ Resuming...",
             step: updated.currentStep,
             type: questionnaireHelper.getQuestion(updated.currentStep)?.type
         };
     }
-
 
     if (!session.active) {
         return { reply: lang === "ar" ? "❌ تم إيقاف الجلسة. اكتب 'restart' للبدء من جديد." : "❌ Session stopped. Type 'restart' to start again." };
@@ -144,10 +184,27 @@ async function processMessage(userId, message) {
     // 🟢 First-time menu
     if (!session.hasSeenMenu) {
         session.hasSeenMenu = true;
+        await sessionManager.updateSession(userId, session);
 
         const commandsInfo = lang === "ar"
-            ? "\n\n⚙️ الأوامر المتاحة:\n- restart: إعادة تشغيل الجلسة\n- report: عرض تقرير الإجابات\n- stop: إيقاف الجلسة\n- delay: تأجيل الجلسة\n- resume: استئناف الجلسة\n- finish: إنهاء الجلسة مبكرًا"
-            : "\n\n⚙️ Available commands:\n- restart: Restart the session\n- report: Show report of answers\n- stop: Stop the session\n- delay: Delay the session\n- resume: Resume the session\n- finish: Finish session early";
+            ? "\n\n⚙️ الأوامر المتاحة:\n" +
+            "- restart: إعادة تشغيل الجلسة\n" +
+            "- report: عرض تقرير الإجابات\n" +
+            "- stop: إيقاف الجلسة\n" +
+            "- delay: تأجيل الجلسة\n" +
+            "- resume: استئناف الجلسة\n" +
+            "- finish: إنهاء الجلسة مبكرًا\n" +
+            "- lang ar: تغيير اللغة إلى العربية\n" +
+            "- lang en: تغيير اللغة إلى الإنجليزية"
+            : "\n\n⚙️ Available commands:\n" +
+            "- restart: Restart the session\n" +
+            "- report: Show report of answers\n" +
+            "- stop: Stop the session\n" +
+            "- delay: Delay the session\n" +
+            "- resume: Resume the session\n" +
+            "- finish: Finish session early\n" +
+            "- lang ar: Switch language to Arabic\n" +
+            "- lang en: Switch language to English";
 
         return {
             reply: lang === "ar"
@@ -158,12 +215,13 @@ async function processMessage(userId, message) {
         };
     }
 
-
     // 🟢 Menu choice
     if (session.currentStep === "welcomeMenu") {
         if (normalized === "1") {
             session.mode = "survey";
             session.currentStep = "main_service_type";
+            await sessionManager.updateSession(userId, session);
+
             const q = questionnaireHelper.getQuestion(session.currentStep);
             return {
                 reply: q?.question?.[lang] || q?.message?.[lang],
@@ -174,6 +232,8 @@ async function processMessage(userId, message) {
         if (normalized === "2") {
             session.mode = "contact";
             session.currentStep = "contact_name";
+            await sessionManager.updateSession(userId, session);
+
             return {
                 reply: lang === "ar" ? "📛 من فضلك أدخل اسمك الكامل:" : "📛 Please provide your full name:",
                 step: "contact_name",
