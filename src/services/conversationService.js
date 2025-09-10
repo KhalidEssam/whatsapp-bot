@@ -27,9 +27,11 @@ class ConversationService {
                     language: user.preferredLanguage,
                     currentStep: 'welcome',
                     responses: new Map(),
-                    availableServices: []
+                    availableServices: [],
+                    status: 'active'   // <-- FIX
                 });
             }
+
 
             // Process current step
             return await this.processStep(session, message);

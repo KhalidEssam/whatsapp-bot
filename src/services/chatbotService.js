@@ -3,6 +3,8 @@ import contactFlow from "./contactFlow.js";
 import surveyFlow from "./surveyFlow.js";
 import questionnaireHelper from "./questionnaireHelper.js";
 import reportGenerator from "./reportGenerator.js";
+import User from "../models/User.js";
+import Report from "../models/Report.js"; // add at top
 
 function detectLanguage(message) {
     const normalized = message?.toLowerCase().trim();
@@ -11,42 +13,15 @@ function detectLanguage(message) {
     return "en"; // fallback
 }
 
-// function generateReport(session, lang) {
-//     const answers = session.answers || {};
-//     if (Object.keys(answers).length === 0) {
-//         return lang === "ar"
-//             ? "📋 لا توجد إجابات حتى الآن."
-//             : "📋 No answers recorded yet.";
-//     }
 
-//     let reportLines = [];
-//     for (const [step, answer] of Object.entries(answers)) {
-//         const q = questionnaireHelper.getQuestion(step);
-//         const questionText = q?.question?.[lang] || step;
-//         let answerText;
-
-//         if (Array.isArray(answer)) {
-//             answerText = answer.join(", ");
-//         } else if (typeof answer === "object") {
-//             answerText = JSON.stringify(answer);
-//         } else {
-//             answerText = String(answer);
-//         }
-
-//         reportLines.push(`❓ ${questionText}\n➡️ ${answerText}`);
-//     }
-
-//     return (lang === "ar" ? "📑 تقرير الإجابات:\n\n" : "📑 Report of answers:\n\n") + reportLines.join("\n\n");
-// }
-
-function processMessage(userId, message) {
-    const session = sessionManager.getSession(userId);
+async function processMessage(userId, message) {
+    const session = await sessionManager.getSession(userId);
     const normalized = message?.toLowerCase().trim();
 
     // 🟢 Restart handling
     if (normalized === "restart") {
         sessionManager.resetSession(userId);
-        const newSession = sessionManager.getSession(userId);
+        const newSession = await sessionManager.getSession(userId);
         newSession.hasSeenMenu = false;
         newSession.lang = null;
         return {
@@ -56,10 +31,31 @@ function processMessage(userId, message) {
         };
     }
 
-    // 🟢 Detect language
+    // 🟢 Load user's preferred language if session has none
     if (!session.lang) {
-        session.lang = detectLanguage(message);
+        let user = await User.findOne({ phoneNumber: userId }); // <-- FIXED
+
+        if (user?.preferredLanguage) {
+            session.lang = user.preferredLanguage;
+        } else {
+            session.lang = detectLanguage(message); // fallback detection
+
+            if (user) {
+                // update existing user
+                await User.findOneAndUpdate(
+                    { phoneNumber: userId },
+                    { preferredLanguage: session.lang }
+                );
+            } else {
+                // create new user if not found
+                user = await User.create({
+                    phoneNumber: userId,
+                    preferredLanguage: session.lang
+                });
+            }
+        }
     }
+
     const lang = session.lang;
 
     // 🟢 Report command (doesn't reset session)
@@ -75,42 +71,68 @@ function processMessage(userId, message) {
             type: "review"
         };
     }
-    // 🟢 Finish command (early end + submit placeholder)
-    if (normalized === "finish") {
-        session.active = false; // mark session ended
-        console.log("📝 Finish command triggered. Generating early report...");
 
-        const report = reportGenerator.generateReport(session, session.lang);
+
+    // 🟢 Finish command
+    if (normalized === "finish") {
+        session.active = false;
+        session.status = "completed";   // NEW
+        session.completedAt = new Date();
+
+        const reportText = reportGenerator.generateReport(session, session.lang);
+
+        try {
+            await Report.create({
+                userId,
+                answers: session.answers,
+                reportText,
+                language: session.lang,
+            });
+
+            // ✅ Update session in DB + memory
+            await sessionManager.updateSession(userId, {
+                active: false,
+                status: "completed",
+                completedAt: new Date(),
+                lastReport: reportText, // optional
+            });
+
+            console.log("✅ Report + session update saved for:", userId);
+        } catch (err) {
+            console.error("❌ Failed to save report/session:", err);
+        }
 
         return {
             reply:
                 lang === "ar"
-                    ? `✅ تم إنهاء الجلسة مبكرًا.\n📑 تقرير الإجابات:\n${report}\n\n⚠️ (ملاحظة: سلوك حفظ البيانات لم يُفعل بعد)`
-                    : `✅ Session finished early.\n📑 Report of answers:\n${report}\n\n⚠️ (Note: Submission behavior not yet implemented)`,
+                    ? `✅ تم إنهاء الجلسة.\n📑 تقرير الإجابات:\n${reportText}\n\n💾 تم حفظ التقرير في قاعدة البيانات.`
+                    : `✅ Session finished.\n📑 Report of answers:\n${reportText}\n\n💾 Report saved to database.`,
             answers: session.answers,
             step: "finished",
-            type: "review"
+            type: "review",
         };
     }
+
 
 
     // Stop / Delay / Resume
     if (normalized === "stop") {
-        session.active = false;
+        await sessionManager.updateSession(userId, { active: false });
         return { reply: lang === "ar" ? "🛑 تم إيقاف الجلسة." : "🛑 Session stopped." };
     }
     if (normalized === "delay") {
-        session.delayed = true;
+        await sessionManager.updateSession(userId, { delayed: true });
         return { reply: lang === "ar" ? "⏸️ الجلسة مؤجلة. اكتب 'resume' لاحقاً." : "⏸️ Delayed. Type 'resume' later." };
     }
     if (normalized === "resume") {
-        session.delayed = false;
+        const updated = await sessionManager.updateSession(userId, { delayed: false });
         return {
             reply: lang === "ar" ? "▶️ استئناف..." : "▶️ Resuming...",
-            step: session.currentStep,
-            type: questionnaireHelper.getQuestion(session.currentStep)?.type
+            step: updated.currentStep,
+            type: questionnaireHelper.getQuestion(updated.currentStep)?.type
         };
     }
+
 
     if (!session.active) {
         return { reply: lang === "ar" ? "❌ تم إيقاف الجلسة. اكتب 'restart' للبدء من جديد." : "❌ Session stopped. Type 'restart' to start again." };

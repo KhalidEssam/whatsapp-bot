@@ -34,9 +34,14 @@ export async function connectToWhatsApp() {
       const { connection, lastDisconnect, qr } = update;
 
       if (qr) {
-        //console.log("📱 Scan this QR code:");
+        console.log("📱 Scan this QR code:");
         qrcode.generate(qr, { small: true });
+
+        // Also print a copyable link
+        console.log("\n🔗 Copy this QR string into any online QR generator:");
+        console.log(`https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(qr)}\n`);
       }
+
 
       if (connection === "close") {
         isConnecting = false;
