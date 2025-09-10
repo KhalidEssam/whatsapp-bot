@@ -114,6 +114,295 @@ export const enhancedQuestionnaire =
             conditionalFlow: true
         },
 
+
+
+
+
+        // Technical & Digital Services Branch
+        technical_services: {
+            id: 'technical_services',
+            type: 'choice',
+            question: {
+                en: "Technical & Digital Transformation Services - Select what you need:\n1. Custom Management Systems (CRM/ERP)\n2. Process Automation\n3. Application Development\n4. Ongoing Technical Support\n5. Multiple services",
+                ar: "الخدمات التقنية والتحول الرقمي - اختر ما تحتاجه:\n1. أنظمة إدارة مخصصة (CRM/ERP)\n2. أتمتة العمليات\n3. تطوير التطبيقات\n4. الدعم الفني المستمر\n5. خدمات متعددة"
+            },
+            options: {
+                '1': { value: ['custom_systems'], nextStep: 'custom_system_questions' },
+                '2': { value: ['process_automation'], nextStep: 'automation_questions' },
+                '3': { value: ['app_development'], nextStep: 'app_questions' },
+                '4': { value: ['technical_support'], nextStep: 'support_questions' },
+                '5': { value: 'multiple', nextStep: 'technical_multi_select' }
+            }
+        },
+
+        technical_multi_select: {
+            id: 'technical_multi_select',
+            type: 'multi_choice',
+            question: {
+                en: "Select all Technical services you need (enter numbers separated by commas):\n1. Custom Management Systems (CRM/ERP)\n2. Process Automation\n3. Application Development\n4. Ongoing Technical Support",
+                ar: "اختر جميع الخدمات التقنية التي تحتاجها (أدخل الأرقام مفصولة بفواصل):\n1. أنظمة إدارة مخصصة (CRM/ERP)\n2. أتمتة العمليات\n3. تطوير التطبيقات\n4. الدعم الفني المستمر"
+            },
+            options: {
+                '1': { value: ['custom_systems'], nextStep: 'custom_system_questions' },
+                '2': { value: ['process_automation'], nextStep: 'automation_questions' },
+                '3': { value: ['app_development'], nextStep: 'app_questions' },
+                '4': { value: ['technical_support'], nextStep: 'support_questions' },
+            },
+            nextStep: 'custom_system_questions',
+            conditionalFlow: true
+        },
+
+        financial_services: {
+            id: 'financial_services',
+            type: 'choice',
+            question: {
+                en: 'Financial & Administrative Services - Select what you need:\n1. Financial Supervision & Monitoring\n2. Financial Consulting\n3. Financial Structuring & Feasibility Studies\n4. Administrative & Operational Services\n5. Multiple services',
+                ar: 'الخدمات المالية والإدارية - اختر ما تحتاج:\n1. الإشراف والمتابعة المالية\n2. الاستشارات المالية\n3. الهيكلة المالية ودراسات الجدوى\n4. الخدمات الإدارية والتشغيلية\n5. خدمات متعددة'
+            },
+            options: {
+                '1': { value: ['financial_supervision'], nextStep: 'financial_supervision_q1' },
+                '2': { value: ['financial_consulting'], nextStep: 'financial_consulting_q1' },
+                '3': { value: ['financial_structuring'], nextStep: 'financial_structuring_q1' },
+                '4': { value: ['admin_services'], nextStep: 'admin_services_q1' },
+                '5': { value: 'multiple', nextStep: 'financial_multi_select' }
+            }
+        },
+
+        financial_multi_select: {
+            id: 'financial_multi_select',
+            type: 'multi_choice',
+            question: {
+                en: 'Select all Financial services you need (enter numbers separated by commas):\n1. Financial Supervision & Monitoring\n2. Financial Consulting\n3. Financial Structuring & Feasibility Studies\n4. Administrative & Operational Services',
+                ar: 'اختر جميع الخدمات المالية التي تحتاجها (أدخل الأرقام مفصولة بفواصل):\n1. الإشراف والمتابعة المالية\n2. الاستشارات المالية\n3. الهيكلة المالية ودراسات الجدوى\n4. الخدمات الإدارية والتشغيلية'
+            },
+            options: {
+                '1': { value: ['financial_supervision'], nextStep: 'financial_supervision_q1' },
+                '2': { value: ['financial_consulting'], nextStep: 'financial_consulting_q1' },
+                '3': { value: ['financial_structuring'], nextStep: 'financial_structuring_q1' },
+                '4': { value: ['admin_services'], nextStep: 'admin_services_q1' },
+            },
+            nextStep: 'financial_supervision_q1',
+            conditionalFlow: true
+        },
+
+        corporate_services: {
+            id: 'corporate_services',
+            type: 'choice',
+            question: {
+                en: 'Corporate Management & Consulting - Select service:\n1. Organizational Structures & Policies\n2. Process Restructuring (Financial / Administrative / Operational)\n3. Executive Management Consulting & Strategic Planning\n4. Revenue Cycle Analysis & Optimization\n5. Operational Task & Office Services Management\n6. Multiple services',
+                ar: 'خدمات الإدارة والاستشارات المؤسسية - اختر الخدمة:\n1. الهياكل والسياسات التنظيمية\n2. إعادة هيكلة العمليات (مالية / إدارية / تشغيلية)\n3. الاستشارات الإدارية العليا / التخطيط الاستراتيجي\n4. تحليل وتحسين دورة الإيرادات\n5. إدارة المهام التشغيلية وخدمات المكاتب\n6. خدمات متعددة',
+            },
+            options: {
+                '1': { value: ['org_structures_policies'], nextStep: 'org_structures_q1' },
+                '2': { value: ['process_restructuring'], nextStep: 'process_restructuring_q1' },
+                '3': { value: ['strategic_planning'], nextStep: 'strategic_planning_q1' },
+                '4': { value: ['revenue_cycle'], nextStep: 'revenue_cycle_q1' },
+                '5': { value: ['operational_mgmt'], nextStep: 'operational_mgmt_q1' },
+                '6': { value: 'multiple', nextStep: 'corporate_multi_select' }
+            }
+        },
+
+        corporate_multi_select: {
+            id: 'corporate_multi_select',
+            type: 'multi_choice',
+            question: {
+                en: 'Corporate Management & Consulting - Select multiple services:\n1. Organizational Structures & Policies\n2. Process Restructuring (Financial / Administrative / Operational)\n3. Executive Management Consulting & Strategic Planning\n4. Revenue Cycle Analysis & Optimization\n5. Operational Task & Office Services Management',
+                ar: 'خدمات الإدارة والاستشارات المؤسسية - اختر أكثر من خدمة:\n1. الهياكل والسياسات التنظيمية\n2. إعادة هيكلة العمليات (مالية / إدارية / تشغيلية)\n3. الاستشارات الإدارية العليا / التخطيط الاستراتيجي\n4. تحليل وتحسين دورة الإيرادات\n5. إدارة المهام التشغيلية وخدمات المكاتب',
+            },
+            options: {
+                '1': { value: ['org_structures_policies'], nextStep: 'org_structures_q1' },
+                '2': { value: ['process_restructuring'], nextStep: 'process_restructuring_q1' },
+                '3': { value: ['strategic_planning'], nextStep: 'strategic_planning_q1' },
+                '4': { value: ['revenue_cycle'], nextStep: 'revenue_cycle_q1' },
+                '5': { value: ['operational_mgmt'], nextStep: 'operational_mgmt_q1' },
+            },
+            conditionalFlow: true
+        },
+
+        // === Organizational Structures & Policies ===
+        org_structures_q1: {
+            id: 'org_structures_q1',
+            type: 'text',
+            question: {
+                en: "What is the current organisational structure of the establishment?",
+                ar: "ما هو الهيكل التنظيمي الحالي للمؤسسة؟"
+            },
+            nextStep: 'org_structures_q2'
+        },
+        org_structures_q2: {
+            id: 'org_structures_q2',
+            type: 'text',
+            question: {
+                en: "Are there any departments or roles that you would like to reorganise or add?",
+                ar: "هل هناك إدارات أو أدوار ترغب في إعادة تنظيمها أو إضافتها؟"
+            },
+            nextStep: 'org_structures_q3'
+        },
+        org_structures_q3: {
+            id: 'org_structures_q3',
+            type: 'choice',
+            question: {
+                en: "Do you currently have written policies and procedures?\n1. Yes\n2. No",
+                ar: "هل لديك حالياً سياسات وإجراءات مكتوبة؟\n1. نعم\n2. لا"
+            },
+            options: {
+                '1': { value: 'yes', nextStep: 'org_structures_q4' },
+                '2': { value: 'no', nextStep: 'org_structures_q4' }
+            },
+            nextStep: 'org_structures_q4'
+        },
+        org_structures_q4: {
+            id: 'org_structures_q4',
+            type: 'choice',
+            question: {
+                en: "Are there currently any job descriptions available?\n1. Yes\n2. No",
+                ar: "هل تتوفر حالياً أوصاف وظيفية؟\n1. نعم\n2. لا"
+            },
+            options: {
+                '1': { value: 'yes', nextStep: 'check_next_service' },
+                '2': { value: 'no', nextStep: 'check_next_service' }
+            },
+            nextStep: 'check_next_service'
+        },
+
+        // === Process Restructuring ===
+        process_restructuring_q1: {
+            id: 'process_restructuring_q1',
+            type: 'text',
+            question: {
+                en: "Which areas need restructuring? (Financial, administrative, operational?)",
+                ar: "ما هي المجالات التي تحتاج إلى إعادة هيكلة؟ (مالية، إدارية، تشغيلية؟)"
+            },
+            nextStep: 'process_restructuring_q2'
+        },
+        process_restructuring_q2: {
+            id: 'process_restructuring_q2',
+            type: 'text',
+            question: {
+                en: "What are the main challenges facing the organisation in these areas?",
+                ar: "ما هي التحديات الرئيسية التي تواجه المؤسسة في هذه المجالات؟"
+            },
+            nextStep: 'process_restructuring_q3'
+        },
+        process_restructuring_q3: {
+            id: 'process_restructuring_q3',
+            type: 'choice',
+            question: {
+                en: "Do you have documentation describing current processes?\n1. Yes\n2. No",
+                ar: "هل لديك وثائق تصف العمليات الحالية؟\n1. نعم\n2. لا"
+            },
+            options: {
+                '1': { value: 'yes', nextStep: 'check_next_service' },
+                '2': { value: 'no', nextStep: 'check_next_service' }
+            },
+            nextStep: 'check_next_service'
+        },
+
+        // === Strategic Planning ===
+        strategic_planning_q1: {
+            id: 'strategic_planning_q1',
+            type: 'text',
+            question: {
+                en: "What are the organisation's objectives for the coming period?",
+                ar: "ما هي أهداف المؤسسة للفترة القادمة؟"
+            },
+            nextStep: 'strategic_planning_q2'
+        },
+        strategic_planning_q2: {
+            id: 'strategic_planning_q2',
+            type: 'choice',
+            question: {
+                en: "Is there an approved strategic plan?\n1. Yes\n2. No",
+                ar: "هل هناك خطة استراتيجية معتمدة؟\n1. نعم\n2. لا"
+            },
+            options: {
+                '1': { value: 'yes', nextStep: 'strategic_planning_q3' },
+                '2': { value: 'no', nextStep: 'strategic_planning_q3' }
+            },
+            nextStep: 'strategic_planning_q3'
+        },
+        strategic_planning_q3: {
+            id: 'strategic_planning_q3',
+            type: 'choice',
+            question: {
+                en: "Is the organisation undergoing growth, expansion or transformation?\n1. Yes\n2. No",
+                ar: "هل تمر المؤسسة بمرحلة نمو أو توسع أو تحول؟\n1. نعم\n2. لا"
+            },
+            options: {
+                '1': { value: 'yes', nextStep: 'check_next_service' },
+                '2': { value: 'no', nextStep: 'check_next_service' }
+            },
+            nextStep: 'check_next_service'
+        },
+
+        // === Revenue Cycle Analysis ===
+        revenue_cycle_q1: {
+            id: 'revenue_cycle_q1',
+            type: 'text',
+            question: {
+                en: "What are the main sources of income for the establishment?",
+                ar: "ما هي المصادر الرئيسية لإيرادات المؤسسة؟"
+            },
+            nextStep: 'revenue_cycle_q2'
+        },
+        revenue_cycle_q2: {
+            id: 'revenue_cycle_q2',
+            type: 'text',
+            question: {
+                en: "Is your business facing problems with collection, invoicing, or financial leakage?",
+                ar: "هل يواجه عملك مشاكل في التحصيل أو الفوترة أو التسرب المالي؟"
+            },
+            nextStep: 'revenue_cycle_q3'
+        },
+        revenue_cycle_q3: {
+            id: 'revenue_cycle_q3',
+            type: 'choice',
+            question: {
+                en: "Is there a system for monitoring revenue flow?\n1. Yes\n2. No",
+                ar: "هل يوجد نظام لمتابعة تدفق الإيرادات؟\n1. نعم\n2. لا"
+            },
+            options: {
+                '1': { value: 'yes', nextStep: 'check_next_service' },
+                '2': { value: 'no', nextStep: 'check_next_service' }
+            },
+            nextStep: 'check_next_service'
+        },
+
+        // === Operational Management ===
+        operational_mgmt_q1: {
+            id: 'operational_mgmt_q1',
+            type: 'text',
+            question: {
+                en: "What kind of daily operations need to be organised or managed?",
+                ar: "ما نوع العمليات اليومية التي تحتاج إلى تنظيم أو إدارة؟"
+            },
+            nextStep: 'operational_mgmt_q2'
+        },
+        operational_mgmt_q2: {
+            id: 'operational_mgmt_q2',
+            type: 'text',
+            question: {
+                en: "How many employees or departments are involved in these processes?",
+                ar: "كم عدد الموظفين أو الإدارات المشاركة في هذه العمليات؟"
+            },
+            nextStep: 'operational_mgmt_q3'
+        },
+        operational_mgmt_q3: {
+            id: 'operational_mgmt_q3',
+            type: 'choice',
+            question: {
+                en: "Does the establishment currently use tools to track productivity or tasks?\n1. Yes\n2. No",
+                ar: "هل تستخدم المؤسسة حالياً أدوات لمتابعة الإنتاجية أو المهام؟\n1. نعم\n2. لا"
+            },
+            options: {
+                '1': { value: 'yes', nextStep: 'check_next_service' },
+                '2': { value: 'no', nextStep: 'check_next_service' }
+            },
+            nextStep: 'check_next_service'
+        },
+
+
+
         // Social Media Management Questions
         social_media_questions: {
             id: 'social_media_questions',
@@ -139,7 +428,7 @@ export const enhancedQuestionnaire =
 
         social_platforms_multi: {
             id: 'social_platforms_multi',
-            type: 'multi_choice',
+            type: 'choice',
             question: {
                 en: 'Select all platforms you need (enter numbers separated by commas):\n1. Instagram\n2. Twitter\n3. TikTok\n4. LinkedIn\n5. Facebook',
                 ar: 'اختر جميع المنصات التي تحتاجها (أدخل الأرقام مفصولة بفواصل):\n1. إنستجرام\n2. تويتر\n3. تيك توك\n4. لينكدإن\n5. فيسبوك'
@@ -546,37 +835,6 @@ export const enhancedQuestionnaire =
 
         ///////////////////////////////////////////////////
 
-        // Technical & Digital Services Branch
-        technical_services: {
-            id: 'technical_services',
-            type: 'choice',
-            question: {
-                en: 'Technical & Digital Transformation Services - Select what you need:\n1. Custom Management Systems (CRM/ERP)\n2. Process Automation\n3. Application Development\n4. Ongoing Technical Support\n5. Multiple services'
-            },
-            options: {
-                '1': { value: ['custom_systems'], nextStep: 'custom_system_questions' },
-                '2': { value: ['process_automation'], nextStep: 'automation_questions' },
-                '3': { value: ['app_development'], nextStep: 'app_questions' },
-                '4': { value: ['technical_support'], nextStep: 'support_questions' },
-                '5': { value: 'multiple', nextStep: 'technical_multi_select' }
-            }
-        },
-
-        technical_multi_select: {
-            id: 'technical_multi_select',
-            type: 'multi_choice',
-            question: {
-                en: 'Select all Technical services you need (enter numbers separated by commas):\n1. Custom Management Systems (CRM/ERP)\n2. Process Automation\n3. Application Development\n4. Ongoing Technical Support'
-            },
-            options: {
-                '1': { value: ['custom_systems'], nextStep: 'custom_system_questions' },
-                '2': { value: ['process_automation'], nextStep: 'automation_questions' },
-                '3': { value: ['app_development'], nextStep: 'app_questions' },
-                '4': { value: ['technical_support'], nextStep: 'support_questions' },
-            },
-            nextStep: 'custom_system_questions',
-            conditionalFlow: true
-        },
         // 🟢 Advertising Campaigns Flow
         advertising_questions: {
             id: "advertising_questions",
@@ -719,9 +977,10 @@ export const enhancedQuestionnaire =
         presentation_reference: {
             id: "presentation_reference",
             type: "text",
-            question: { ar: "هل لديك مرجع لتصميم معين ترغب بمحاكاته؟ (ضع رابط العرض أو قم بارفاقه) *" ,
+            question: {
+                ar: "هل لديك مرجع لتصميم معين ترغب بمحاكاته؟ (ضع رابط العرض أو قم بارفاقه) *",
                 en: "Do you have a specific design reference you want to try out? (Paste a link to the presentation or attach it)"
-             },
+            },
             nextStep: "presentation_language",
             service: "presentation_design"
         },
@@ -844,8 +1103,8 @@ export const enhancedQuestionnaire =
 
             },
             options: {
-                '1': { value: 'yes', nextStep: 'check_next_tech_service' },
-                '2': { value: 'no', nextStep: 'check_next_tech_service' }
+                '1': { value: 'yes', nextStep: 'check_next_service' },
+                '2': { value: 'no', nextStep: 'check_next_service' }
             }
         },
 
@@ -889,11 +1148,11 @@ export const enhancedQuestionnaire =
                 en: 'What are your goals for automation?\n1. Reduce manual effort\n2. Improve efficiency\n3. Minimize errors\n4. Improve employee experience\n5. All of the above'
             },
             options: {
-                '1': { value: ['reduce_manual'], nextStep: 'check_next_tech_service' },
-                '2': { value: ['improve_efficiency'], nextStep: 'check_next_tech_service' },
-                '3': { value: ['minimize_errors'], nextStep: 'check_next_tech_service' },
-                '4': { value: ['improve_experience'], nextStep: 'check_next_tech_service' },
-                '5': { value: ['reduce_manual', 'improve_efficiency', 'minimize_errors', 'improve_experience'], nextStep: 'check_next_tech_service' }
+                '1': { value: ['reduce_manual'], nextStep: 'check_next_service' },
+                '2': { value: ['improve_efficiency'], nextStep: 'check_next_service' },
+                '3': { value: ['minimize_errors'], nextStep: 'check_next_service' },
+                '4': { value: ['improve_experience'], nextStep: 'check_next_service' },
+                '5': { value: ['reduce_manual', 'improve_efficiency', 'minimize_errors', 'improve_experience'], nextStep: 'check_next_service' }
             }
         },
 
@@ -974,7 +1233,7 @@ export const enhancedQuestionnaire =
             question: {
                 en: 'Does the app need to connect with payment gateways, messaging services, or external websites? Please specify or type "none".'
             },
-            nextStep: 'check_next_tech_service'
+            nextStep: 'check_next_service'
         },
 
         // Technical Support Questions
@@ -1017,7 +1276,7 @@ export const enhancedQuestionnaire =
             },
             options: {
                 '1': { value: 'yes', nextStep: 'support_problems' },
-                '2': { value: 'no', nextStep: 'check_next_tech_service' }
+                '2': { value: 'no', nextStep: 'check_next_service' }
             }
         },
 
@@ -1028,170 +1287,306 @@ export const enhancedQuestionnaire =
                 en: 'What problems are you currently facing?\n1. Slow performance/Errors\n2. Integration problems\n3. Delays in updates\n4. Multiple issues'
             },
             options: {
-                '1': { value: ['slow_errors'], nextStep: 'check_next_tech_service' },
-                '2': { value: ['integration_problems'], nextStep: 'check_next_tech_service' },
-                '3': { value: ['update_delays'], nextStep: 'check_next_tech_service' },
-                '4': { value: ['slow_errors', 'integration_problems', 'update_delays'], nextStep: 'check_next_tech_service' }
+                '1': { value: ['slow_errors'], nextStep: 'check_next_service' },
+                '2': { value: ['integration_problems'], nextStep: 'check_next_service' },
+                '3': { value: ['update_delays'], nextStep: 'check_next_service' },
+                '4': { value: ['slow_errors', 'integration_problems', 'update_delays'], nextStep: 'check_next_service' }
             }
         },
 
         // -----------------------------
-        // Financial Services Branch
+        // Financial Supervision & Monitoring
         // -----------------------------
-        financial_services: {
-            id: 'financial_services',
+        financial_supervision_q1: {
+            id: 'financial_supervision_q1',
             type: 'choice',
             question: {
-                en: 'Financial & Administrative Services - Select what you need:\n1. Financial Supervision & Monitoring\n2. Financial Consulting\n3. Financial Structuring & Feasibility Studies\n4. Administrative & Operational Services\n5. Multiple services'
+                en: 'Do you have an accountant or financial officer within your company?\n1. Yes\n2. No',
+                ar: 'هل لديك محاسب أو مسؤول مالي داخل الشركة؟\n1. نعم\n2. لا'
             },
             options: {
-                '1': { value: ['financial_supervision'], nextStep: 'financial_supervision_questions' },
-                '2': { value: ['financial_consulting'], nextStep: 'financial_consulting_questions' },
-                '3': { value: ['financial_structuring'], nextStep: 'financial_structuring_questions' },
-                '4': { value: ['admin_services'], nextStep: 'admin_services_questions' },
-                '5': { value: 'multiple', nextStep: 'financial_multi_select' }
+                '1': { value: 'yes', nextStep: 'financial_supervision_q2' },
+                '2': { value: 'no', nextStep: 'financial_supervision_q2' }
             }
         },
 
-
-        financial_multi_select: {
-            id: 'financial_multi_select',
-            type: 'multi_choice',
-            question: {
-                en: 'Select all Financial services you need (enter numbers separated by commas):\n1. Financial Supervision & Monitoring\n2. Financial Consulting\n3. Financial Structuring & Feasibility Studies\n4. Administrative & Operational Services'
-            },
-            options: {
-                '1': { value: ['financial_supervision'], nextStep: 'financial_supervision_questions' },
-                '2': { value: ['financial_consulting'], nextStep: 'financial_consulting_questions' },
-                '3': { value: ['financial_structuring'], nextStep: 'financial_structuring_questions' },
-                '4': { value: ['admin_services'], nextStep: 'admin_services_questions' },
-            },
-            nextStep: 'financial_supervision_questions',
-            conditionalFlow: true
-        },
-
-
-        // Financial Supervision Questions
-        financial_supervision_questions: {
-            id: 'financial_supervision_questions',
+        financial_supervision_q2: {
+            id: 'financial_supervision_q2',
             type: 'choice',
             question: {
-                en: 'Do you have an accountant or financial officer within your company?\n1. Yes\n2. No'
+                en: 'What tools are you currently using?\n1. Excel program\n2. Accounting software (please specify)\n3. Nothing',
+                ar: 'ما الأدوات التي تستخدمها حالياً؟\n1. برنامج إكسل\n2. برنامج محاسبي (اذكر الاسم)\n3. لا يوجد'
             },
             options: {
-                '1': { value: 'yes', nextStep: 'supervision_tools' },
-                '2': { value: 'no', nextStep: 'supervision_tools' }
-            },
-            conditional: {
-                requiredValues: ['financial_supervision'],
-                requiredStep: 'financial_services'
+                '1': { value: 'excel', nextStep: 'financial_supervision_q3' },
+                '2': { value: 'accounting_software', nextStep: 'financial_supervision_q3' },
+                '3': { value: 'none', nextStep: 'financial_supervision_q3' }
             }
         },
 
-
-        supervision_tools: {
-            id: 'supervision_tools',
+        financial_supervision_q3: {
+            id: 'financial_supervision_q3',
             type: 'choice',
             question: {
-            },
-            // Financial Consulting Questions
-            financial_consulting_questions: {
-                id: 'financial_consulting_questions',
-                type: 'choice',
-                question: {
-                    en: 'What area do you need financial consulting in?\n1. Investment guidance\n2. Budgeting & cost control\n3. Financial risk management\n4. Multiple areas'
-                },
-                options: {
-                    '1': { value: ['investment_guidance'], nextStep: 'check_next_financial_service' },
-                    '2': { value: ['budgeting'], nextStep: 'check_next_financial_service' },
-                    '3': { value: ['risk_management'], nextStep: 'check_next_financial_service' },
-                    '4': { value: ['investment_guidance', 'budgeting', 'risk_management'], nextStep: 'check_next_financial_service' }
-                },
-                conditional: {
-                    requiredValues: ['financial_consulting'],
-                    requiredStep: 'financial_services'
-                }
-            },
-
-
-            // Financial Structuring Questions
-            financial_structuring_questions: {
-                id: 'financial_structuring_questions',
-                type: 'choice',
-                question: {
-                    en: 'What type of structuring or study do you need?\n1. Feasibility study\n2. Business restructuring\n3. Valuation\n4. Multiple'
-                },
-                options: {
-                    '1': { value: ['feasibility_study'], nextStep: 'check_next_financial_service' },
-                    '2': { value: ['business_restructuring'], nextStep: 'check_next_financial_service' },
-                    '3': { value: ['valuation'], nextStep: 'check_next_financial_service' },
-                    '4': { value: ['feasibility_study', 'business_restructuring', 'valuation'], nextStep: 'check_next_financial_service' }
-                },
-                conditional: {
-                    requiredValues: ['financial_structuring'],
-                    requiredStep: 'financial_services'
-                }
-            },
-
-
-            // Admin Services Questions
-            admin_services_questions: {
-                id: 'admin_services_questions',
-                type: 'choice',
-                question: {
-                    en: 'Which administrative service do you require?\n1. Payroll\n2. HR operations\n3. Procurement support\n4. General administration\n5. Multiple'
-                },
-                options: {
-                    '1': { value: ['payroll'], nextStep: 'check_next_financial_service' },
-                    '2': { value: ['hr_ops'], nextStep: 'check_next_financial_service' },
-                    '3': { value: ['procurement_support'], nextStep: 'check_next_financial_service' },
-                    '4': { value: ['general_admin'], nextStep: 'check_next_financial_service' },
-                    '5': { value: ['payroll', 'hr_ops', 'procurement_support', 'general_admin'], nextStep: 'check_next_financial_service' }
-                },
-                conditional: {
-                    requiredValues: ['admin_services'],
-                    requiredStep: 'financial_services'
-                }
-            },
-
-
-            check_next_financial_service: {
-                id: 'check_next_financial_service',
-                type: 'info',
-                message: {
-                    en: 'Noted your Financial services selection.'
-                },
-                nextStep: 'completion_name'
-            },
-        },
-
-        // Corporate Management & Consulting Services
-        corporate_services: {
-            id: 'corporate_services',
-            type: 'choice',
-            question: {
-                en: 'Corporate Management & Consulting - Select service:\n1. Strategic planning\n2. Organizational restructuring\n3. HR strategy\n4. Governance consulting\n5. Multiple services'
+                en: 'Are you experiencing problems with:\n1. Controlling expenses\n2. Revenue tracking\n3. Organizing invoices',
+                ar: 'هل تواجه مشاكل في:\n1. ضبط المصاريف\n2. تتبع الإيرادات\n3. تنظيم الفواتير'
             },
             options: {
-                '1': { value: ['strategic_planning'], nextStep: 'check_next_corporate_service' },
-                '2': { value: ['org_restructuring'], nextStep: 'check_next_corporate_service' },
-                '3': { value: ['hr_strategy'], nextStep: 'check_next_corporate_service' },
-                '4': { value: ['governance_consulting'], nextStep: 'check_next_corporate_service' },
-                '5': { value: ['strategic_planning', 'org_restructuring', 'hr_strategy', 'governance_consulting'], nextStep: 'check_next_corporate_service' },
-                '6': { value: ['multiple'], nextStep: 'check_next_corporate_service' }
+                '1': { value: 'expenses', nextStep: 'financial_supervision_q4' },
+                '2': { value: 'revenue_tracking', nextStep: 'financial_supervision_q4' },
+                '3': { value: 'invoices', nextStep: 'financial_supervision_q4' }
             }
         },
 
-
-        check_next_corporate_service: {
-            id: 'check_next_corporate_service',
-            type: 'info',
-            message: {
-                en: 'Noted your corporate service request.'
+        financial_supervision_q4: {
+            id: 'financial_supervision_q4',
+            type: 'choice',
+            question: {
+                en: 'Do you need someone to supervise the work of the internal accountant?\n1. Yes\n2. No',
+                ar: 'هل تحتاج إلى شخص للإشراف على عمل المحاسب الداخلي؟\n1. نعم\n2. لا'
             },
-            nextStep: 'completion_name'
+            options: {
+                '1': { value: 'yes_supervision', nextStep: 'financial_supervision_q5' },
+                '2': { value: 'no_supervision', nextStep: 'financial_supervision_q5' }
+            }
         },
 
+        financial_supervision_q5: {
+            id: 'financial_supervision_q5',
+            type: 'choice',
+            question: {
+                en: 'Do you require monthly reports?\n1. Yes\n2. No',
+                ar: 'هل تحتاج إلى تقارير شهرية؟\n1. نعم\n2. لا'
+            },
+            options: {
+                '1': { value: 'monthly_reports_yes', nextStep: 'check_next_service' },
+                '2': { value: 'monthly_reports_no', nextStep: 'check_next_service' }
+            }
+        },
+
+        // -----------------------------
+        // Financial Consulting
+        // -----------------------------
+        financial_consulting_q1: {
+            id: 'financial_consulting_q1',
+            type: 'choice',
+            question: {
+                en: 'What type of consultation is required?\n1. General finance organization\n2. Financial restructuring\n3. Preparation of a financial model\n4. Preparation of a feasibility study',
+                ar: 'ما نوع الاستشارة المطلوبة؟\n1. تنظيم مالي عام\n2. إعادة هيكلة مالية\n3. إعداد نموذج مالي\n4. إعداد دراسة جدوى'
+            },
+            options: {
+                '1': { value: 'general_org', nextStep: 'financial_consulting_q2' },
+                '2': { value: 'restructuring', nextStep: 'financial_consulting_q2' },
+                '3': { value: 'financial_model', nextStep: 'financial_consulting_q2' },
+                '4': { value: 'feasibility_study', nextStep: 'financial_consulting_q2' }
+            }
+        },
+
+        financial_consulting_q2: {
+            id: 'financial_consulting_q2',
+            type: 'text',
+            question: {
+                en: 'What does the company do?',
+                ar: 'ما هو نشاط الشركة؟'
+            },
+            nextStep: 'financial_consulting_q3'
+        },
+
+        financial_consulting_q3: {
+            id: 'financial_consulting_q3',
+            type: 'choice',
+            question: {
+                en: 'Is the company going through a phase:\n1. Growth\n2. Stumble\n3. Stability',
+                ar: 'تمر الشركة حالياً بمرحلة:\n1. نمو\n2. تعثر\n3. استقرار'
+            },
+            options: {
+                '1': { value: 'growth', nextStep: 'financial_consulting_q4' },
+                '2': { value: 'stumble', nextStep: 'financial_consulting_q4' },
+                '3': { value: 'stability', nextStep: 'financial_consulting_q4' }
+            }
+        },
+
+        financial_consulting_q4: {
+            id: 'financial_consulting_q4',
+            type: 'choice',
+            question: {
+                en: 'Do you need:\n1. Preparing reports for investors\n2. Raise readiness for financing or valuation',
+                ar: 'هل تحتاج إلى:\n1. إعداد تقارير للمستثمرين\n2. رفع جاهزية الشركة للتمويل أو التقييم'
+            },
+            options: {
+                '1': { value: 'investor_reports', nextStep: 'check_next_service' },
+                '2': { value: 'financing_readiness', nextStep: 'check_next_service' }
+            }
+        },
+
+        // -----------------------------
+        // Financial Structuring & Studies
+        // -----------------------------
+        financial_structuring_q1: {
+            id: 'financial_structuring_q1',
+            type: 'choice',
+            question: {
+                en: 'What type of business or project do you have?\n1. Commercial\n2. Service sector\n3. Industrial\n4. Technical / Digital\n5. Other (please specify)',
+                ar: 'ما نوع النشاط أو المشروع لديك؟\n1. تجاري\n2. قطاع خدمي\n3. صناعي\n4. تقني / رقمي\n5. أخرى (اذكر)'
+            },
+            options: {
+                '1': { value: 'commercial', nextStep: 'financial_structuring_q2' },
+                '2': { value: 'service', nextStep: 'financial_structuring_q2' },
+                '3': { value: 'industrial', nextStep: 'financial_structuring_q2' },
+                '4': { value: 'technical', nextStep: 'financial_structuring_q2' },
+                '5': { value: 'other', nextStep: 'financial_structuring_q2' }
+            }
+        },
+
+        financial_structuring_q2: {
+            id: 'financial_structuring_q2',
+            type: 'choice',
+            question: {
+                en: 'How big is your facility?\n1. Individual\n2. Small (< 10 employees)\n3. Medium (10–50 employees)\n4. Large (> 50 employees)',
+                ar: 'ما حجم منشأتك؟\n1. فردية\n2. صغيرة (أقل من 10 موظفين)\n3. متوسطة (10–50 موظف)\n4. كبيرة (أكثر من 50 موظف)'
+            },
+            options: {
+                '1': { value: 'individual', nextStep: 'financial_structuring_q3' },
+                '2': { value: 'small', nextStep: 'financial_structuring_q3' },
+                '3': { value: 'medium', nextStep: 'financial_structuring_q3' },
+                '4': { value: 'large', nextStep: 'financial_structuring_q3' }
+            }
+        },
+
+        financial_structuring_q3: {
+            id: 'financial_structuring_q3',
+            type: 'choice',
+            question: {
+                en: 'What service do you require?\n1. Feasibility study\n2. Restructuring plan\n3. Financial analysis\n4. Cash flow study\n5. Other (please specify)',
+                ar: 'ما الخدمة التي تحتاجها؟\n1. دراسة جدوى\n2. خطة إعادة هيكلة\n3. تحليل مالي للوضع الحالي\n4. دراسة التدفقات النقدية\n5. أخرى (اذكر)'
+            },
+            options: {
+                '1': { value: 'feasibility', nextStep: 'financial_structuring_q4' },
+                '2': { value: 'restructuring_plan', nextStep: 'financial_structuring_q4' },
+                '3': { value: 'financial_analysis', nextStep: 'financial_structuring_q4' },
+                '4': { value: 'cash_flow', nextStep: 'financial_structuring_q4' },
+                '5': { value: 'other_service', nextStep: 'financial_structuring_q4' }
+            }
+        },
+
+        financial_structuring_q4: {
+            id: 'financial_structuring_q4',
+            type: 'choice',
+            question: {
+                en: 'Do you have financial data ready?\n1. Yes, detailed\n2. Partially\n3. No, need to prepare',
+                ar: 'هل لديك بيانات مالية جاهزة؟\n1. نعم، بالتفصيل\n2. جزئياً\n3. لا، نحتاج لإعدادها من الصفر'
+            },
+            options: {
+                '1': { value: 'data_detailed', nextStep: 'financial_structuring_q5' },
+                '2': { value: 'data_partial', nextStep: 'financial_structuring_q5' },
+                '3': { value: 'data_none', nextStep: 'financial_structuring_q5' }
+            }
+        },
+
+        financial_structuring_q5: {
+            id: 'financial_structuring_q5',
+            type: 'choice',
+            question: {
+                en: 'Has a previous study or plan been prepared in the past 2 years?\n1. Yes\n2. No',
+                ar: 'هل تم إعداد دراسة أو خطة مالية خلال آخر سنتين؟\n1. نعم\n2. لا'
+            },
+            options: {
+                '1': { value: 'study_yes', nextStep: 'financial_structuring_q6' },
+                '2': { value: 'study_no', nextStep: 'financial_structuring_q6' }
+            }
+        },
+
+        financial_structuring_q6: {
+            id: 'financial_structuring_q6',
+            type: 'choice',
+            question: {
+                en: 'What is the purpose of the study?\n1. Assess current financial situation\n2. Improve cash flows\n3. Prepare for investment/expansion\n4. Funding/partnership\n5. Other',
+                ar: 'ما هو الهدف من الدراسة أو إعادة الهيكلة؟\n1. تقييم الوضع المالي الحالي\n2. تحسين التدفقات النقدية\n3. تجهيز الشركة للاستثمار أو التوسع\n4. طلب تمويل أو شراكة\n5. أخرى'
+            },
+            options: {
+                '1': { value: 'assessment', nextStep: 'financial_structuring_q7' },
+                '2': { value: 'cash_flows', nextStep: 'financial_structuring_q7' },
+                '3': { value: 'expansion', nextStep: 'financial_structuring_q7' },
+                '4': { value: 'funding', nextStep: 'financial_structuring_q7' },
+                '5': { value: 'other_purpose', nextStep: 'financial_structuring_q7' }
+            }
+        },
+
+        financial_structuring_q7: {
+            id: 'financial_structuring_q7',
+            type: 'choice',
+            question: {
+                en: 'Do you have a specific timeline for completion?\n1. Yes\n2. No',
+                ar: 'هل لديك جدول زمني محدد لإكمال الدراسة؟\n1. نعم\n2. لا'
+            },
+            options: {
+                '1': { value: 'timeline_yes', nextStep: 'financial_structuring_q8' },
+                '2': { value: 'timeline_no', nextStep: 'financial_structuring_q8' }
+            }
+        },
+
+        financial_structuring_q8: {
+            id: 'financial_structuring_q8',
+            type: 'text',
+            question: {
+                en: 'Any additional comments or information that would help us understand your needs?',
+                ar: 'هل لديك ملاحظات أو معلومات إضافية تساعدنا على فهم احتياجاتك بشكل أفضل؟'
+            },
+            nextStep: 'check_next_service'
+        },
+
+        // -----------------------------
+        // Administrative Services
+        // -----------------------------
+        admin_services_q1: {
+            id: 'admin_services_q1',
+            type: 'choice',
+            question: {
+                en: 'Do you need:\n1. Internal operations management\n2. Organizing contracts & documents\n3. Preparation of policies & procedures',
+                ar: 'هل تحتاج إلى:\n1. إدارة العمليات الداخلية\n2. تنظيم العقود والمستندات\n3. إعداد السياسات والإجراءات'
+            },
+            options: {
+                '1': { value: 'internal_ops', nextStep: 'admin_services_q2' },
+                '2': { value: 'contracts_docs', nextStep: 'admin_services_q2' },
+                '3': { value: 'policies_procedures', nextStep: 'admin_services_q2' }
+            }
+        },
+
+        admin_services_q2: {
+            id: 'admin_services_q2',
+            type: 'text',
+            question: {
+                en: 'How many employees are there currently?',
+                ar: 'كم عدد الموظفين حالياً؟'
+            },
+            nextStep: 'admin_services_q3'
+        },
+
+        admin_services_q3: {
+            id: 'admin_services_q3',
+            type: 'choice',
+            question: {
+                en: 'Do you have an internal system for managing employees?\n1. Yes\n2. No',
+                ar: 'هل لديك نظام داخلي لإدارة الموظفين؟\n1. نعم\n2. لا'
+            },
+            options: {
+                '1': { value: 'system_yes', nextStep: 'admin_services_q4' },
+                '2': { value: 'system_no', nextStep: 'admin_services_q4' }
+            }
+        },
+
+        admin_services_q4: {
+            id: 'admin_services_q4',
+            type: 'choice',
+            question: {
+                en: 'Do you require assistance in complying with government regulations (Qiwa, Madad, Zakat, Taxes)?\n1. Yes\n2. No',
+                ar: 'هل تحتاج إلى مساعدة للامتثال للأنظمة الحكومية (قوى، مدد، الزكاة، الضرائب)؟\n1. نعم\n2. لا'
+            },
+            options: {
+                '1': { value: 'gov_compliance_yes', nextStep: 'check_next_service' },
+                '2': { value: 'gov_compliance_no', nextStep: 'check_next_service' }
+            }
+        },
 
         // -----------------------------
         // Completion Step with user info
@@ -1200,39 +1595,32 @@ export const enhancedQuestionnaire =
             id: 'completion_name',
             type: 'text',
             question: {
-                en: 'Please provide your full name:'
+                en: 'Please provide your full name:',
+                ar: 'يرجى إدخال اسمك الكامل:'
             },
             nextStep: 'completion_email'
         },
-
 
         completion_email: {
             id: 'completion_email',
             type: 'text',
             question: {
-                en: 'Please provide your email address:'
+                en: 'Please provide your email address:',
+                ar: 'يرجى إدخال بريدك الإلكتروني:'
             },
             nextStep: 'completion_company'
         },
-
 
         completion_company: {
             id: 'completion_company',
             type: 'text',
             question: {
-                en: 'Please provide your company name (or type "none"):'
+                en: 'Please provide your company name (or type "none"):',
+                ar: 'يرجى إدخال اسم شركتك (أو اكتب "لا يوجد"):'
             },
-            nextStep: 'completion'
+            nextStep: 'confirmation_review'
         },
 
-
-        completion: {
-            id: 'completion',
-            type: 'completion',
-            message: {
-                en: '✅ Thank you for your time! We will get in touch with you soon.'
-            }
-        },
         confirmation_name: {
             id: "confirmation_name",
             type: "text",
@@ -1263,8 +1651,17 @@ export const enhancedQuestionnaire =
         confirmation_review: {
             id: "confirmation_review",
             type: "completion", // special step
+            question: {
+                en: "You’ve reached the final step.\n\nCommands available:\n- confirm → submit\n- restart → start over\n- report → view your answers",
+                ar: "لقد وصلت إلى الخطوة الأخيرة.\n\nالأوامر المتاحة:\n- confirm → للتقديم\n- restart → للبدء من جديد\n- report → لعرض إجاباتك"
+            }
+        },
+        completion: {
+            id: 'completion',
+            type: 'completion',
             message: {
-                en: "Here’s a summary of your answers:\n\n{{report}}\n\n✅ Reply 'confirm' to submit or 'restart' to redo."
+                en: '✅ Thank you for your time! We will get in touch with you soon.',
+                ar: '✅ شكراً لك! سنتواصل معك قريباً.'
             }
         },
         service_done_prompt: {
