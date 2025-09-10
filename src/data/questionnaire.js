@@ -1114,7 +1114,7 @@ export const enhancedQuestionnaire =
             type: 'text',
             question: {
                 en: 'What kind of processes would you like to automate? (e.g., leave requests, approvals, daily tasks)',
-                ar: 'ما هي العمليات التي ترغب بتحليلها؟ (مثل طلبات الإجازة، الموافقات، المهام اليومية)'
+                ar: 'ما هي العمليات التي ترغب باتمتتها ؟ (مثل طلبات الإجازة، الموافقات، المهام اليومية)'
             },
             nextStep: 'automation_tools',
             conditional: {
@@ -1127,7 +1127,8 @@ export const enhancedQuestionnaire =
             id: 'automation_tools',
             type: 'text',
             question: {
-                en: 'Are you currently using management tools (such as Trello, Notion, Monday, Zoho)? Please specify or type "none".'
+                en: 'Are you currently using management tools (such as Trello, Notion, Monday, Zoho)? Please specify or type "none".',
+                ar: 'هل تستخدم حاليًا أدوات إدارة (مثل Trello أو Notion أو Monday أو Zoho)؟ يرجى التحديد أو اكتب "لا يوجد".'
             },
             nextStep: 'automation_approach'
         },
@@ -1136,7 +1137,8 @@ export const enhancedQuestionnaire =
             id: 'automation_approach',
             type: 'text',
             question: {
-                en: 'Would you prefer to build the system from scratch or use customized off-the-shelf solutions?'
+                en: 'Would you prefer to build the system from scratch or use customized off-the-shelf solutions?',
+                ar: 'هل تفضل بناء النظام من الصفر أم استخدام حلول جاهزة مخصصة؟'
             },
             nextStep: 'automation_goals'
         },
@@ -1145,7 +1147,8 @@ export const enhancedQuestionnaire =
             id: 'automation_goals',
             type: 'choice',
             question: {
-                en: 'What are your goals for automation?\n1. Reduce manual effort\n2. Improve efficiency\n3. Minimize errors\n4. Improve employee experience\n5. All of the above'
+                en: 'What are your goals for automation?\n1. Reduce manual effort\n2. Improve efficiency\n3. Minimize errors\n4. Improve employee experience\n5. All of the above',
+                ar: 'ما هي أهدافك من الأتمتة؟\n1. تقليل الجهد اليدوي\n2. تحسين الكفاءة\n3. تقليل الأخطاء\n4. تحسين تجربة الموظفين\n5. جميع ما سبق'
             },
             options: {
                 '1': { value: ['reduce_manual'], nextStep: 'check_next_service' },
@@ -1161,7 +1164,8 @@ export const enhancedQuestionnaire =
             id: 'app_questions',
             type: 'choice',
             question: {
-                en: 'What kind of application would you like to develop?\n1. Mobile app (iOS/Android)\n2. Web App\n3. Both'
+                en: 'What kind of application would you like to develop?\n1. Mobile app (iOS/Android)\n2. Web App\n3. Both',
+                ar: 'ما نوع التطبيق الذي ترغب في تطويره؟\n1. تطبيق جوال (iOS/Android)\n2. تطبيق ويب\n3. كلاهما'
             },
             options: {
                 '1': { value: ['mobile_app'], nextStep: 'app_purpose' },
@@ -1178,7 +1182,8 @@ export const enhancedQuestionnaire =
             id: 'app_purpose',
             type: 'choice',
             question: {
-                en: 'What is the purpose of the application?\n1. Commercial (sales, reservations, customer follow-up)\n2. Internal service\n3. Educational or informative\n4. Other'
+                en: 'What is the purpose of the application?\n1. Commercial (sales, reservations, customer follow-up)\n2. Internal service\n3. Educational or informative\n4. Other',
+                ar: 'ما هو الغرض من التطبيق؟\n1. تجاري (مبيعات، حجوزات، متابعة العملاء)\n2. خدمة داخلية\n3. تعليمي أو تثقيفي\n4. أخرى'
             },
             options: {
                 '1': { value: 'commercial', nextStep: 'app_idea' },
@@ -1192,8 +1197,10 @@ export const enhancedQuestionnaire =
             id: 'app_idea',
             type: 'text',
             question: {
-                en: 'Do you have a complete idea, or shall we start from scratch? Please describe your concept.'
-            },
+                en: 'Do you have a complete idea, or shall we start from scratch? Please describe your concept.',
+                ar: 'هل لديك فكرة مكتملة، أم نبدأ من الصفر؟ يرجى وصف فكرتك.'
+            }
+            ,
             nextStep: 'app_similar'
         },
 
@@ -1201,8 +1208,10 @@ export const enhancedQuestionnaire =
             id: 'app_similar',
             type: 'text',
             question: {
-                en: 'Are there any similar applications on the market? Please mention them if available or type "none".'
-            },
+                en: 'Are there any similar applications on the market? Please mention them if available or type "none".',
+                ar: 'هل هناك تطبيقات مشابهة في السوق؟ يرجى ذكرها إن وجدت أو اكتب "لا يوجد".'
+            }
+            ,
             nextStep: 'app_language'
         },
 
@@ -1210,8 +1219,10 @@ export const enhancedQuestionnaire =
             id: 'app_language',
             type: 'text',
             question: {
-                en: 'Do you prefer a specific language for the interface? (e.g., Arabic, English, both)'
-            },
+                en: 'Do you prefer a specific language for the interface? (e.g., Arabic, English, both)',
+                ar: 'هل تفضل لغة معينة للواجهة؟ (مثلاً: العربية، الإنجليزية، أو كلاهما)'
+            }
+            ,
             nextStep: 'app_login'
         },
 
@@ -1219,8 +1230,10 @@ export const enhancedQuestionnaire =
             id: 'app_login',
             type: 'choice',
             question: {
-                en: 'Does the application require user login?\n1. Yes\n2. No'
-            },
+                en: 'Does the application require user login?\n1. Yes\n2. No',
+                ar: 'هل يحتاج التطبيق لتسجيل دخول للمستخدمين؟\n1. نعم\n2. لا'
+            }
+            ,
             options: {
                 '1': { value: 'yes', nextStep: 'app_integrations' },
                 '2': { value: 'no', nextStep: 'app_integrations' }
@@ -1231,7 +1244,8 @@ export const enhancedQuestionnaire =
             id: 'app_integrations',
             type: 'text',
             question: {
-                en: 'Does the app need to connect with payment gateways, messaging services, or external websites? Please specify or type "none".'
+                en: 'Does the app need to connect with payment gateways, messaging services, or external websites? Please specify or type "none".',
+                ar: 'هل يحتاج التطبيق للاتصال ببوابات الدفع أو خدمات الرسائل أو مواقع خارجية؟ يرجى التحديد أو اكتب "لا يوجد".'
             },
             nextStep: 'check_next_service'
         },
@@ -1241,8 +1255,10 @@ export const enhancedQuestionnaire =
             id: 'support_questions',
             type: 'choice',
             question: {
-                en: 'What kind of technical support do you need?\n1. Website monitoring and maintenance\n2. Support for existing system/application\n3. Emergency response\n4. All of the above'
-            },
+                en: 'What kind of technical support do you need?\n1. Website monitoring and maintenance\n2. Support for existing system/application\n3. Emergency response\n4. All of the above',
+                ar: 'ما نوع الدعم الفني الذي تحتاجه؟\n1. مراقبة وصيانة الموقع الإلكتروني\n2. دعم للنظام/التطبيق الحالي\n3. الاستجابة للطوارئ\n4. جميع ما سبق'
+            }
+            ,
             options: {
                 '1': { value: ['website_maintenance'], nextStep: 'support_hours' },
                 '2': { value: ['system_support'], nextStep: 'support_hours' },
@@ -1259,8 +1275,10 @@ export const enhancedQuestionnaire =
             id: 'support_hours',
             type: 'choice',
             question: {
-                en: 'What are your preferred support hours?\n1. During working hours\n2. 24/7\n3. Flexible'
-            },
+                en: 'What are your preferred support hours?\n1. During working hours\n2. 24/7\n3. Flexible',
+                ar: 'ما هي ساعات الدعم المفضلة لديك؟\n1. خلال ساعات العمل\n2. على مدار الساعة\n3. مرنة'
+            }
+            ,
             options: {
                 '1': { value: 'working_hours', nextStep: 'existing_system_support' },
                 '2': { value: '24_7', nextStep: 'existing_system_support' },
@@ -1272,8 +1290,10 @@ export const enhancedQuestionnaire =
             id: 'existing_system_support',
             type: 'choice',
             question: {
-                en: 'Do you have an existing system or website that needs support?\n1. Yes\n2. No'
-            },
+                en: 'Do you have an existing system or website that needs support?\n1. Yes\n2. No',
+                ar: 'هل لديك نظام أو موقع موجود يحتاج إلى دعم؟\n1. نعم\n2. لا'
+            }
+            ,
             options: {
                 '1': { value: 'yes', nextStep: 'support_problems' },
                 '2': { value: 'no', nextStep: 'check_next_service' }
@@ -1284,7 +1304,8 @@ export const enhancedQuestionnaire =
             id: 'support_problems',
             type: 'choice',
             question: {
-                en: 'What problems are you currently facing?\n1. Slow performance/Errors\n2. Integration problems\n3. Delays in updates\n4. Multiple issues'
+                en: 'What problems are you currently facing?\n1. Slow performance/Errors\n2. Integration problems\n3. Delays in updates\n4. Multiple issues',
+                ar: 'ما هي المشكلات التي تواجهها حالياً؟\n1. بطء الأداء/أخطاء\n2. مشاكل في التكامل\n3. تأخيرات في التحديثات\n4. عدة مشكلات'
             },
             options: {
                 '1': { value: ['slow_errors'], nextStep: 'check_next_service' },
