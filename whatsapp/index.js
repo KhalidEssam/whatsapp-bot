@@ -91,7 +91,7 @@ export async function connectToWhatsApp() {
       setTimeout(async () => {
         try {
           const result = await chatbotService.processMessage(sender, textMessage);
-          console.log("✅ Replied to", sender, "| Reply:", result);
+          //console.log("✅ Replied to", sender, "| Reply:", result);
 
           if (result.reply || result.reply !== null) {
             await sock.sendMessage(sender, { text: result.reply });

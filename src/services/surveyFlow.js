@@ -9,7 +9,7 @@ function handleSurveyFlow(session, message, lang = "en") {
     if (!message) {
         // If multiQueue has items, process the next one
         if (session.multiQueue && session.multiQueue.length > 0) {
-            console.log("🔍 System-triggered next step or check_next_service No of remaining services. ", session.multiQueue.length);
+            //console.log("🔍 System-triggered next step or check_next_service No of remaining services. ", session.multiQueue.length);
 
             session.currentStep = session.multiQueue.shift();
             const nextQuestion = questionnaireHelper.getQuestion(session.currentStep);
@@ -23,7 +23,7 @@ function handleSurveyFlow(session, message, lang = "en") {
             }
         }
 
-        console.log("🔍 Queue empty → moving to completion steps");
+        //console.log("🔍 Queue empty → moving to completion steps");
 
         // Queue empty → go to completion_name FIRST
         session.currentStep = "completion_name";
@@ -53,11 +53,11 @@ function handleSurveyFlow(session, message, lang = "en") {
 
     // 🔹 Special handler for system step: check_next_service
     if (session.currentStep === "check_next_service") {
-        console.log("🟢 System reached check_next_service");
+        //console.log("🟢 System reached check_next_service");
 
         if (session.multiQueue && session.multiQueue.length > 0) {
             const nextStep = session.multiQueue.shift();
-            console.log("➡️ Moving to next step from queue:", nextStep);
+            //console.log("➡️ Moving to next step from queue:", nextStep);
 
             session.currentStep = nextStep;
             const nextQuestion = questionnaireHelper.getQuestion(nextStep);
@@ -72,12 +72,12 @@ function handleSurveyFlow(session, message, lang = "en") {
         }
 
         // ✅ If no more steps → jump to confirmation
-        console.log("🟢 Queue empty → jumping to confirmation");
+        //console.log("🟢 Queue empty → jumping to confirmation");
         session.currentStep = "confirmation_review";
         const confirmQuestion = questionnaireHelper.getQuestion("confirmation_review");
         const report = reportGenerator.generateReport(session);
-        console.log("🟢 Report before replace:", report);
-        console.log("🟢 Confirm Question Text:", confirmQuestion.message[lang]);
+       // console.log("🟢 Report before replace:", report);
+       // console.log("🟢 Confirm Question Text:", confirmQuestion.message[lang]);
 
         return {
             reply: confirmQuestion.message[lang].replace("{{report}}", report),
@@ -119,7 +119,7 @@ function handleSurveyFlow(session, message, lang = "en") {
 
         // 🟢 FIX: If next step is check_next_service, trigger system handler immediately
         if (session.currentStep === "check_next_service") {
-            console.log("🟢 Directly triggering check_next_service after last question");
+           // console.log("🟢 Directly triggering check_next_service after last question");
             return handleSurveyFlow(session, null, lang);
         }
 
@@ -174,11 +174,90 @@ function handleSurveyFlow(session, message, lang = "en") {
 }
 
 // 🔹 Helper for handling choice with multiple sub-services
+// function handleChoiceWithMultiple(session, currentQuestion, message, lang) {
+//     //console.log("🔍 handleChoiceWithMultiple called, message:", message);
+//     if (!message) {
+//         return {
+//             reply: currentQuestion.question?.[lang] || currentQuestion.message?.[lang],
+//             step: currentQuestion.id,
+//             type: currentQuestion.type
+//         };
+//     }
+
+//     const option = currentQuestion.options[message];
+//     if (!option) {
+//         return {
+//             reply: "❌ Invalid option. Please reply with a valid number.",
+//             question: currentQuestion.question?.[lang]
+//         };
+//     }
+
+//     if (option.value === "multiple") {
+//         // FIXED: Use option.nextStep instead of currentQuestion.nextStep
+//         session.awaitingMultiInput = option.nextStep;
+//         return {
+//             reply:
+//                 (currentQuestion.question?.[session.lang] || "Please select all relevant options separated by commas (e.g., 1,3,4):")
+//                     .split("\n")
+//                     .slice(0, -1) // remove last line
+//                     .join("\n"),
+//             step: currentQuestion.id,
+//             type: "multi_choice_input"
+//         };
+
+//     }
+
+//     session.answers.push({
+//         step: currentQuestion.id,
+//         value: option.value,
+//         service: currentQuestion.service
+//     });
+//     session.currentStep = option.nextStep || currentQuestion.nextStep;
+
+//     // 🟢 FIX: If next step is check_next_service, trigger system handler immediately
+//     if (session.currentStep === "check_next_service") {
+//        // console.log("🟢 Directly triggering check_next_service after last choice");
+//         return handleSurveyFlow(session, null, lang);
+//     }
+
+//     const nextQuestion = questionnaireHelper.getQuestion(session.currentStep);
+//     return {
+//         reply: nextQuestion?.question?.[lang] || nextQuestion?.message?.[lang],
+//         step: nextQuestion?.id,
+//         type: nextQuestion?.type
+//     };
+
+// }
+
+
+// 🔹 Helper for formatting question + options
+function formatQuestionWithOptions(question, lang) {
+    let text = question.question?.[lang] || question.message?.[lang] || "";
+
+    if (question.type === "choice" && question.options) {
+        // check if the text already contains "1.", "2.", etc.
+        const hasNumbers = Object.keys(question.options).some(
+            (key) => text.includes(`${key}.`)
+        );
+
+        if (!hasNumbers) {
+            const opts = Object.entries(question.options)
+                .map(([key, opt]) => `${key}. ${opt.value}`)
+                .join("\n");
+
+            text += "\n" + opts;
+        }
+    }
+
+    return text;
+}
+
+
+// 🔹 Handle choice with multiple sub-services
 function handleChoiceWithMultiple(session, currentQuestion, message, lang) {
-    console.log("🔍 handleChoiceWithMultiple called, message:", message);
     if (!message) {
         return {
-            reply: currentQuestion.question?.[lang] || currentQuestion.message?.[lang],
+            reply: formatQuestionWithOptions(currentQuestion, lang),
             step: currentQuestion.id,
             type: currentQuestion.type
         };
@@ -187,8 +266,9 @@ function handleChoiceWithMultiple(session, currentQuestion, message, lang) {
     const option = currentQuestion.options[message];
     if (!option) {
         return {
-            reply: "❌ Invalid option. Please reply with a valid number.",
-            question: currentQuestion.question?.[lang]
+            reply: "❌ Invalid option. Please reply with a valid number.\n\n" + formatQuestionWithOptions(currentQuestion, lang),
+            step: currentQuestion.id,
+            type: currentQuestion.type
         };
     }
 
@@ -204,7 +284,6 @@ function handleChoiceWithMultiple(session, currentQuestion, message, lang) {
             step: currentQuestion.id,
             type: "multi_choice_input"
         };
-
     }
 
     session.answers.push({
@@ -216,24 +295,25 @@ function handleChoiceWithMultiple(session, currentQuestion, message, lang) {
 
     // 🟢 FIX: If next step is check_next_service, trigger system handler immediately
     if (session.currentStep === "check_next_service") {
-        console.log("🟢 Directly triggering check_next_service after last choice");
         return handleSurveyFlow(session, null, lang);
     }
 
     const nextQuestion = questionnaireHelper.getQuestion(session.currentStep);
     return {
-        reply: nextQuestion?.question?.[lang] || nextQuestion?.message?.[lang],
+        reply: formatQuestionWithOptions(nextQuestion, lang),
         step: nextQuestion?.id,
         type: nextQuestion?.type
     };
-
 }
+
+
+
 
 // 🔹 Helper for handling user input of multi-choice numbers - COMPLETELY REWRITTEN
 
 // 🔹 Helper for handling user input of multi-choice numbers - CORRECTED FOR NEW STRUCTURE
 function handleMultiChoiceInput(session, message, lang) {
-    console.log('🔍 handleMultiChoiceInput:', session.awaitingMultiInput, message);
+    //('🔍 handleMultiChoiceInput:', session.awaitingMultiInput, message);
 
 
     if (!session.awaitingMultiInput || !message) {
@@ -243,7 +323,7 @@ function handleMultiChoiceInput(session, message, lang) {
     const multiStepId = session.awaitingMultiInput;
     const multiQuestion = questionnaireHelper.getQuestion(multiStepId);
 
-    console.log('🔍 Multi question:', multiQuestion?.id, multiQuestion?.options);
+    //console.log('🔍 Multi question:', multiQuestion?.id, multiQuestion?.options);
 
     if (!multiQuestion || !multiQuestion.options) {
         return { reply: "⚠️ No options available.", step: multiStepId };

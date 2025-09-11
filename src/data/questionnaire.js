@@ -758,30 +758,30 @@ export const enhancedQuestionnaire =
             nextStep: 'visual_identity_logo_type'
         },
 
+        visual_identity_logo_samples: {
+            id: 'visual_identity_logo_samples',
+            type: 'choice',
+            question: {
+                en: 'Do you have logo samples you like?\n1. upload_files\n2. provide_links',
+                ar: 'هل لديك نماذج شعارات تعجبك؟\n1. رفع ملفات\n2. تزويد روابط'
+            },
+            options: {
+                '1': { value: 'upload_files', nextStep: 'visual_identity_colors' }, // رفع ملفات
+                '2': { value: 'provide_links', nextStep: 'visual_identity_colors' } // تزويد روابط
+            }
+        },
+
         visual_identity_logo_type: {
             id: 'visual_identity_logo_type',
             type: 'choice',
             question: {
-                en: 'What type of logo do you prefer?',
-                ar: 'ما نوع الشعار الذي تفضله؟'
+                en: 'What type of logo do you prefer?\n1. symbolic_icon\n2. text\n3. mixed_text_icon',
+                ar: 'ما نوع الشعار الذي تفضله؟\n1. شعار أيقوني/رمزي\n2. شعار نصي\n3. شعار نصي + أيقونة'
             },
             options: {
                 '1': { value: 'symbolic_icon', nextStep: 'visual_identity_logo_samples' }, // شعار أيقوني/رمزي
                 '2': { value: 'text', nextStep: 'visual_identity_logo_samples' },          // شعار نصي
                 '3': { value: 'mixed_text_icon', nextStep: 'visual_identity_logo_samples' } // شعار نصي + أيقونة
-            }
-        },
-
-        visual_identity_logo_samples: {
-            id: 'visual_identity_logo_samples',
-            type: 'choice',
-            question: {
-                en: 'Do you have logo samples you like?',
-                ar: 'هل لديك نماذج شعارات تعجبك؟'
-            },
-            options: {
-                '1': { value: 'upload_files', nextStep: 'visual_identity_colors' }, // رفع ملفات
-                '2': { value: 'provide_links', nextStep: 'visual_identity_colors' } // تزويد روابط
             }
         },
 

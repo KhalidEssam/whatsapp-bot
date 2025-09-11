@@ -17,6 +17,8 @@ async function processMessage(userId, message) {
     let session = await sessionManager.getSession(userId);
     const normalized = message?.toLowerCase().trim();
 
+    console.log(session);
+
     // 🟢 Restart handling
     if (normalized === "restart") {
         await sessionManager.resetSession(userId);
@@ -133,7 +135,7 @@ async function processMessage(userId, message) {
                 lastReport: reportText,
             });
 
-            console.log("✅ Report + session update saved for:", userId);
+            //console.log("✅ Report + session update saved for:", userId);
         } catch (err) {
             console.error("❌ Failed to save report/session:", err);
         }

@@ -12,16 +12,16 @@ function getSubServicesArray(stepId) {
 
 
 function getNextService(session) {
-    console.log('🔍 getNextService called, multiQueue:', session.multiQueue);
+    //console.log('🔍 getNextService called, multiQueue:', session.multiQueue);
 
     // If there are still items in the multiQueue, return the next one
     if (session.multiQueue && session.multiQueue.length > 0) {
         const nextStep = session.multiQueue.shift();
-        console.log('🔍 Next step from queue:', nextStep);
+        //console.log('🔍 Next step from queue:', nextStep);
         return nextStep;
     }
 
-    console.log('🔍 No more items in queue, going to confirmation');
+    //console.log('🔍 No more items in queue, going to confirmation');
     // If queue is empty, go to confirmation
     return "confirmation";
 }
