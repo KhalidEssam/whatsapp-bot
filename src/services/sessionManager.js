@@ -67,4 +67,19 @@ async function updateSession(userId, updates) {
     return updated;
 }
 
+const SESSION_TTL = 1000 * 60 * 30; // 30 mins
+
+function cleanupSessions() {
+    const now = Date.now();
+    for (const [userId, session] of Object.entries(userSessions)) {
+        if (now - new Date(session.lastActivity || session.createdAt).getTime() > SESSION_TTL) {
+            delete userSessions[userId];
+        }
+    }
+}
+
+// Run cleanup every 10 mins
+setInterval(cleanupSessions, 1000 * 60 * 10);
+
+
 export default { createNewSession, getSession, resetSession, updateSession };

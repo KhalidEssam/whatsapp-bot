@@ -1,6 +1,7 @@
 // src/services/handleSurveyFlow.js
 import questionnaireHelper from "./questionnaireHelper.js";
 import reportGenerator from "./reportGenerator.js";
+import {sendManagerReport} from "../mailer/MailSender.js";
 
 // 🔹 Main survey flow handler
 function handleSurveyFlow(session, message, lang = "en") {
@@ -22,8 +23,6 @@ function handleSurveyFlow(session, message, lang = "en") {
                 };
             }
         }
-
-        //console.log("🔍 Queue empty → moving to completion steps");
 
         // Queue empty → go to completion_name FIRST
         session.currentStep = "completion_name";
@@ -53,11 +52,9 @@ function handleSurveyFlow(session, message, lang = "en") {
 
     // 🔹 Special handler for system step: check_next_service
     if (session.currentStep === "check_next_service") {
-        //console.log("🟢 System reached check_next_service");
 
         if (session.multiQueue && session.multiQueue.length > 0) {
             const nextStep = session.multiQueue.shift();
-            //console.log("➡️ Moving to next step from queue:", nextStep);
 
             session.currentStep = nextStep;
             const nextQuestion = questionnaireHelper.getQuestion(nextStep);
@@ -72,12 +69,10 @@ function handleSurveyFlow(session, message, lang = "en") {
         }
 
         // ✅ If no more steps → jump to confirmation
-        //console.log("🟢 Queue empty → jumping to confirmation");
         session.currentStep = "confirmation_review";
         const confirmQuestion = questionnaireHelper.getQuestion("confirmation_review");
         const report = reportGenerator.generateReport(session);
-       // console.log("🟢 Report before replace:", report);
-       // console.log("🟢 Confirm Question Text:", confirmQuestion.message[lang]);
+
 
         return {
             reply: confirmQuestion.message[lang].replace("{{report}}", report),
@@ -91,17 +86,47 @@ function handleSurveyFlow(session, message, lang = "en") {
 
     // 🔹 Handle confirmation review
     if (session.currentStep === "confirmation_review") {
-        if (message.toLowerCase() === "confirm") {
-            return { reply: "✅ Thank you! Your responses have been submitted.", answers: session.answers, done: true };
-        } else if (message.toLowerCase() === "restart") {
+        const msg = message.toLowerCase().trim();
+
+        if (msg === "1" || msg === "confirm") {
+
+            sendManagerReport({
+                userId: session.userId,
+                name: session.answers.find(a => a.step === "completion_name").value,
+                report: reportGenerator.generateReport(session),
+            });
+
+            
+            return {
+                reply: "✅ Thank you! Your responses have been submitted.",
+                answers: session.answers,
+                done: true
+            };
+        }
+        else if (msg === "2" || msg === "restart") {
             session.answers = [];
             session.currentStep = "serviceA";
             const restartQuestion = questionnaireHelper.getQuestion(session.currentStep);
-            return { reply: restartQuestion.question[lang], step: session.currentStep };
-        } else {
-            return { reply: "❌ Please reply with 'confirm' or 'restart'.", step: "confirmation_review", type: "review" };
+            return {
+                reply: restartQuestion.question[lang],
+                step: session.currentStep
+            };
+        }
+        else if (msg === "3" || msg === "report") {
+            return {
+                reply: `📝 Here are your answers so far:\n${JSON.stringify(session.answers, null, 2)}`,
+                step: "confirmation_review"
+            };
+        }
+        else {
+            return {
+                reply: "❌ Invalid choice.\n\nPlease reply with:\n1 → confirm\n2 → restart\n3 → report",
+                step: "confirmation_review",
+                type: "review"
+            };
         }
     }
+
 
     // 🔹 Handle normal questions
     if (currentQuestion.type === "choice") {
@@ -119,7 +144,6 @@ function handleSurveyFlow(session, message, lang = "en") {
 
         // 🟢 FIX: If next step is check_next_service, trigger system handler immediately
         if (session.currentStep === "check_next_service") {
-           // console.log("🟢 Directly triggering check_next_service after last question");
             return handleSurveyFlow(session, null, lang);
         }
 
@@ -172,63 +196,6 @@ function handleSurveyFlow(session, message, lang = "en") {
         };
     }
 }
-
-// 🔹 Helper for handling choice with multiple sub-services
-// function handleChoiceWithMultiple(session, currentQuestion, message, lang) {
-//     //console.log("🔍 handleChoiceWithMultiple called, message:", message);
-//     if (!message) {
-//         return {
-//             reply: currentQuestion.question?.[lang] || currentQuestion.message?.[lang],
-//             step: currentQuestion.id,
-//             type: currentQuestion.type
-//         };
-//     }
-
-//     const option = currentQuestion.options[message];
-//     if (!option) {
-//         return {
-//             reply: "❌ Invalid option. Please reply with a valid number.",
-//             question: currentQuestion.question?.[lang]
-//         };
-//     }
-
-//     if (option.value === "multiple") {
-//         // FIXED: Use option.nextStep instead of currentQuestion.nextStep
-//         session.awaitingMultiInput = option.nextStep;
-//         return {
-//             reply:
-//                 (currentQuestion.question?.[session.lang] || "Please select all relevant options separated by commas (e.g., 1,3,4):")
-//                     .split("\n")
-//                     .slice(0, -1) // remove last line
-//                     .join("\n"),
-//             step: currentQuestion.id,
-//             type: "multi_choice_input"
-//         };
-
-//     }
-
-//     session.answers.push({
-//         step: currentQuestion.id,
-//         value: option.value,
-//         service: currentQuestion.service
-//     });
-//     session.currentStep = option.nextStep || currentQuestion.nextStep;
-
-//     // 🟢 FIX: If next step is check_next_service, trigger system handler immediately
-//     if (session.currentStep === "check_next_service") {
-//        // console.log("🟢 Directly triggering check_next_service after last choice");
-//         return handleSurveyFlow(session, null, lang);
-//     }
-
-//     const nextQuestion = questionnaireHelper.getQuestion(session.currentStep);
-//     return {
-//         reply: nextQuestion?.question?.[lang] || nextQuestion?.message?.[lang],
-//         step: nextQuestion?.id,
-//         type: nextQuestion?.type
-//     };
-
-// }
-
 
 // 🔹 Helper for formatting question + options
 function formatQuestionWithOptions(question, lang) {

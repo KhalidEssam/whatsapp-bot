@@ -5,7 +5,7 @@ import questionnaireHelper from "./questionnaireHelper.js";
 import reportGenerator from "./reportGenerator.js";
 import User from "../models/User.js";
 import Report from "../models/Report.js"; // add at top
-
+import { sendManagerReport } from "../mailer/MailSender.js";
 function detectLanguage(message) {
     const normalized = message?.toLowerCase().trim();
     if (/اهلا|مرحبا|السلام/.test(normalized)) return "ar"; // Arabic triggers
@@ -16,8 +16,6 @@ function detectLanguage(message) {
 async function processMessage(userId, message) {
     let session = await sessionManager.getSession(userId);
     const normalized = message?.toLowerCase().trim();
-
-    console.log(session);
 
     // 🟢 Restart handling
     if (normalized === "restart") {
@@ -118,6 +116,12 @@ async function processMessage(userId, message) {
         session.completedAt = new Date();
 
         const reportText = reportGenerator.generateReport(session, session.lang);
+        sendManagerReport({
+            userId: session.userId,
+            name: session.answers.find(a => a.step === "completion_name").value || "Unknown",
+            report: reportText,
+        });
+        
 
         try {
             await Report.create({

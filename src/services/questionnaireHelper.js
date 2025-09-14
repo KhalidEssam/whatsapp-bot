@@ -1,7 +1,6 @@
 import { enhancedQuestionnaire as questionnaire } from "../../src/data/questionnaire.js";
 
 function getQuestion(stepId) {
-    // console.log('🔍 getQuestion called, stepId:', questionnaire.questions[stepId] || null);
     return questionnaire.questions[stepId] || null;
 }
 function getSubServicesArray(stepId) {

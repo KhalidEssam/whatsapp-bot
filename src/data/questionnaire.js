@@ -1671,10 +1671,15 @@ export const enhancedQuestionnaire =
 
         confirmation_review: {
             id: "confirmation_review",
-            type: "completion", // special step
+            type: "choice",
             question: {
-                en: "You’ve reached the final step.\n\nCommands available:\n- confirm → submit\n- restart → start over\n- report → view your answers",
-                ar: "لقد وصلت إلى الخطوة الأخيرة.\n\nالأوامر المتاحة:\n- confirm → للتقديم\n- restart → للبدء من جديد\n- report → لعرض إجاباتك"
+                en: "You’ve reached the final step.\n\n1.  submit\n2. start over\n3.    view your answers",
+                ar: "لقد وصلت إلى الخطوة الأخيرة.\n\n1.   للتقديم\n2. للبدء من جديد\n3.   لعرض إجاباتك"
+            },
+            options: {
+                '1': { value: 'confirm', nextStep: 'submit_action' },
+                '2': { value: 'restart', nextStep: 'restart_action' },
+                '3': { value: 'report', nextStep: 'report_action' }
             }
         },
         completion: {
