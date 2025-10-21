@@ -1,18 +1,17 @@
-// whatsapp/index.js - FIXED VERSION
 import makeWASocket, {
   useMultiFileAuthState,
-  DisconnectReason
-} from "baileys";
+  DisconnectReason,
+  fetchLatestBaileysVersion
+} from "@whiskeysockets/baileys";
 import { Boom } from "@hapi/boom";
 import qrcode from "qrcode-terminal";
 import chatbotService from "../src/services/chatbotService.js";
 
-let isConnecting = false; // Prevent multiple connection attempts
-let sock = null; // store global socket instance
+let isConnecting = false;
+let sock = null;
 
 export async function connectToWhatsApp() {
   if (isConnecting) {
-    //console.log("⚠️ Connection already in progress, skipping...");
     return sock;
   }
 
@@ -20,12 +19,38 @@ export async function connectToWhatsApp() {
 
   try {
     const { state, saveCreds } = await useMultiFileAuthState("auth_info");
+    const { version } = await fetchLatestBaileysVersion();
 
     sock = makeWASocket({
+      version,
       auth: state,
       printQRInTerminal: false,
       browser: ["WhatsApp Bot", "Chrome", "1.0.0"],
       connectTimeoutMs: 60_000,
+      defaultQueryTimeoutMs: 60_000,
+      keepAliveIntervalMs: 30_000,
+      markOnlineOnConnect: true,
+      syncFullHistory: false,
+      // FIX: Remove or use proper Pino logger
+      logger: {
+        level: 'silent',
+        // Add the child method
+        child: () => ({
+          level: 'silent',
+          trace: () => { },
+          debug: () => { },
+          info: () => { },
+          warn: () => { },
+          error: () => { },
+          fatal: () => { }
+        }),
+        trace: () => { },
+        debug: () => { },
+        info: () => { },
+        warn: () => { },
+        error: () => { },
+        fatal: () => { }
+      }
     });
 
     sock.ev.on("creds.update", saveCreds);
@@ -36,37 +61,32 @@ export async function connectToWhatsApp() {
       if (qr) {
         console.log("📱 Scan this QR code:");
         qrcode.generate(qr, { small: true });
-
-        // Also print a copyable link
-        console.log("\n🔗 Copy this QR string into any online QR generator:");
+        console.log("\n🔗 Or use this link:");
         console.log(`https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(qr)}\n`);
       }
-
 
       if (connection === "close") {
         isConnecting = false;
 
-        const statusCode =
-          lastDisconnect?.error instanceof Boom
-            ? lastDisconnect.error.output.statusCode
-            : undefined;
+        const statusCode = lastDisconnect?.error instanceof Boom
+          ? lastDisconnect.error.output.statusCode
+          : undefined;
 
-        //console.log("❌ Connection closed. Status code:", statusCode);
+        console.log("❌ Connection closed. Status code:", statusCode);
 
         const shouldReconnect = statusCode !== DisconnectReason.loggedOut;
-        //console.log("🔄 Should reconnect:", shouldReconnect);
 
         if (shouldReconnect) {
-          //console.log("⏳ Reconnecting in 5 seconds...");
+          console.log("⏳ Reconnecting in 5 seconds...");
           setTimeout(() => {
             connectToWhatsApp();
           }, 5000);
         } else {
-          //console.log("🚫 Logged out, not reconnecting");
+          console.log("🚫 Logged out, please restart and scan QR code");
         }
       } else if (connection === "open") {
         isConnecting = false;
-        //console.log("✅ Connected to WhatsApp");
+        console.log("✅ Connected to WhatsApp successfully!");
       }
     });
 
@@ -83,52 +103,45 @@ export async function connectToWhatsApp() {
         msg.message?.extendedTextMessage?.text ||
         "";
 
-      //console.log("📩 From:", sender, "| Text:", textMessage);
+      console.log("📩 From:", sender, "| Text:", textMessage);
 
-      const delay = Math.floor(Math.random() * (5000 - 2000 + 1));
-      //console.log(`⏳ Waiting ${delay / 1000}s before replying...`);
+      const delay = Math.floor(Math.random() * 3000 + 2000);
 
       setTimeout(async () => {
         try {
           const result = await chatbotService.processMessage(sender, textMessage);
-          //console.log("✅ Replied to", sender, "| Reply:", result);
 
-          if (result.reply || result.reply !== null) {
+          if (result.reply) {
             await sock.sendMessage(sender, { text: result.reply });
-            //console.log("✅ Replied to", sender, "| Reply:", result.reply);
-          } else {
-            //console.log("⚠️ No reply generated for", sender);
+            console.log("✅ Replied to", sender);
           }
         } catch (error) {
-          //console.error("❌ Failed to send message:", error.message);
+          console.error("❌ Failed to send message:", error.message);
         }
       }, delay);
-
     });
 
     return sock;
   } catch (error) {
     isConnecting = false;
-    //console.error("❌ Error connecting to WhatsApp:", error.message);
+    console.error("❌ Error connecting to WhatsApp:", error.message);
     throw error;
   }
 }
 
-// ✅ Helper to send message to a specific number
 export async function sendMessageToNumber(number, message) {
   try {
     if (!sock) throw new Error("WhatsApp client not connected yet.");
 
-    // format number → WhatsApp JID
     const jid = number.includes("@s.whatsapp.net")
       ? number
       : `${number}@s.whatsapp.net`;
 
     await sock.sendMessage(jid, { text: message });
-    //console.log(`📤 Sent message to ${jid}: ${message}`);
+    console.log(`📤 Sent message to ${jid}`);
     return { success: true };
   } catch (err) {
-    //console.error("❌ Failed to send message:", err.message);
+    console.error("❌ Failed to send message:", err.message);
     return { success: false, error: err.message };
   }
 }
