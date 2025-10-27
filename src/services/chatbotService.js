@@ -8,8 +8,8 @@ import Report from "../models/Report.js"; // add at top
 import { sendManagerReport } from "../mailer/MailSender.js";
 function detectLanguage(message) {
     const normalized = message?.toLowerCase().trim();
-    if (/اهلا|مرحبا|السلام/.test(normalized)) return "ar"; // Arabic triggers
-    if (/hi|hello|hey/.test(normalized)) return "en";       // English triggers
+    if (normalized === "1") return "ar"; // Arabic triggers
+    if (normalized === "2") return "en";       // English triggers
     return "en"; // fallback
 }
 
@@ -27,7 +27,7 @@ async function processMessage(userId, message) {
         await sessionManager.updateSession(userId, newSession); // 🔥 persist
 
         return {
-            reply: "🔄 Session restarted! Please say Hi / أهلا وسهلا to set your language.",
+            reply: "- للغة العربية اكتب رقم 1  \n - For English type No. 2",
             step: "lang_detect",
             type: "text"
         };
@@ -37,23 +37,23 @@ async function processMessage(userId, message) {
     if (!session.lang) {
         let user = await User.findOne({ phoneNumber: userId }); // <-- FIXED
 
-        if (user?.preferredLanguage) {
-            session.lang = user.preferredLanguage;
-        } else {
-            session.lang = detectLanguage(message); // fallback detection
+        // if (user?.preferredLanguage) {
+        //     session.lang = user.preferredLanguage;
+        // } else {
+        session.lang = detectLanguage(message); // fallback detection
 
-            if (user) {
-                await User.findOneAndUpdate(
-                    { phoneNumber: userId },
-                    { preferredLanguage: session.lang }
-                );
-            } else {
-                user = await User.create({
-                    phoneNumber: userId,
-                    preferredLanguage: session.lang
-                });
-            }
+        if (user) {
+            await User.findOneAndUpdate(
+                { phoneNumber: userId },
+                { preferredLanguage: session.lang }
+            );
+        } else {
+            user = await User.create({
+                phoneNumber: userId,
+                preferredLanguage: session.lang
+            });
         }
+        // }
 
         await sessionManager.updateSession(userId, session); // 🔥 persist
     }
@@ -121,7 +121,7 @@ async function processMessage(userId, message) {
             name: session.answers.find(a => a.step === "completion_name").value || "Unknown",
             report: reportText,
         });
-        
+
 
         try {
             await Report.create({
@@ -181,13 +181,12 @@ async function processMessage(userId, message) {
     }
 
     if (!session.active) {
+        return
         return { reply: lang === "ar" ? "❌ تم إيقاف الجلسة. اكتب 'restart' للبدء من جديد." : "❌ Session stopped. Type 'restart' to start again." };
     }
     if (session.delayed) {
         return { reply: lang === "ar" ? "⏸️ الجلسة مؤجلة. اكتب 'resume' للمتابعة." : "⏸️ Session is delayed. Type 'resume' to continue." };
     }
-
-    // 🟢 First-time menu
     if (!session.hasSeenMenu) {
         session.hasSeenMenu = true;
         await sessionManager.updateSession(userId, session);
@@ -214,8 +213,8 @@ async function processMessage(userId, message) {
 
         return {
             reply: lang === "ar"
-                ? "👋 أهلاً وسهلاً! اختر:\n1️⃣ طلب خدمة\n2️⃣ جمع بيانات التواصل" + commandsInfo
-                : "👋 Welcome! Please choose:\n1️⃣ Service Request Survey\n2️⃣ Contact Info Gathering" + commandsInfo,
+                ? "👋 أهلاً وسهلاً! اختر:\n1️⃣ طلب خدمة\n2️⃣ معاودة الاتصال\n3️⃣ التحدث مع ممثل الشركة" 
+                : "👋 Welcome! Please choose:\n1️⃣ Service Request Survey\n2️⃣ Return Call\n3️⃣ Talk to the company representative",
             step: "welcomeMenu",
             type: "choice"
         };
@@ -244,6 +243,17 @@ async function processMessage(userId, message) {
                 reply: lang === "ar" ? "📛 من فضلك أدخل اسمك الكامل:" : "📛 Please provide your full name:",
                 step: "contact_name",
                 type: "text"
+            };
+        }
+        if (normalized === "3") {
+            // 🛑 Kill chatbot session intentionally
+            await sessionManager.endSession(userId);
+            return {
+                reply: lang === "ar"
+                    ? "👨‍💼 تم تحويلك إلى ممثل الشركة. لن يستجيب النظام حتى يتم إعادة تشغيله. اكتب 'restart' للبدء من جديد."
+                    : "👨‍💼 You’ve been transferred to the company representative. The chatbot will now stop responding until restarted. type restart to start again.",
+                step: "terminated",
+                stop: true
             };
         }
         return {

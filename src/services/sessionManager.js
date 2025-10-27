@@ -78,8 +78,13 @@ function cleanupSessions() {
     }
 }
 
+function endSession(userId) {
+    console.log("Ending session for:", userId);
+    userSessions[userId].active = false;
+}
+
 // Run cleanup every 10 mins
 setInterval(cleanupSessions, 1000 * 60 * 10);
 
 
-export default { createNewSession, getSession, resetSession, updateSession };
+export default { createNewSession, getSession, resetSession, updateSession, endSession };

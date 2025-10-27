@@ -105,11 +105,22 @@ export async function connectToWhatsApp() {
 
       console.log("📩 From:", sender, "| Text:", textMessage);
 
+      // 🧪 TEST MODE — only reply to your own number
+      const MY_TEST_NUMBER = "201555068174@s.whatsapp.net"; // ← put your real WhatsApp JID here
+      if (sender !== MY_TEST_NUMBER) {
+        console.log("🚫 Ignored message from", sender, "(Test mode active)");
+        return;
+      }
+
       const delay = Math.floor(Math.random() * 3000 + 2000);
 
       setTimeout(async () => {
         try {
           const result = await chatbotService.processMessage(sender, textMessage);
+          if (result === undefined) {
+            console.log("No reply");
+            return;
+          };
 
           if (result.reply) {
             await sock.sendMessage(sender, { text: result.reply });
@@ -129,19 +140,19 @@ export async function connectToWhatsApp() {
   }
 }
 
-export async function sendMessageToNumber(number, message) {
-  try {
-    if (!sock) throw new Error("WhatsApp client not connected yet.");
+// export async function sendMessageToNumber(number, message) {
+//   try {
+//     if (!sock) throw new Error("WhatsApp client not connected yet.");
 
-    const jid = number.includes("@s.whatsapp.net")
-      ? number
-      : `${number}@s.whatsapp.net`;
+//     const jid = number.includes("@s.whatsapp.net")
+//       ? number
+//       : `${number}@s.whatsapp.net`;
 
-    await sock.sendMessage(jid, { text: message });
-    console.log(`📤 Sent message to ${jid}`);
-    return { success: true };
-  } catch (err) {
-    console.error("❌ Failed to send message:", err.message);
-    return { success: false, error: err.message };
-  }
-}
+//     await sock.sendMessage(jid, { text: message });
+//     console.log(`📤 Sent message to ${jid}`);
+//     return { success: true };
+//   } catch (err) {
+//     console.error("❌ Failed to send message:", err.message);
+//     return { success: false, error: err.message };
+//   }
+// }

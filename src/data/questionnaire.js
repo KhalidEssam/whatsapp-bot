@@ -12,8 +12,8 @@ export const enhancedQuestionnaire =
             id: 'main_service_type',
             type: 'choice',
             question: {
-                en: ' Welcome! I\'ll help you find the right services for your business. Select Main Service Type:\n1. Marketing & Creative Services\n2. Technical & Digital Transformation Services\n3. Financial & Administrative Services\n4. Corporate Management & Consulting Services',
-                ar: ' مرحبا سوف اساعدك على اختيار الخدمة المناسبة لك. اختر احدي الخدمات الرئيسية. \n1. خدمات التسويق والابداع\n2. خدمات التحول الرقمي\n3. خدمات المالية والادارية\n4. خدمات الادارة والاستشارات'
+                en: ' Welcome! I\'ll help you find the right services for your business. Select Main Service Type:\n1. Marketing & Creative Services\n2. Other Services',
+                ar: ' مرحبا سوف اساعدك على اختيار الخدمة المناسبة لك. اختر احدي الخدمات الرئيسية. \n1. خدمات التسويق والابداع\n2. خدمات أخرى'
 
             },
             options: {
@@ -22,14 +22,29 @@ export const enhancedQuestionnaire =
                     nextStep: 'marketing_services'
                 },
                 '2': {
+                    value: 'other_services',
+                    nextStep: 'other_main_service_type'
+                },
+            }
+        },
+        other_main_service_type: {
+            id: 'other_main_service_type',
+            type: 'choice',
+            question: {
+                en: ' Select from the following Service Type:\n1. Technical & Digital Transformation Services\n2. Financial & Administrative Services\n3. Corporate Management & Consulting Services',
+                ar: ' اختر من بين الخدمات التالية: \n1. خدمات التحول الرقمي\n2. خدمات المالية والادارية\n3. خدمات الادارة والاستشارات'
+
+            },
+            options: {
+                '1': {
                     value: 'technical_digital',
                     nextStep: 'technical_services'
                 },
-                '3': {
+                '2': {
                     value: 'financial_admin',
                     nextStep: 'financial_services'
                 },
-                '4': {
+                '3': {
                     value: 'corporate_consulting',
                     nextStep: 'corporate_services'
                 }
