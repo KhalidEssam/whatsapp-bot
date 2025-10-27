@@ -106,11 +106,11 @@ export async function connectToWhatsApp() {
       console.log("📩 From:", sender, "| Text:", textMessage);
 
       // 🧪 TEST MODE — only reply to your own number
-      const MY_TEST_NUMBER = "201555068174@s.whatsapp.net"; // ← put your real WhatsApp JID here
-      if (sender !== MY_TEST_NUMBER) {
-        console.log("🚫 Ignored message from", sender, "(Test mode active)");
-        return;
-      }
+      // const MY_TEST_NUMBER = "201555068174@s.whatsapp.net"; // ← put your real WhatsApp JID here
+      // if (sender !== MY_TEST_NUMBER) {
+      //   console.log("🚫 Ignored message from", sender, "(Test mode active)");
+      //   return;
+      // }
 
       const delay = Math.floor(Math.random() * 3000 + 2000);
 
