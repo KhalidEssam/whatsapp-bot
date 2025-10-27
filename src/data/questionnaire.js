@@ -1661,7 +1661,8 @@ export const enhancedQuestionnaire =
             id: "confirmation_name",
             type: "text",
             question: {
-                en: "Please enter your full name:"
+                en: "Please enter your full name:",
+                ar: "يرجى إدخال اسمك الكامل:"
             },
             nextStep: "confirmation_email"
         },
@@ -1670,7 +1671,8 @@ export const enhancedQuestionnaire =
             id: "confirmation_email",
             type: "text",
             question: {
-                en: "Please enter your email address:"
+                en: "Please enter your email address:",
+                ar: "يرجى إدخال بريدك الإلكتروني:"
             },
             nextStep: "confirmation_phone"
         },
@@ -1679,7 +1681,8 @@ export const enhancedQuestionnaire =
             id: "confirmation_phone",
             type: "text",
             question: {
-                en: "Please enter your phone number:"
+                en: "Please enter your phone number:",
+                ar: "يرجى إدخال رقم هاتفك:"
             },
             nextStep: "confirmation_review"
         },
